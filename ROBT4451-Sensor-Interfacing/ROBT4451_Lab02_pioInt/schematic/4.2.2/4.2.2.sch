@@ -1,0 +1,925 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4.2.2-rescue:74HC244-74xx U6
+U 1 1 60014086
+P 8650 3000
+F 0 "U6" H 8650 4200 50  0000 C CNN
+F 1 "74HC244" H 8650 4100 50  0000 C CNN
+F 2 "" H 8650 3000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf" H 8650 3000 50  0001 C CNN
+	1    8650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:74HC273-74xx U5
+U 1 1 600156C4
+P 7450 3000
+F 0 "U5" H 7450 4200 50  0000 C CNN
+F 1 "74HC273" H 7450 4100 50  0000 C CNN
+F 2 "" H 7450 3000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT273.pdf" H 7450 3000 50  0001 C CNN
+	1    7450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:Jumper_2_Open-Jumper JP?
+U 1 1 6001F2DF
+P 1650 3750
+F 0 "JP?" H 1650 3985 50  0001 C CNN
+F 1 "J1" H 1650 3894 50  0000 C CNN
+F 2 "" H 1650 3750 50  0001 C CNN
+F 3 "~" H 1650 3750 50  0001 C CNN
+	1    1650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:HDSP-4830_2-LED L1
+U 1 1 600209F5
+P 8550 4600
+F 0 "L1" H 8550 5267 50  0000 C CNN
+F 1 "10 X LED" H 8550 5176 50  0000 C CNN
+F 2 "Display:HDSP-4830" H 8550 3800 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 6550 4800 50  0001 C CNN
+	1    8550 4600
+	0    -1   1    0   
+$EndComp
+$Comp
+L 4.2.2-rescue:R_US-Device R?
+U 1 1 6004EF31
+P 1950 3600
+F 0 "R?" H 2018 3646 50  0001 L CNN
+F 1 "1k" H 2018 3600 50  0000 L CNN
+F 2 "" V 1990 3590 50  0001 C CNN
+F 3 "~" H 1950 3600 50  0001 C CNN
+	1    1950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3750 1350 3750
+Wire Wire Line
+	1850 3750 1950 3750
+Connection ~ 1950 3750
+Wire Wire Line
+	1950 3750 2250 3750
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 60052752
+P 1350 3850
+F 0 "#PWR?" H 1350 3600 50  0001 C CNN
+F 1 "GND" H 1355 3677 50  0001 C CNN
+F 2 "" H 1350 3850 50  0001 C CNN
+F 3 "" H 1350 3850 50  0001 C CNN
+	1    1350 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 6006E304
+P 8150 5350
+F 0 "#PWR?" H 8150 5100 50  0001 C CNN
+F 1 "GND" H 8155 5177 50  0001 C CNN
+F 2 "" H 8150 5350 50  0001 C CNN
+F 3 "" H 8150 5350 50  0001 C CNN
+	1    8150 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4800 8150 4950
+Wire Wire Line
+	8250 4800 8250 4950
+Wire Wire Line
+	8350 4800 8350 4950
+Wire Wire Line
+	8450 4800 8450 4950
+Wire Wire Line
+	8550 4800 8550 4950
+Wire Wire Line
+	8650 4800 8650 4950
+Wire Wire Line
+	8750 4800 8750 4950
+Wire Wire Line
+	8850 4800 8850 4950
+$Comp
+L 4.2.2-rescue:R_Network10_US-Device R1
+U 1 1 600220E1
+P 8650 5150
+F 0 "R1" H 9138 5196 50  0000 L CNN
+F 1 "10 X 1k" H 9138 5105 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP11" V 9225 5150 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 8650 5150 50  0001 C CNN
+	1    8650 5150
+	1    0    0    1   
+$EndComp
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 6007CD1E
+P 8650 3800
+F 0 "#PWR?" H 8650 3550 50  0001 C CNN
+F 1 "GND" H 8655 3627 50  0001 C CNN
+F 2 "" H 8650 3800 50  0001 C CNN
+F 3 "" H 8650 3800 50  0001 C CNN
+	1    8650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 6007CFE4
+P 7450 3800
+F 0 "#PWR?" H 7450 3550 50  0001 C CNN
+F 1 "GND" H 7455 3627 50  0001 C CNN
+F 2 "" H 7450 3800 50  0001 C CNN
+F 3 "" H 7450 3800 50  0001 C CNN
+	1    7450 3800
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7950 2500 8050 2600
+Entry Wire Line
+	7950 2600 8050 2700
+Entry Wire Line
+	7950 2700 8050 2800
+Entry Wire Line
+	7950 2800 8050 2900
+Entry Wire Line
+	7950 2900 8050 3000
+Entry Wire Line
+	7950 3000 8050 3100
+Entry Wire Line
+	7950 3100 8050 3200
+Entry Wire Line
+	7950 3200 8050 3300
+Entry Wire Line
+	8050 2400 8150 2500
+Entry Wire Line
+	8050 2500 8150 2600
+Entry Wire Line
+	8050 2600 8150 2700
+Entry Wire Line
+	8050 2700 8150 2800
+Entry Wire Line
+	8050 2800 8150 2900
+Entry Wire Line
+	8050 2900 8150 3000
+Entry Wire Line
+	8050 3000 8150 3100
+Entry Wire Line
+	8050 3100 8150 3200
+Entry Wire Line
+	8050 4300 8150 4400
+Entry Wire Line
+	8150 4300 8250 4400
+Entry Wire Line
+	8250 4300 8350 4400
+Entry Wire Line
+	8350 4300 8450 4400
+Entry Wire Line
+	8450 4300 8550 4400
+Entry Wire Line
+	8550 4300 8650 4400
+Entry Wire Line
+	8650 4300 8750 4400
+Entry Wire Line
+	8750 4300 8850 4400
+Entry Wire Line
+	2250 1800 2350 1900
+Entry Wire Line
+	2250 1900 2350 2000
+Entry Wire Line
+	2250 2000 2350 2100
+Entry Wire Line
+	2250 950  2350 1050
+Entry Wire Line
+	2250 1050 2350 1150
+Entry Wire Line
+	2250 1150 2350 1250
+Entry Wire Line
+	2250 1250 2350 1350
+Entry Wire Line
+	2250 1350 2350 1450
+Entry Wire Line
+	2250 1450 2350 1550
+Entry Wire Line
+	2250 1550 2350 1650
+Entry Wire Line
+	2250 1650 2350 1750
+Entry Wire Line
+	2350 3150 2450 3250
+Entry Wire Line
+	2350 3250 2450 3350
+Entry Wire Line
+	2350 3350 2450 3450
+Entry Wire Line
+	6850 2400 6950 2500
+Entry Wire Line
+	6850 2500 6950 2600
+Entry Wire Line
+	6850 2600 6950 2700
+Entry Wire Line
+	6850 2700 6950 2800
+Entry Wire Line
+	6850 2800 6950 2900
+Entry Wire Line
+	6850 2900 6950 3000
+Entry Wire Line
+	6850 3000 6950 3100
+Entry Wire Line
+	6850 3100 6950 3200
+Entry Wire Line
+	9150 2500 9250 2600
+Entry Wire Line
+	9150 2600 9250 2700
+Entry Wire Line
+	9150 2700 9250 2800
+Entry Wire Line
+	9150 2800 9250 2900
+Entry Wire Line
+	9150 2900 9250 3000
+Entry Wire Line
+	9150 3000 9250 3100
+Entry Wire Line
+	9150 3100 9250 3200
+Entry Wire Line
+	9150 3200 9250 3300
+$Comp
+L 4.2.2-rescue:74AHC04-74xx U1:
+U 1 1 600984C9
+P 2850 3000
+F 0 "U1:" H 2850 3317 50  0000 C CNN
+F 1 "74HC04" H 2850 3226 50  0000 C CNN
+F 2 "" H 2850 3000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 2850 3000 50  0001 C CNN
+	1    2850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2150 2250 2150
+Wire Wire Line
+	2450 3250 3150 3250
+Wire Wire Line
+	3150 3350 2450 3350
+Wire Wire Line
+	2450 3450 3150 3450
+$Comp
+L 4.2.2-rescue:MSP430-User_defined A1
+U 1 1 600AF2DF
+P 1750 700
+F 0 "A1" H 1808 715 50  0000 C CNN
+F 1 "MSP430" H 1808 624 50  0000 C CNN
+F 2 "" H 1750 700 50  0001 C CNN
+F 3 "" H 1750 700 50  0001 C CNN
+	1    1750 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:74HC32-User_defined U2:
+U 1 2 600AFE74
+P 5600 3400
+F 0 "U2:" H 5600 3725 50  0000 C CNN
+F 1 "74HC32" H 5600 3634 50  0000 C CNN
+F 2 "" H 5600 3400 50  0001 C CNN
+F 3 "" H 5600 3400 50  0001 C CNN
+	1    5600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:74HC32-User_defined U2:
+U 2 2 600B147C
+P 6050 4200
+F 0 "U2:" H 6050 4525 50  0000 C CNN
+F 1 "74HC32" H 6050 4434 50  0000 C CNN
+F 2 "" H 6050 4200 50  0001 C CNN
+F 3 "" H 6050 4200 50  0001 C CNN
+	2    6050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2250 5150 3300
+Wire Wire Line
+	2250 2250 4700 2250
+Wire Wire Line
+	5300 3300 5150 3300
+$Comp
+L 4.2.2-rescue:+5V-power #PWR?
+U 1 1 600D6829
+P 7450 2200
+F 0 "#PWR?" H 7450 2050 50  0001 C CNN
+F 1 "+5V" H 7465 2373 50  0000 C CNN
+F 2 "" H 7450 2200 50  0001 C CNN
+F 3 "" H 7450 2200 50  0001 C CNN
+	1    7450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:+5V-power #PWR?
+U 1 1 600D7081
+P 8650 2200
+F 0 "#PWR?" H 8650 2050 50  0001 C CNN
+F 1 "+5V" H 8665 2373 50  0000 C CNN
+F 2 "" H 8650 2200 50  0001 C CNN
+F 3 "" H 8650 2200 50  0001 C CNN
+	1    8650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:+5V-power #PWR?
+U 1 1 600E78DE
+P 6800 3700
+F 0 "#PWR?" H 6800 3550 50  0001 C CNN
+F 1 "+5V" H 6815 3873 50  0000 C CNN
+F 2 "" H 6800 3700 50  0001 C CNN
+F 3 "" H 6800 3700 50  0001 C CNN
+	1    6800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3700 6950 3700
+Wire Wire Line
+	6950 3700 6950 3500
+Wire Wire Line
+	5900 3400 6950 3400
+$Comp
+L 4.2.2-rescue:Jumper_2_Open-Jumper JP?
+U 1 1 60108923
+P 1650 4250
+F 0 "JP?" H 1650 4485 50  0001 C CNN
+F 1 "J2" H 1650 4394 50  0000 C CNN
+F 2 "" H 1650 4250 50  0001 C CNN
+F 3 "~" H 1650 4250 50  0001 C CNN
+	1    1650 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4250 1350 4250
+$Comp
+L 4.2.2-rescue:Jumper_2_Open-Jumper JP?
+U 1 1 6010A616
+P 1650 4750
+F 0 "JP?" H 1650 4985 50  0001 C CNN
+F 1 "J3" H 1650 4894 50  0000 C CNN
+F 2 "" H 1650 4750 50  0001 C CNN
+F 3 "~" H 1650 4750 50  0001 C CNN
+	1    1650 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4750 1350 4750
+Wire Wire Line
+	1450 5250 1350 5250
+$Comp
+L 4.2.2-rescue:Jumper_2_Open-Jumper JP?
+U 1 1 6010DCB7
+P 1650 5750
+F 0 "JP?" H 1650 5985 50  0001 C CNN
+F 1 "J5" H 1650 5894 50  0000 C CNN
+F 2 "" H 1650 5750 50  0001 C CNN
+F 3 "~" H 1650 5750 50  0001 C CNN
+	1    1650 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5750 1350 5750
+$Comp
+L 4.2.2-rescue:Jumper_2_Open-Jumper JP?
+U 1 1 6010F8B0
+P 1650 6250
+F 0 "JP?" H 1650 6485 50  0001 C CNN
+F 1 "J6" H 1650 6394 50  0000 C CNN
+F 2 "" H 1650 6250 50  0001 C CNN
+F 3 "~" H 1650 6250 50  0001 C CNN
+	1    1650 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6250 1350 6250
+$Comp
+L 4.2.2-rescue:Jumper_2_Open-Jumper JP?
+U 1 1 60111EAF
+P 1650 6750
+F 0 "JP?" H 1650 6985 50  0001 C CNN
+F 1 "J7" H 1650 6894 50  0000 C CNN
+F 2 "" H 1650 6750 50  0001 C CNN
+F 3 "~" H 1650 6750 50  0001 C CNN
+	1    1650 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6750 1350 6750
+$Comp
+L 4.2.2-rescue:Jumper_2_Open-Jumper JP?
+U 1 1 601140E0
+P 1650 7250
+F 0 "JP?" H 1650 7485 50  0001 C CNN
+F 1 "J8" H 1650 7394 50  0000 C CNN
+F 2 "" H 1650 7250 50  0001 C CNN
+F 3 "~" H 1650 7250 50  0001 C CNN
+	1    1650 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 7250 1350 7250
+Wire Wire Line
+	1350 3850 1350 3750
+Entry Wire Line
+	2250 3750 2350 3850
+Entry Wire Line
+	2250 4250 2350 4350
+Entry Wire Line
+	2250 4750 2350 4850
+Entry Wire Line
+	2250 5250 2350 5350
+Entry Wire Line
+	2250 5750 2350 5850
+Entry Wire Line
+	2250 6250 2350 6350
+Entry Wire Line
+	2250 6750 2350 6850
+Entry Wire Line
+	2250 7250 2350 7350
+Connection ~ 6850 1050
+Wire Bus Line
+	6850 1050 9250 1050
+Wire Wire Line
+	8150 3400 8150 3500
+Wire Wire Line
+	8150 4200 6350 4200
+Connection ~ 8150 3500
+$Comp
+L 74xx_IEEE:74LS138 U3
+U 1 1 60060FED
+P 3700 3000
+F 0 "U3" H 3700 3516 50  0000 C CNN
+F 1 "74HC138" H 3700 3425 50  0000 C CNN
+F 2 "" H 3700 3000 50  0001 C CNN
+F 3 "" H 3700 3000 50  0001 C CNN
+	1    3700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2150 2550 3000
+Wire Wire Line
+	3150 2800 3150 2900
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600799C6
+P 3150 3050
+F 0 "#PWR?" H 3150 2800 50  0001 C CNN
+F 1 "GND" H 3155 2877 50  0001 C CNN
+F 2 "" H 3150 3050 50  0001 C CNN
+F 3 "" H 3150 3050 50  0001 C CNN
+	1    3150 3050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 2900
+Wire Wire Line
+	3150 2900 3150 3050
+Connection ~ 5150 3300
+Wire Wire Line
+	5150 3300 5150 4100
+Wire Wire Line
+	5000 3500 5000 4300
+Wire Wire Line
+	4250 3500 5000 3500
+$Comp
+L 4.2.2-rescue:74AHC04-74xx U1:
+U 2 1 600AD6E9
+P 5450 4100
+F 0 "U1:" H 5450 4417 50  0000 C CNN
+F 1 "74HC04" H 5450 4326 50  0000 C CNN
+F 2 "" H 5450 4100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 5450 4100 50  0001 C CNN
+	2    5450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:74AHC04-74xx U1:
+U 3 1 600AFC5B
+P 4550 6600
+F 0 "U1:" H 4550 6917 50  0000 C CNN
+F 1 "74HC04" H 4550 6826 50  0000 C CNN
+F 2 "" H 4550 6600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf" H 4550 6600 50  0001 C CNN
+	3    4550 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3300 4250 3300
+Wire Wire Line
+	4850 3300 4850 6400
+Connection ~ 5000 3500
+Wire Wire Line
+	5000 3500 5300 3500
+Wire Wire Line
+	5000 4300 5750 4300
+Wire Wire Line
+	8150 3500 8150 4200
+Wire Wire Line
+	4250 4500 4700 4500
+Wire Wire Line
+	4700 4500 4700 2250
+Connection ~ 4700 2250
+Wire Wire Line
+	4700 2250 5150 2250
+Wire Wire Line
+	4250 4500 4250 6600
+Connection ~ 5550 6500
+Wire Wire Line
+	5450 6500 5550 6500
+$Comp
+L 4.2.2-rescue:74HC32-User_defined U2:
+U 3 2 600B2791
+P 5150 6500
+F 0 "U2:" H 5150 6825 50  0000 C CNN
+F 1 "74HC32" H 5150 6734 50  0000 C CNN
+F 2 "" H 5150 6500 50  0001 C CNN
+F 3 "" H 5150 6500 50  0001 C CNN
+	3    5150 6500
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	5450 7350 2350 7350
+Wire Wire Line
+	5550 6600 5550 6500
+$Comp
+L 4.2.2-rescue:+5V-power #PWR?
+U 1 1 600FFF3A
+P 6050 5300
+F 0 "#PWR?" H 6050 5150 50  0001 C CNN
+F 1 "+5V" H 6065 5473 50  0000 C CNN
+F 2 "" H 6050 5300 50  0001 C CNN
+F 3 "" H 6050 5300 50  0001 C CNN
+	1    6050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600D5387
+P 6050 6900
+F 0 "#PWR?" H 6050 6650 50  0001 C CNN
+F 1 "GND" H 6055 6727 50  0001 C CNN
+F 2 "" H 6050 6900 50  0001 C CNN
+F 3 "" H 6050 6900 50  0001 C CNN
+	1    6050 6900
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	6550 6300 6650 6400
+Entry Wire Line
+	6550 6200 6650 6300
+Entry Wire Line
+	6550 6100 6650 6200
+Entry Wire Line
+	6550 6000 6650 6100
+Entry Wire Line
+	6550 5900 6650 6000
+Entry Wire Line
+	6550 5800 6650 5900
+Entry Wire Line
+	6550 5700 6650 5800
+Entry Wire Line
+	6550 5600 6650 5700
+Entry Wire Line
+	5450 6200 5550 6300
+Entry Wire Line
+	5450 6100 5550 6200
+Entry Wire Line
+	5450 6000 5550 6100
+Entry Wire Line
+	5450 5900 5550 6000
+Entry Wire Line
+	5450 5800 5550 5900
+Entry Wire Line
+	5450 5700 5550 5800
+Entry Wire Line
+	5450 5600 5550 5700
+Entry Wire Line
+	5450 5500 5550 5600
+$Comp
+L 4.2.2-rescue:74HC244-74xx U4
+U 1 1 60014C38
+P 6050 6100
+F 0 "U4" H 6050 7300 50  0000 C CNN
+F 1 "74HC244" H 6050 7200 50  0000 C CNN
+F 2 "" H 6050 6100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf" H 6050 6100 50  0001 C CNN
+	1    6050 6100
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	6650 1050 6850 1050
+Wire Bus Line
+	2350 1050 6650 1050
+Connection ~ 6650 1050
+Wire Wire Line
+	1850 4250 2250 4250
+Wire Wire Line
+	1850 4750 2250 4750
+Wire Wire Line
+	1850 5250 2250 5250
+$Comp
+L 4.2.2-rescue:Jumper_2_Open-Jumper JP?
+U 1 1 6010C00E
+P 1650 5250
+F 0 "JP?" H 1650 5485 50  0001 C CNN
+F 1 "J4" H 1650 5394 50  0000 C CNN
+F 2 "" H 1650 5250 50  0001 C CNN
+F 3 "~" H 1650 5250 50  0001 C CNN
+	1    1650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5750 2250 5750
+Wire Wire Line
+	1850 6250 2250 6250
+Wire Wire Line
+	1850 7250 2250 7250
+Wire Wire Line
+	1850 6750 2250 6750
+$Comp
+L User_defined:+5V V?
+U 1 1 600C2556
+P 1950 3400
+F 0 "V?" H 1950 3400 50  0001 C CNN
+F 1 "+5V" H 1969 3382 50  0000 C CNN
+F 2 "" H 1950 3400 50  0001 C CNN
+F 3 "" H 1950 3400 50  0001 C CNN
+	1    1950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:R_US-Device R?
+U 1 1 600CD1EC
+P 1950 4100
+F 0 "R?" H 2018 4146 50  0001 L CNN
+F 1 "1k" H 2018 4100 50  0000 L CNN
+F 2 "" V 1990 4090 50  0001 C CNN
+F 3 "~" H 1950 4100 50  0001 C CNN
+	1    1950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:+5V V?
+U 1 1 600CD1F2
+P 1950 3900
+F 0 "V?" H 1950 3900 50  0001 C CNN
+F 1 "+5V" H 1969 3882 50  0000 C CNN
+F 2 "" H 1950 3900 50  0001 C CNN
+F 3 "" H 1950 3900 50  0001 C CNN
+	1    1950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:R_US-Device R?
+U 1 1 600CF365
+P 1950 4600
+F 0 "R?" H 2018 4646 50  0001 L CNN
+F 1 "1k" H 2018 4600 50  0000 L CNN
+F 2 "" V 1990 4590 50  0001 C CNN
+F 3 "~" H 1950 4600 50  0001 C CNN
+	1    1950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:+5V V?
+U 1 1 600CF36B
+P 1950 4400
+F 0 "V?" H 1950 4400 50  0001 C CNN
+F 1 "+5V" H 1969 4382 50  0000 C CNN
+F 2 "" H 1950 4400 50  0001 C CNN
+F 3 "" H 1950 4400 50  0001 C CNN
+	1    1950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:R_US-Device R?
+U 1 1 600D19EA
+P 1950 5100
+F 0 "R?" H 2018 5146 50  0001 L CNN
+F 1 "1k" H 2018 5100 50  0000 L CNN
+F 2 "" V 1990 5090 50  0001 C CNN
+F 3 "~" H 1950 5100 50  0001 C CNN
+	1    1950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:+5V V?
+U 1 1 600D19F0
+P 1950 4900
+F 0 "V?" H 1950 4900 50  0001 C CNN
+F 1 "+5V" H 1969 4882 50  0000 C CNN
+F 2 "" H 1950 4900 50  0001 C CNN
+F 3 "" H 1950 4900 50  0001 C CNN
+	1    1950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:R_US-Device R?
+U 1 1 600D3AEF
+P 1950 5600
+F 0 "R?" H 2018 5646 50  0001 L CNN
+F 1 "1k" H 2018 5600 50  0000 L CNN
+F 2 "" V 1990 5590 50  0001 C CNN
+F 3 "~" H 1950 5600 50  0001 C CNN
+	1    1950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:+5V V?
+U 1 1 600D3AF5
+P 1950 5400
+F 0 "V?" H 1950 5400 50  0001 C CNN
+F 1 "+5V" H 1969 5382 50  0000 C CNN
+F 2 "" H 1950 5400 50  0001 C CNN
+F 3 "" H 1950 5400 50  0001 C CNN
+	1    1950 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:R_US-Device R?
+U 1 1 600D5B60
+P 1950 6100
+F 0 "R?" H 2018 6146 50  0001 L CNN
+F 1 "1k" H 2018 6100 50  0000 L CNN
+F 2 "" V 1990 6090 50  0001 C CNN
+F 3 "~" H 1950 6100 50  0001 C CNN
+	1    1950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:+5V V?
+U 1 1 600D5B66
+P 1950 5900
+F 0 "V?" H 1950 5900 50  0001 C CNN
+F 1 "+5V" H 1969 5882 50  0000 C CNN
+F 2 "" H 1950 5900 50  0001 C CNN
+F 3 "" H 1950 5900 50  0001 C CNN
+	1    1950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:R_US-Device R?
+U 1 1 600D7C37
+P 1950 6600
+F 0 "R?" H 2018 6646 50  0001 L CNN
+F 1 "1k" H 2018 6600 50  0000 L CNN
+F 2 "" V 1990 6590 50  0001 C CNN
+F 3 "~" H 1950 6600 50  0001 C CNN
+	1    1950 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:+5V V?
+U 1 1 600D7C3D
+P 1950 6400
+F 0 "V?" H 1950 6400 50  0001 C CNN
+F 1 "+5V" H 1969 6382 50  0000 C CNN
+F 2 "" H 1950 6400 50  0001 C CNN
+F 3 "" H 1950 6400 50  0001 C CNN
+	1    1950 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:R_US-Device R?
+U 1 1 600D9EA0
+P 1950 7100
+F 0 "R?" H 2018 7146 50  0001 L CNN
+F 1 "1k" H 2018 7100 50  0000 L CNN
+F 2 "" V 1990 7090 50  0001 C CNN
+F 3 "~" H 1950 7100 50  0001 C CNN
+	1    1950 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:+5V V?
+U 1 1 600D9EA6
+P 1950 6900
+F 0 "V?" H 1950 6900 50  0001 C CNN
+F 1 "+5V" H 1969 6882 50  0000 C CNN
+F 2 "" H 1950 6900 50  0001 C CNN
+F 3 "" H 1950 6900 50  0001 C CNN
+	1    1950 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600DC401
+P 1350 4350
+F 0 "#PWR?" H 1350 4100 50  0001 C CNN
+F 1 "GND" H 1355 4177 50  0001 C CNN
+F 2 "" H 1350 4350 50  0001 C CNN
+F 3 "" H 1350 4350 50  0001 C CNN
+	1    1350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4350 1350 4250
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600DE479
+P 1350 4850
+F 0 "#PWR?" H 1350 4600 50  0001 C CNN
+F 1 "GND" H 1355 4677 50  0001 C CNN
+F 2 "" H 1350 4850 50  0001 C CNN
+F 3 "" H 1350 4850 50  0001 C CNN
+	1    1350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4850 1350 4750
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600E04C1
+P 1350 5350
+F 0 "#PWR?" H 1350 5100 50  0001 C CNN
+F 1 "GND" H 1355 5177 50  0001 C CNN
+F 2 "" H 1350 5350 50  0001 C CNN
+F 3 "" H 1350 5350 50  0001 C CNN
+	1    1350 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5350 1350 5250
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600E257E
+P 1350 5850
+F 0 "#PWR?" H 1350 5600 50  0001 C CNN
+F 1 "GND" H 1355 5677 50  0001 C CNN
+F 2 "" H 1350 5850 50  0001 C CNN
+F 3 "" H 1350 5850 50  0001 C CNN
+	1    1350 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5850 1350 5750
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600E4779
+P 1350 6350
+F 0 "#PWR?" H 1350 6100 50  0001 C CNN
+F 1 "GND" H 1355 6177 50  0001 C CNN
+F 2 "" H 1350 6350 50  0001 C CNN
+F 3 "" H 1350 6350 50  0001 C CNN
+	1    1350 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6350 1350 6250
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600E692F
+P 1350 6850
+F 0 "#PWR?" H 1350 6600 50  0001 C CNN
+F 1 "GND" H 1355 6677 50  0001 C CNN
+F 2 "" H 1350 6850 50  0001 C CNN
+F 3 "" H 1350 6850 50  0001 C CNN
+	1    1350 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6850 1350 6750
+$Comp
+L 4.2.2-rescue:GND-power #PWR?
+U 1 1 600E8DD3
+P 1350 7350
+F 0 "#PWR?" H 1350 7100 50  0001 C CNN
+F 1 "GND" H 1355 7177 50  0001 C CNN
+F 2 "" H 1350 7350 50  0001 C CNN
+F 3 "" H 1350 7350 50  0001 C CNN
+	1    1350 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7350 1350 7250
+Wire Bus Line
+	2350 1900 2350 3350
+Wire Bus Line
+	8050 4300 8750 4300
+Wire Bus Line
+	2350 1050 2350 1750
+Wire Bus Line
+	2350 3850 2350 7350
+Wire Bus Line
+	5450 5500 5450 7350
+Wire Bus Line
+	6650 1050 6650 6400
+Wire Bus Line
+	9250 1050 9250 3300
+Wire Bus Line
+	6850 1050 6850 3100
+Wire Bus Line
+	8050 2400 8050 4300
+$EndSCHEMATC

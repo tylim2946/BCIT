@@ -1,0 +1,9 @@
+change U3 to 74HC138
+get rid of U1:C and U1:D
+
+From U3, tie ~G2B and G1 high/low and drive ~G2A with ~E
+
+For peripherals at address 0x5, prevent MSP430 from writing data
+
+
+WARNING! CPLD USES 3.3V

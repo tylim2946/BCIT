@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name User_defined)(type Legacy)(uri "C:/Users/Kevin Rim/ShareFile/Personal Folders/4th Semester/ROBT4451/ROBT4451_Lab02_pioInt/User_defined.lib")(options "")(descr ""))
+  (lib (name 4.2.2-rescue)(type Legacy)(uri ${KIPRJMOD}/4.2.2-rescue.lib)(options "")(descr ""))
+)

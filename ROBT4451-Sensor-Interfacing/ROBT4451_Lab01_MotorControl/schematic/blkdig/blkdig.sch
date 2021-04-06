@@ -1,0 +1,82 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L User_defined:MSP430_Lab03 A?
+U 1 1 600EFF51
+P 3000 2650
+F 0 "A?" H 3088 2665 50  0000 C CNN
+F 1 "MSP430_Lab03" H 3088 2574 50  0000 C CNN
+F 2 "" H 3000 2650 50  0001 C CNN
+F 3 "" H 3000 2650 50  0001 C CNN
+	1    3000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:keypad SW?
+U 1 1 600F05CE
+P 4700 2100
+F 0 "SW?" H 4928 1883 50  0000 L CNN
+F 1 "keypad" H 4928 1792 50  0000 L CNN
+F 2 "" H 4700 2100 50  0001 C CNN
+F 3 "" H 4700 2100 50  0001 C CNN
+	1    4700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L User_defined:VNH7070 A?
+U 1 1 600F0BC3
+P 4750 3050
+F 0 "A?" H 5028 2801 50  0000 L CNN
+F 1 "VNH7070" H 5028 2710 50  0000 L CNN
+F 2 "" H 4750 3050 50  0001 C CNN
+F 3 "" H 4750 3050 50  0001 C CNN
+	1    4750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 600F49C5
+P 3950 2900
+F 0 "R?" H 4018 2946 50  0000 L CNN
+F 1 "R_US" H 4018 2855 50  0000 L CNN
+F 2 "" V 3990 2890 50  0001 C CNN
+F 3 "~" H 3950 2900 50  0001 C CNN
+	1    3950 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 2900 3800 2900
+Wire Wire Line
+	4100 2900 4800 2900
+Wire Wire Line
+	4800 2900 4800 2550
+Wire Wire Line
+	4600 2550 4600 3000
+Wire Wire Line
+	4600 3000 3500 3000
+Wire Wire Line
+	3500 3200 4400 3200
+Wire Wire Line
+	3500 3300 4400 3300
+Wire Wire Line
+	4400 3400 3500 3400
+Wire Wire Line
+	3500 3600 4000 3600
+Wire Wire Line
+	4000 3600 4000 3500
+Wire Wire Line
+	4000 3500 4400 3500
+$EndSCHEMATC

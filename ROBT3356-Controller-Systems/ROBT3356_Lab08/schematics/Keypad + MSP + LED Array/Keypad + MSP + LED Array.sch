@@ -1,0 +1,455 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4800 3600 0    50   Input ~ 0
+P3.0
+$Comp
+L power:GND #PWR?
+U 1 1 5F917F98
+P 6050 4650
+F 0 "#PWR?" H 6050 4400 50  0001 C CNN
+F 1 "GND" H 6055 4477 50  0000 C CNN
+F 2 "" H 6050 4650 50  0001 C CNN
+F 3 "" H 6050 4650 50  0001 C CNN
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:HDSP-4830_2 L1
+U 1 1 5F930398
+P 5150 4000
+F 0 "L1" H 5150 4549 50  0000 C CNN
+F 1 "2510T-AB" H 5150 4576 50  0001 C CNN
+F 2 "Display:HDSP-4830" H 5150 3200 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 3150 4200 50  0001 C CNN
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 3700 0    50   Input ~ 0
+P3.1
+Text GLabel 4800 3800 0    50   Input ~ 0
+P3.2
+Text GLabel 4800 3900 0    50   Input ~ 0
+P3.3
+Wire Wire Line
+	4800 3600 4950 3600
+Wire Wire Line
+	4800 3700 4950 3700
+Wire Wire Line
+	4800 3800 4950 3800
+Wire Wire Line
+	4800 3900 4950 3900
+$Comp
+L Switch:SW_Push_45deg SW1:11
+U 1 1 5FA4F397
+P 2450 3500
+F 0 "SW1:11" H 2450 3663 50  0000 C CNN
+F 1 " " H 2450 3690 50  0000 C CNN
+F 2 "" H 2450 3500 50  0001 C CNN
+F 3 "~" H 2450 3500 50  0001 C CNN
+	1    2450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:21
+U 1 1 5FA51DA0
+P 2750 3500
+F 0 "SW1:21" H 2750 3663 50  0000 C CNN
+F 1 " " H 2750 3690 50  0000 C CNN
+F 2 "" H 2750 3500 50  0001 C CNN
+F 3 "~" H 2750 3500 50  0001 C CNN
+	1    2750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:31
+U 1 1 5FA5228A
+P 3050 3500
+F 0 "SW1:31" H 3050 3663 50  0000 C CNN
+F 1 " " H 3050 3690 50  0000 C CNN
+F 2 "" H 3050 3500 50  0001 C CNN
+F 3 "~" H 3050 3500 50  0001 C CNN
+	1    3050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:41
+U 1 1 5FA52981
+P 3350 3500
+F 0 "SW1:41" H 3350 3663 50  0000 C CNN
+F 1 " " H 3350 3690 50  0000 C CNN
+F 2 "" H 3350 3500 50  0001 C CNN
+F 3 "~" H 3350 3500 50  0001 C CNN
+	1    3350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:42
+U 1 1 5FA53696
+P 3350 3800
+F 0 "SW1:42" H 3350 3963 50  0000 C CNN
+F 1 " " H 3350 3990 50  0000 C CNN
+F 2 "" H 3350 3800 50  0001 C CNN
+F 3 "~" H 3350 3800 50  0001 C CNN
+	1    3350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:32
+U 1 1 5FA54BA1
+P 3050 3800
+F 0 "SW1:32" H 3050 3963 50  0000 C CNN
+F 1 " " H 3050 3990 50  0000 C CNN
+F 2 "" H 3050 3800 50  0001 C CNN
+F 3 "~" H 3050 3800 50  0001 C CNN
+	1    3050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:22
+U 1 1 5FA553FD
+P 2750 3800
+F 0 "SW1:22" H 2750 3963 50  0000 C CNN
+F 1 " " H 2750 3990 50  0000 C CNN
+F 2 "" H 2750 3800 50  0001 C CNN
+F 3 "~" H 2750 3800 50  0001 C CNN
+	1    2750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:12
+U 1 1 5FA55875
+P 2450 3800
+F 0 "SW1:12" H 2450 3963 50  0000 C CNN
+F 1 " " H 2450 3990 50  0000 C CNN
+F 2 "" H 2450 3800 50  0001 C CNN
+F 3 "~" H 2450 3800 50  0001 C CNN
+	1    2450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2400 2350 2400
+Connection ~ 3250 3400
+Wire Wire Line
+	3250 3400 3250 3300
+Connection ~ 3250 3700
+Wire Wire Line
+	3250 3700 3250 3400
+Wire Wire Line
+	3250 4000 3250 3700
+Wire Wire Line
+	2550 3600 2850 3600
+Connection ~ 2850 3600
+Wire Wire Line
+	2850 3600 3150 3600
+Connection ~ 3150 3600
+Wire Wire Line
+	3150 3600 3450 3600
+Connection ~ 3450 3600
+Wire Wire Line
+	2550 3900 2850 3900
+Connection ~ 2850 3900
+Wire Wire Line
+	2850 3900 3150 3900
+Connection ~ 3150 3900
+Wire Wire Line
+	3150 3900 3450 3900
+Connection ~ 3450 3900
+Wire Wire Line
+	1950 2700 2650 2700
+Connection ~ 2950 3400
+Wire Wire Line
+	2950 3400 2950 3700
+Connection ~ 2950 3700
+Wire Wire Line
+	2950 3700 2950 4000
+Text GLabel 1650 3300 0    50   Input ~ 0
+P6.3
+Text GLabel 1650 3000 0    50   Input ~ 0
+P6.2
+Text GLabel 1650 2700 0    50   Input ~ 0
+P6.1
+Text GLabel 1650 2400 0    50   Input ~ 0
+P6.0
+Wire Wire Line
+	2950 3000 1950 3000
+Connection ~ 2650 3400
+Wire Wire Line
+	2650 3400 2650 3700
+Connection ~ 2650 3700
+Wire Wire Line
+	2650 3700 2650 4000
+Wire Wire Line
+	1950 3300 3250 3300
+Connection ~ 2350 3400
+Connection ~ 2350 3700
+Wire Wire Line
+	2350 3700 2350 3400
+Wire Wire Line
+	2350 4000 2350 3700
+Text GLabel 3950 4200 2    50   Input ~ 0
+P2.6
+Text GLabel 3950 4500 2    50   Input ~ 0
+P2.7
+Wire Wire Line
+	2950 3000 2950 3400
+Wire Wire Line
+	2650 2700 2650 3400
+Wire Wire Line
+	2350 2400 2350 3400
+Connection ~ 2350 4000
+Connection ~ 2650 4000
+Connection ~ 2950 4000
+Connection ~ 3250 4000
+Text GLabel 3950 3900 2    50   Input ~ 0
+P2.5
+Text GLabel 3950 3600 2    50   Input ~ 0
+P2.4
+Connection ~ 3450 4500
+Wire Wire Line
+	3150 4500 3450 4500
+Connection ~ 3150 4500
+Wire Wire Line
+	2850 4500 3150 4500
+Connection ~ 2850 4500
+Wire Wire Line
+	2550 4500 2850 4500
+Connection ~ 3450 4200
+Wire Wire Line
+	3150 4200 3450 4200
+Connection ~ 3150 4200
+Wire Wire Line
+	2850 4200 3150 4200
+Connection ~ 2850 4200
+Wire Wire Line
+	2550 4200 2850 4200
+$Comp
+L Switch:SW_Push_45deg SW1:33
+U 1 1 5FA57A24
+P 3050 4100
+F 0 "SW1:33" H 3050 4263 50  0000 C CNN
+F 1 " " H 3050 4290 50  0000 C CNN
+F 2 "" H 3050 4100 50  0001 C CNN
+F 3 "~" H 3050 4100 50  0001 C CNN
+	1    3050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:34
+U 1 1 5FA57619
+P 3050 4400
+F 0 "SW1:34" H 3050 4563 50  0000 C CNN
+F 1 " " H 3050 4590 50  0000 C CNN
+F 2 "" H 3050 4400 50  0001 C CNN
+F 3 "~" H 3050 4400 50  0001 C CNN
+	1    3050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:24
+U 1 1 5FA57270
+P 2750 4400
+F 0 "SW1:24" H 2750 4563 50  0000 C CNN
+F 1 " " H 2750 4590 50  0000 C CNN
+F 2 "" H 2750 4400 50  0001 C CNN
+F 3 "~" H 2750 4400 50  0001 C CNN
+	1    2750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:23
+U 1 1 5FA56D11
+P 2750 4100
+F 0 "SW1:23" H 2750 4263 50  0000 C CNN
+F 1 " " H 2750 4290 50  0000 C CNN
+F 2 "" H 2750 4100 50  0001 C CNN
+F 3 "~" H 2750 4100 50  0001 C CNN
+	1    2750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:14
+U 1 1 5FA563B1
+P 2450 4400
+F 0 "SW1:14" H 2450 4563 50  0000 C CNN
+F 1 " " H 2450 4590 50  0000 C CNN
+F 2 "" H 2450 4400 50  0001 C CNN
+F 3 "~" H 2450 4400 50  0001 C CNN
+	1    2450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:13
+U 1 1 5FA55DF9
+P 2450 4100
+F 0 "SW1:13" H 2450 4263 50  0000 C CNN
+F 1 " " H 2450 4290 50  0000 C CNN
+F 2 "" H 2450 4100 50  0001 C CNN
+F 3 "~" H 2450 4100 50  0001 C CNN
+	1    2450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:44
+U 1 1 5FA544AA
+P 3350 4400
+F 0 "SW1:44" H 3350 4563 50  0000 C CNN
+F 1 " " H 3350 4590 50  0000 C CNN
+F 2 "" H 3350 4400 50  0001 C CNN
+F 3 "~" H 3350 4400 50  0001 C CNN
+	1    3350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW1:43
+U 1 1 5FA53E57
+P 3350 4100
+F 0 "SW1:43" H 3350 4263 50  0000 C CNN
+F 1 " " H 3350 4290 50  0000 C CNN
+F 2 "" H 3350 4100 50  0001 C CNN
+F 3 "~" H 3350 4100 50  0001 C CNN
+	1    3350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4000 3250 4300
+Wire Wire Line
+	2950 4000 2950 4300
+Wire Wire Line
+	2650 4000 2650 4300
+Wire Wire Line
+	2350 4000 2350 4300
+$Comp
+L Device:R_US R1
+U 1 1 5FA855AD
+P 1800 2400
+F 0 "R1" V 1595 2400 50  0000 C CNN
+F 1 "1k" V 1686 2400 50  0000 C CNN
+F 2 "" V 1840 2390 50  0001 C CNN
+F 3 "~" H 1800 2400 50  0001 C CNN
+	1    1800 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FA90C13
+P 1800 2700
+F 0 "R2" V 1595 2700 50  0000 C CNN
+F 1 "1k" V 1686 2700 50  0000 C CNN
+F 2 "" V 1840 2690 50  0001 C CNN
+F 3 "~" H 1800 2700 50  0001 C CNN
+	1    1800 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5FA91FF6
+P 1800 3000
+F 0 "R3" V 1595 3000 50  0000 C CNN
+F 1 "1k" V 1686 3000 50  0000 C CNN
+F 2 "" V 1840 2990 50  0001 C CNN
+F 3 "~" H 1800 3000 50  0001 C CNN
+	1    1800 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5FA9346F
+P 1800 3300
+F 0 "R4" V 1595 3300 50  0000 C CNN
+F 1 "1k" V 1686 3300 50  0000 C CNN
+F 2 "" V 1840 3290 50  0001 C CNN
+F 3 "~" H 1800 3300 50  0001 C CNN
+	1    1800 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 3600 3950 3600
+Wire Wire Line
+	3450 3900 3950 3900
+Wire Wire Line
+	3450 4200 3950 4200
+Wire Wire Line
+	3450 4500 3950 4500
+$Comp
+L Device:R_Network10_US R5
+U 1 1 5FAC6367
+P 5850 4100
+F 0 "R5" V 5133 4100 50  0000 C CNN
+F 1 "10 x 1k" V 5224 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP11" V 6425 4100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5850 4100 50  0001 C CNN
+	1    5850 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3600 5650 3600
+Wire Wire Line
+	5350 3700 5650 3700
+Wire Wire Line
+	5350 3800 5650 3800
+Wire Wire Line
+	5350 3900 5650 3900
+Wire Wire Line
+	5350 4000 5650 4000
+Wire Wire Line
+	5350 4100 5650 4100
+Wire Wire Line
+	5350 4200 5650 4200
+Wire Wire Line
+	5350 4300 5650 4300
+Wire Wire Line
+	6050 3600 6050 4650
+Text GLabel 4800 4000 0    50   Input ~ 0
+P3.4
+Text GLabel 4800 4100 0    50   Input ~ 0
+P3.5
+Text GLabel 4800 4200 0    50   Input ~ 0
+P3.7
+Text GLabel 4800 4300 0    50   Input ~ 0
+P3.8
+Wire Wire Line
+	4800 4000 4950 4000
+Wire Wire Line
+	4800 4100 4950 4100
+Wire Wire Line
+	4800 4200 4950 4200
+Wire Wire Line
+	4800 4300 4950 4300
+Wire Notes Line
+	3600 4700 3600 2250
+Wire Notes Line
+	3600 2250 2200 2250
+Wire Notes Line
+	2200 2250 2200 4700
+Wire Notes Line
+	2200 4700 3600 4700
+Text Label 3650 3600 0    50   ~ 0
+1
+Text Label 3650 3900 0    50   ~ 0
+2
+Text Label 3650 4200 0    50   ~ 0
+3
+Text Label 3650 4500 0    50   ~ 0
+4
+Text Label 2100 2400 0    50   ~ 0
+5
+Text Label 2100 2700 0    50   ~ 0
+6
+Text Label 2100 3000 0    50   ~ 0
+7
+Text Label 2100 3300 0    50   ~ 0
+8
+$EndSCHEMATC
