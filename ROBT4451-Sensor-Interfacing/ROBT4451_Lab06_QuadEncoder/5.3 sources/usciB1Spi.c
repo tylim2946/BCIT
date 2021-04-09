@@ -4,7 +4,7 @@
  *
  *  Author: Taeyoon Rim
  *  Created on: February 26th, 2021
- *  Modified: March 7th, 2021
+ *  Modified: April 9th, 2021
  **************************************************************************************************/
 #include <msp430.h>
 #include <usciB1Spi.h>
@@ -100,8 +100,30 @@ void usciB1SpiClkDiv(unsigned int sclkDiv)
 ************************************************************************************/
 void usciB1SpiPutChar(unsigned char txByte)
 {
-    while (!(UCB1IFG & UCTXIFG));
+    while(!(UCB1IFG & UCTXIFG));
         UCB1TXBUF = txByte;  // if TXBUFF ready then transmit a byte by writing to it
+}
+
+/************************************************************************************
+* Function: usciB1SpiTxString
+* - writes a C string of characters by calling usciB1SpiTxChar
+* Arguments: txChar - pointer to char (string) to be transmitted
+* Return: none
+*
+* Author: Taeyoon Rim
+* Created on: April 9th, 2021
+* Modified: April 9th, 2021
+************************************************************************************/
+void usciB1SpiTxString(unsigned char * txChar)
+{
+    unsigned int idx = 0;
+
+    while(txChar[idx] != 0) // while not a null character
+    {
+        usciA1UartTxChar(txChar[idx++]) ;
+    }
+
+    return idx;
 }
 
 /************************************************************************************

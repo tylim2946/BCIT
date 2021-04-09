@@ -4,7 +4,7 @@
  *
  *  Author: Taeyoon Rim
  *  Created on: February 26th, 2021
- *  Modified: February 26th, 2021
+ *  Modified: April 9th, 2021
  **************************************************************************************************/
 #ifndef UCSIB1SPI_H_
 #define UCSIB1SPI_H_
@@ -19,6 +19,7 @@
 void usciB1SpiInit(unsigned char spiMST, unsigned int sclkDiv, unsigned char sclkMode, unsigned char spiLoopBack);
 void usciB1SpiClkDiv(unsigned int sclkDiv);
 void usciB1SpiPutChar(unsigned char txByte);
+void usciB1SpiTxString(unsigned char * txChar);
 void usciB1SpiTxBuffer(const unsigned char * buffer, int buffLen);
 
 #endif /* UCSIB1SPI_H_ */

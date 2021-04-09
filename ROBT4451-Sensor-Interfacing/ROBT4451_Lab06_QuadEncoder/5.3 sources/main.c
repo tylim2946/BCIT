@@ -4,7 +4,7 @@
  *
  *  Author: Taeyoon Rim
  *  Created on: Mar 22, 2021
- *  Modified: Mar 22, 2021
+ *  Modified: Apr 9, 2021
  **************************************************************************************************/
 
 #include <msp430.h> 
@@ -30,7 +30,9 @@ int main(void)
 	while(1)
 	{
 	    sprintf(str, "\r\nposCount: %d\tdir: %s", posCount, dir?"CW":"CCW");
+
 	    usciA1UartTxString(str);
+	    usciB1SpiTxString(str);
 	}
 
 	return 0;
