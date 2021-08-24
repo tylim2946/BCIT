@@ -4,7 +4,7 @@
  *
  *  Author: Taeyoon Rim
  *  Created on: Mar 22, 2021
- *  Modified: Mar 22, 2021
+ *  Modified: Apr 9, 2021
  **************************************************************************************************/
 
 // quadrature encoder pin connectivity --> to MSP-EXP430F5529LP EVM.
@@ -25,8 +25,11 @@
 #define UPDATE_STATE prevState = currState; currState = P1IN & (A + B)
 #define UPDATE_EDGESELECT P1IES &= ~(A + B); P1IES |= currState         // clear IES for A and B then update based on currState
 #define UPDATE_DIR dir = (prevState & A) ^ (currState & B)
-#define UPDATE_POS posCount += dir ? 1 : posCount -1
+#define UPDATE_POS posCount += dir ? 1 : -1
 
+#define DECODE_EVENT UPDATE_STATE; UPDATE_EDGESELECT; UPDATE_DIR; UPDATE_POS
+
+unsigned char resetCount = 0;
 unsigned int posCount = 0;
 unsigned char dir = 0;      // 1 = CW; 0 = CCW
 unsigned char prevState, currState;
@@ -55,18 +58,15 @@ __interrupt void Port1_ISR(void)
     {
     case 0x04: // reset pushbutton
         posCount = 0;
+        resetCount = 1;
         break;
     case 0x06: // A
-        UPDATE_STATE;
-        UPDATE_EDGESELECT;
-        UPDATE_DIR;
-        UPDATE_POS;
+        DECODE_EVENT;
+        resetCount = 0;
         break;
     case 0x08: // B
-        UPDATE_STATE;
-        UPDATE_EDGESELECT;
-        UPDATE_DIR;
-        UPDATE_POS;
+        DECODE_EVENT;
+        resetCount = 0;
         break;
     }
 }
