@@ -5,7 +5,7 @@
 1. [Lab 5 - Parallel to Serial Conversion](https://github.com/tylim2946/BCIT/tree/main/ROBT3356-Controller-Systems/ROBT3356_Lab05)
 2. [Lab 8 - Keypad Interfacing](https://github.com/tylim2946/BCIT/tree/main/ROBT3356-Controller-Systems/ROBT3356_Lab08) :star:
 
-## ROBT3341 Sensor Interfacing (C)
+## ROBT4451 Sensor Interfacing (C)
 
 1. [Lab 1 - PWM](https://github.com/tylim2946/BCIT/tree/main/ROBT4451-Sensor-Interfacing/ROBT4451_Lab01_PWM)
 2. [Lab 1 - Motor Control](https://github.com/tylim2946/BCIT/tree/main/ROBT4451-Sensor-Interfacing/ROBT4451_Lab01_MotorControl) :star:
@@ -14,6 +14,9 @@
 5. [Lab 4 - SPI](https://github.com/tylim2946/BCIT/tree/main/ROBT4451-Sensor-Interfacing/ROBT4451_Lab04_SPI)
 6. [Lab 5 - LCD Control](https://github.com/tylim2946/BCIT/tree/main/ROBT4451-Sensor-Interfacing/ROBT4451_Lab05_LcdControl) :star:
 7. [Lab 6 - Quadrature Encoder](https://github.com/tylim2946/BCIT/tree/main/ROBT4451-Sensor-Interfacing/ROBT4451_Lab06_QuadEncoder) :star:
+8. [Lab 7 - DAC](https://github.com/tylim2946/BCIT/tree/main/ROBT4451-Sensor-Interfacing/ROBT4451_Lab07_DAC) :star:
+9. [Lab 8 - ADC](https://github.com/tylim2946/BCIT/tree/main/ROBT4451-Sensor-Interfacing/ROBT4451_Lab08_ADC) :star:
+10. [Lab 9 - Accelerometer](https://github.com/tylim2946/BCIT/tree/main/ROBT4451-Sensor-Interfacing/ROBT4451_Lab09_Accel) :star:
 
 ## ELEX4336 Feedback Systems (MATLAB, Simulink)
 
