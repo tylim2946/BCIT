@@ -28,4 +28,4 @@
 4. [Lab 6 - DC Motor, Gearbox and Encoder](https://github.com/tylim2946/BCIT/tree/main/ELEX4336-Feedback-Systems/Lab06)
 
 ## ROBT4456 PLC Applications (Allen-Bradley, LadderLogic)
-1. [Final Project](https://github.com/tylim2946/BCIT/tree/main/ROBT4456-PLC-Applications/FinalProject) :star:
+1. [Final Project - Control of a Four-Floor Smart Elevator](https://github.com/tylim2946/BCIT/tree/main/ROBT4456-PLC-Applications/FinalProject) :star:
