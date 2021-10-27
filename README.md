@@ -26,3 +26,6 @@
 2. [Lab 4 - Block Diagram Reduction](https://github.com/tylim2946/BCIT/tree/main/ELEX4336-Feedback-Systems/Lab04)
 3. [Lab 5 - Model Identification for First Order LTI Systems](https://github.com/tylim2946/BCIT/tree/main/ELEX4336-Feedback-Systems/Lab05)
 4. [Lab 6 - DC Motor, Gearbox and Encoder](https://github.com/tylim2946/BCIT/tree/main/ELEX4336-Feedback-Systems/Lab06)
+
+## ROBT4456 PLC Applications (Allen-Bradley, LadderLogic)
+1. [Final Project](https://github.com/tylim2946/BCIT/tree/main/ROBT4456-PLC-Applications/FinalProject) :star:
