@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.44.53.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="FaultDialog.Text1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="FaultDialog.Text" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="FaultDialog.TextBox1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="FaultDialog.TextBox" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="FaultDialog.Text3" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="FaultDialog.Button" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="FaultDialog.Title" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="FaultDialog.TextBox1" TargetProperty="Text" Source="Tags.HMI_Fault_ErrorCode" />
+        <Item Target="FaultDialog.TextBox" TargetProperty="Text" Source="Tags.HMI_Fault_ErrorCode" />
+        <Item Target="FaultDialog.Text3" TargetProperty="Text" Source="Tags.HMI_Fault_ErrorCode" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>FaultDialog</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>8</ObjectsCount>
+          <ScreenName>FaultDialog</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items>
+        <Item xsi:type="TextLibraryItem" Target="FaultDialog.TextBox1" TargetProperty="Text" Source="Fault_Causes" />
+        <Item xsi:type="TextLibraryItem" Target="FaultDialog.TextBox" TargetProperty="Text" Source="Fault_Description" />
+      </Items>
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

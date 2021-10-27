@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PrinterDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Printer1</Name>
+  <BufferSize>1</BufferSize>
+  <ConnectionType>USB</ConnectionType>
+  <PrinterType>PCLINKJET</PrinterType>
+  <SupportsPCL5c>false</SupportsPCL5c>
+  <ColorType>COLOR</ColorType>
+  <PaperSize>A4</PaperSize>
+  <Orientation>PORTRAIT</Orientation>
+  <NetworkPath />
+  <HandshakeType>XONXOFF</HandshakeType>
+  <NewLineCharType>CRLF</NewLineCharType>
+  <PageLength>0</PageLength>
+  <PageWidth>0</PageWidth>
+  <COMPort>COM1</COMPort>
+  <BaudRate>19200</BaudRate>
+  <DataBit>8</DataBit>
+  <ParityType>None</ParityType>
+  <StopBit>One</StopBit>
+  <RetrySending>5</RetrySending>
+  <TimeInterval>300</TimeInterval>
+  <CodePage>850</CodePage>
+</PrinterDevice>

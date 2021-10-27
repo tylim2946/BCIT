@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform>x86</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD591805-67CA-499A-808F-567848F29C66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neo.ApplicationFramework.Generated</RootNamespace>
+    <AssemblyName>HMI</AssemblyName>
+    <!-- Target framework must be same as simulation assemblies are built for. All assemblies for .NET CF 3.5 are pointed out with path explicitly. -->
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\Temp\Output</OutputPath>
+    <CompactFrameworkPath>C:\Program Files (x86)\Microsoft.NET\SDK\CompactFramework\v3.5\WindowsCE</CompactFrameworkPath>
+    <RedirectToCompactFrameworkVersion>CE8</RedirectToCompactFrameworkVersion>
+    <InstallPath>C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin</InstallPath>
+    <NoStdLib>true</NoStdLib>
+    <DisplayOrHeadless>DISPLAY</DisplayOrHeadless>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <GCServer>False</GCServer>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE;CE;V5;$(DisplayOrHeadless)</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineConstants>TRACE;CE;V5;$(DisplayOrHeadless)</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\mscorlib.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\Microsoft.WindowsCE.Forms.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\System.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\System.Core.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\System.Data.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\System.Drawing.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\System.Windows.Forms.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\System.Xml.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=969db8053d3322ac">
+      <HintPath>$(CompactFrameworkPath)\System.Xml.Linq.dll</HintPath>
+      <SpecificVersion>True</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>$(InstallPath)\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsCE.Forms">
+      <HintPath>$(InstallPath)\Microsoft.WindowsCE.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Windows.Forms">
+      <HintPath>$(InstallPath)\OpenNETCF.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Drawing">
+      <HintPath>$(InstallPath)\OpenNETCF.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF.Configuration">
+      <HintPath>$(InstallPath)\OpenNETCF.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenNETCF">
+      <HintPath>$(InstallPath)\OpenNETCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Common">
+      <HintPath>$(InstallPath)\ThirdPartyCF\Rebex\Rebex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Http">
+      <HintPath>$(InstallPath)\ThirdPartyCF\Rebex\Rebex.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Networking">
+      <HintPath>$(InstallPath)\ThirdPartyCF\Rebex\Rebex.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureMail">
+      <HintPath>$(InstallPath)\SecureMail.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureMailCF">
+      <HintPath>$(InstallPath)\SecureMailCF.dll</HintPath>
+    </Reference>
+    <Reference Include="SecureMail.Core">
+      <HintPath>$(InstallPath)\SecureMail.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreCF.Api.dll">
+      <HintPath>$(InstallPath)\CoreCF.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreCF.Component.Api.dll">
+      <HintPath>$(InstallPath)\CoreCF.Component.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreCF.Engine.dll">
+      <HintPath>$(InstallPath)\CoreCF.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreCF.Component.Engine.dll">
+      <HintPath>$(InstallPath)\CoreCF.Component.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreCF.Controls.Api.dll">
+      <HintPath>$(InstallPath)\CoreCF.Controls.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="ApplicationFrameworkCF.dll">
+      <HintPath>$(InstallPath)\ApplicationFrameworkCF.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtensionsCF">
+      <HintPath>$(InstallPath)\ExtensionsCF.dll</HintPath>
+    </Reference>
+    <Reference Include="StorageCF">
+      <HintPath>$(InstallPath)\StorageCF.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonDatabaseCF">
+      <HintPath>$(InstallPath)\CommonDatabaseCF.dll</HintPath>
+    </Reference>
+    <Reference Include="ToolsCF">
+      <HintPath>$(InstallPath)\ToolsCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Tools">
+      <HintPath>$(InstallPath)\Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlsCF">
+      <HintPath>$(InstallPath)\ControlsCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Controls">
+      <HintPath>$(InstallPath)\Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonCF">
+      <HintPath>$(InstallPath)\CommonCF.dll</HintPath>
+    </Reference>
+    <Reference Include="InterfacesCF">
+      <HintPath>$(InstallPath)\InterfacesCF.dll</HintPath>
+    </Reference>
+    <Reference Include="SignatureInterfacesCF">
+      <HintPath>$(InstallPath)\SignatureInterfacesCF.dll</HintPath>
+    </Reference>
+    <Reference Include="AttributesCF">
+      <HintPath>$(InstallPath)\AttributesCF.dll</HintPath>
+    </Reference>
+    <Reference Include="ResourcesCF">
+      <HintPath>$(InstallPath)\ResourcesCF.dll</HintPath>
+    </Reference>
+    <Reference Include="DataSourceInterop">
+      <HintPath>$(InstallPath)\DataSourceInterop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="$(InstallPath)\Configurations\log4net.config">
+      <Link>log4net.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="$(InstallPath)\Configurations\hourglass.bmp">
+      <Link>hourglass.bmp</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MacroExtensionsCF">
+      <HintPath>C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\MacroExtensionsCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Smith.IXExtension.CloudConfigurationCF">
+      <HintPath>C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\Smith.IXExtension.CloudConfigurationCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Smith.IXExtension.ServicesCF">
+      <HintPath>C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\Smith.IXExtension.ServicesCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Smith.IXExtension.TelemetrySender">
+      <HintPath>C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\Smith.IXExtension.TelemetrySender.dll</HintPath>
+    </Reference>
+    <Reference Include="Smith.IXExtension.TelemetrySender">
+      <HintPath>C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\Smith.IXExtension.TelemetrySender.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\AdministrationScreen.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\AlarmServer.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\CloudConfiguration.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\Controller1.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\DiagnosticsScreen.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\Expressions.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\FaultDialog.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\HMI.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\LicenseRootComponent.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\MainScreen.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\MultipleLanguages.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\OverviewScreen.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\ProjectConfiguration.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\ProjectImages.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\Security.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\SntpClientRootComponent.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\StartScreen.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\Tags.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\TextLibrary.cs" />
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\MainScreen.Script.cs">
+      <Link>MainScreen.Script.cs</Link>
+      <DependentUpon>H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\OverviewScreen.Script.cs">
+      <Link>OverviewScreen.Script.cs</Link>
+      <DependentUpon>H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\OverviewScreen.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\BeInProcessNeo.dll">
+      <Link>BeInProcessNeo.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Common.DLL">
+      <Link>Common.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\CommonCF.DLL">
+      <Link>CommonCF.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\CommonIde.DLL">
+      <Link>CommonIde.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Controls.DLL">
+      <Link>Controls.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\ControlsCF.DLL">
+      <Link>ControlsCF.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Core.Utilities.dll">
+      <Link>Core.Utilities.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\CoreCF.Utilities.dll">
+      <Link>CoreCF.Utilities.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\CloudSettings.config">
+      <Link>CloudSettings.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\IntegratorSwapActiveProject.DLL">
+      <Link>IntegratorSwapActiveProject.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\IntegratorSwapActiveProjectCF.DLL">
+      <Link>IntegratorSwapActiveProjectCF.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\StorageDeviceDetection.dll">
+      <Link>StorageDeviceDetection.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Extensions\StorageDeviceDetectionCF.dll">
+      <Link>StorageDeviceDetectionCF.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\graphicspc.dll">
+      <Link>graphicspc.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Ionic.Zip.CF.dll">
+      <Link>Ionic.Zip.CF.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Ionic.Zip.dll">
+      <Link>Ionic.Zip.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\KeyboardLayouts\Numeric.kbl">
+      <Link>Numeric.kbl</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\KeyboardLayouts\NumericHex.kbl">
+      <Link>NumericHex.kbl</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\KeyboardLayouts\NumericIP.kbl">
+      <Link>NumericIP.kbl</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\KeyboardLayouts\System Default.kbl">
+      <Link>System Default.kbl</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\KeyboardLayouts\US.kbl">
+      <Link>US.kbl</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\OnScreenKeyboardPC.exe">
+      <Link>OnScreenKeyboardPC.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\OPCDAWrapper.dll">
+      <Link>OPCDAWrapper.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\PropertyBag.dll">
+      <Link>PropertyBag.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\SqlCeDatabaseCF.DLL">
+      <Link>SqlCeDatabaseCF.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\SQLite.Interop.dll">
+      <Link>SQLite.Interop.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\SQLiteDatabase.DLL">
+      <Link>SQLiteDatabase.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\SQLiteDatabaseCF.dll">
+      <Link>SQLiteDatabaseCF.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\SQLiteDatabaseCommonCF.dll">
+      <Link>SQLiteDatabaseCommonCF.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Tools.DLL">
+      <Link>Tools.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\ToolsCF.DLL">
+      <Link>ToolsCF.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\ToolsIde.DLL">
+      <Link>ToolsIde.DLL</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Windows CE8\ArmV7\graphicsce.dll">
+      <Link>graphicsce.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Windows CE8\ArmV7\InProcessCE.dll">
+      <Link>InProcessCE.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Windows CE8\ArmV7\OnScreenKeyboardCE.exe">
+      <Link>OnScreenKeyboardCE.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Windows CE8\ArmV7\OPCDAWrapperCe.dll">
+      <Link>OPCDAWrapperCe.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Windows CE8\ArmV7\PdfWrapperCE.dll">
+      <Link>PdfWrapperCE.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Windows CE8\ArmV7\PropertyBagCE.dll">
+      <Link>PropertyBagCE.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Windows CE8\ArmV7\SQLite.Interop.099.dll">
+      <Link>SQLite.Interop.099.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Beijer Electronics AB\iX Developer 2.40 SP4\Bin\Windows CE8\ArmV7\System.Data.SQLite.dll">
+      <Link>System.Data.SQLite.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Program Files (x86)\Common Files\Beijers Shared\OPC Drivers\Allen-Bradley_ControlLogix_Pre2ce8.dll.ce8arm">
+      <Link>Allen-Bradley_ControlLogix_Pre2ce8.dll.ce8arm</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Users\a01160214\AppData\Local\Temp\bf2b7cd7-8b0a-4823-8953-3e5689edf1ec\HMI.exe.manifest">
+      <Link>HMI.exe.manifest</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Users\a01160214\AppData\Local\Temp\Modules.cfgtool">
+      <Link>Modules.cfgtool</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Windows\Fonts\ARIAL.TTF">
+      <Link>ARIAL.TTF</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Windows\Fonts\SEGOEUI.TTF">
+      <Link>SEGOEUI.TTF</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\WINDOWS\FONTS\SEGUIBL.TTF">
+      <Link>SEGUIBL.TTF</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Windows\Fonts\SEGUISB.TTF">
+      <Link>SEGUISB.TTF</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\WINDOWS\FONTS\SEGUISB.TTF">
+      <Link>SEGUISB.TTF</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="C:\Windows\Fonts\TIMES.TTF">
+      <Link>TIMES.TTF</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\AlarmSettings.xml">
+      <Link>AlarmSettings.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\network.bin">
+      <Link>network.bin</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\RenderableControls.zip">
+      <Link>RenderableControls.zip</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\BuildFiles\Symbols.zip">
+      <Link>Symbols.zip</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\ComRegistration.config">
+      <Link>ComRegistration.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\Controller1.cfg">
+      <Link>Controller1.cfg</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\ControllerRunTimeSettings.xml">
+      <Link>ControllerRunTimeSettings.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\Controllers.xml">
+      <Link>Controllers.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\Features.xml">
+      <Link>Features.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\Printer1.xml">
+      <Link>Printer1.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\Project.xml">
+      <Link>Project.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\ScreenIDs.xml">
+      <Link>ScreenIDs.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\Security.xml">
+      <Link>Security.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\Temp\PlatformFactory.xml">
+      <Link>PlatformFactory.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="H:\Personal Folders\4th Semester\ROBT4456\Project\HMI\HMI\TrendDataConfig.xml">
+      <Link>TrendDataConfig.xml</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- Overriding this attribute so that higher target framework for simulation does not collide with .NET CF 3.5.  -->
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWarn>0114;0108</NoWarn>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Copy SourceFiles="$(InstallPath)\Configurations\AppCF.Config" DestinationFiles="$(ProjectDir)\App.Config" />
+  </Target>
+</Project>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols>
+  <Symbol FileName="ic_profile.bmp" Transparent="true" Width="18" Height="18" />
+  <Symbol FileName="ic_overview (2).bmp" Transparent="true" Width="39" Height="34" />
+  <Symbol FileName="ic_diagnostics.bmp" Transparent="true" Width="32" Height="32" />
+  <Symbol FileName="ic_administration.bmp" Transparent="true" Width="27" Height="31" />
+  <Symbol FileName="ic_login.bmp" Transparent="true" Width="30" Height="31" />
+  <Symbol FileName="ic_settings.bmp" Transparent="true" Width="32" Height="32" />
+  <Symbol FileName="door-close.bmp" Transparent="false" Width="80" Height="96" />
+  <Symbol FileName="door-open.bmp" Transparent="false" Width="80" Height="96" />
+</Symbols>

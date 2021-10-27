@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.44.53.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="OverviewScreen.Title" TargetProperty="FontFamily" Source="SEGUISB.TTF" />
+        <Item Target="OverviewScreen.Text1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="OverviewScreen.Text3" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="OverviewScreen.Text5" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="OverviewScreen.Text6" TargetProperty="FontFamily" Source="SEGUISB.TTF" />
+        <Item Target="OverviewScreen.Button" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="OverviewScreen.Button1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="OverviewScreen.Button2" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="OverviewScreen.Button3" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="OverviewScreen.Button4" TargetProperty="FontFamily" Source="TIMES.TTF" />
+        <Item Target="OverviewScreen.Button5" TargetProperty="FontFamily" Source="TIMES.TTF" />
+        <Item Target="OverviewScreen.Button6" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="OverviewScreen.Picture" TargetProperty="Canvas.Left" Source="Tags.HMI_Elevator_CurrentFloor" />
+        <Item Target="OverviewScreen.Picture" TargetProperty="Canvas.Top" Source="Tags.HMI_Elevator_CurrentFloor" />
+        <Item Target="OverviewScreen.SymbolViewbox8" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_FIL4" />
+        <Item Target="OverviewScreen.SymbolViewbox9" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_IL4" />
+        <Item Target="OverviewScreen.SymbolViewbox10" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_FIL3" />
+        <Item Target="OverviewScreen.SymbolViewbox11" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_IL3" />
+        <Item Target="OverviewScreen.SymbolViewbox12" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_FIL2" />
+        <Item Target="OverviewScreen.SymbolViewbox13" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_IL2" />
+        <Item Target="OverviewScreen.SymbolViewbox14" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_FIL1" />
+        <Item Target="OverviewScreen.SymbolViewbox15" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_IL1" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB4" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB4" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="OverviewScreen.Button" TargetProperty="Foreground" Source="Tags.HMI_Elevator_FIL4" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB2" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB2" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="OverviewScreen.Button1" TargetProperty="Foreground" Source="Tags.HMI_Elevator_FIL2" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button2" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB3" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button2" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB3" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="OverviewScreen.Button2" TargetProperty="Foreground" Source="Tags.HMI_Elevator_FIL3" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button3" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB1" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button3" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB1" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="OverviewScreen.Button3" TargetProperty="Foreground" Source="Tags.HMI_Elevator_FIL1" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button4" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBO" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button4" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBO" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button5" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBC" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button5" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBC" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button6" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBE5" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button6" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBE5" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="OverviewScreen.Button6" TargetProperty="Foreground" Source="Tags.HMI_Main_Status" />
+        <Item Target="OverviewScreen.Picture1" TargetProperty="Canvas.Left" Source="Tags.HMI_Elevator_CurrentFloor" />
+        <Item Target="OverviewScreen.Picture1" TargetProperty="Canvas.Top" Source="Tags.HMI_Elevator_CurrentFloor" />
+        <Item Target="OverviewScreen.Picture1" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Elevator_DCLS" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="OverviewScreen.SymbolViewbox" Source="OverviewScreen.m_SymbolViewbox.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox1" Source="OverviewScreen.m_SymbolViewbox1.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox2" Source="OverviewScreen.m_SymbolViewbox2.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox3" Source="OverviewScreen.m_SymbolViewbox3.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox4" Source="OverviewScreen.m_SymbolViewbox4.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox5" Source="OverviewScreen.m_SymbolViewbox5.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox6" Source="OverviewScreen.m_SymbolViewbox6.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox7" Source="OverviewScreen.m_SymbolViewbox7.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox8" Source="OverviewScreen.m_SymbolViewbox8.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox9" Source="OverviewScreen.m_SymbolViewbox9.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox10" Source="OverviewScreen.m_SymbolViewbox10.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox11" Source="OverviewScreen.m_SymbolViewbox11.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox12" Source="OverviewScreen.m_SymbolViewbox12.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox13" Source="OverviewScreen.m_SymbolViewbox13.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox14" Source="OverviewScreen.m_SymbolViewbox14.bmp" />
+        <Item Target="OverviewScreen.SymbolViewbox15" Source="OverviewScreen.m_SymbolViewbox15.bmp" />
+        <Item Target="OverviewScreen.Button" Source="-1438743144_Normal.bmp" />
+        <Item Target="OverviewScreen.Button" Source="-1438743144_Pressed.bmp" />
+        <Item Target="OverviewScreen.Button" Source="-1438743144_Disabled.bmp" />
+        <Item Target="OverviewScreen.Button1" Source="-1438743144_Normal.bmp" />
+        <Item Target="OverviewScreen.Button1" Source="-1438743144_Pressed.bmp" />
+        <Item Target="OverviewScreen.Button1" Source="-1438743144_Disabled.bmp" />
+        <Item Target="OverviewScreen.Button2" Source="-1438743144_Normal.bmp" />
+        <Item Target="OverviewScreen.Button2" Source="-1438743144_Pressed.bmp" />
+        <Item Target="OverviewScreen.Button2" Source="-1438743144_Disabled.bmp" />
+        <Item Target="OverviewScreen.Button3" Source="-1438743144_Normal.bmp" />
+        <Item Target="OverviewScreen.Button3" Source="-1438743144_Pressed.bmp" />
+        <Item Target="OverviewScreen.Button3" Source="-1438743144_Disabled.bmp" />
+        <Item Target="OverviewScreen.Button4" Source="-1438743144_Normal.bmp" />
+        <Item Target="OverviewScreen.Button4" Source="-1438743144_Pressed.bmp" />
+        <Item Target="OverviewScreen.Button4" Source="-1438743144_Disabled.bmp" />
+        <Item Target="OverviewScreen.Button5" Source="-1438743144_Normal.bmp" />
+        <Item Target="OverviewScreen.Button5" Source="-1438743144_Pressed.bmp" />
+        <Item Target="OverviewScreen.Button5" Source="-1438743144_Disabled.bmp" />
+        <Item Target="OverviewScreen.Button6" Source="-1984444086_Normal.bmp" />
+        <Item Target="OverviewScreen.Button6" Source="-1984444086_Pressed.bmp" />
+        <Item Target="OverviewScreen.Button6" Source="-1984444086_Disabled.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>OverviewScreen</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>52</ObjectsCount>
+          <ScreenName>OverviewScreen</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB4" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB4" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB2" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB2" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button2" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB3" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button2" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB3" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button3" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB1" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button3" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPB1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button4" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBO" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button4" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBO" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button5" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBC" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button5" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBC" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button6" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBE5" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="OverviewScreen.Button6" TargetProperty="Actions" Source="Tags.HMI_Elevator_HPBE5" Event="Click" Action="Reset Tag" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="OverviewScreen.Picture" Source="door-close" Width="80" Height="96" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="OverviewScreen.Picture1" Source="door-open" Width="80" Height="96" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.44.53.0">
+  <Categories>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Tags" TargetProperty="HMI_Main_Status" Source="Controller1.DataItem1" />
+        <Item Target="Tags" TargetProperty="HMI_Main_CurrentScreen" Source="Controller1.DataItem2" />
+        <Item Target="Tags" TargetProperty="HMI_Fault_ErrorCode" Source="Controller1.DataItem3" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_FIL4" Source="Controller1.DataItem6" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_FIL3" Source="Controller1.DataItem7" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_FIL2" Source="Controller1.DataItem8" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_FIL1" Source="Controller1.DataItem9" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_FloorCall4" Source="Controller1.DataItem10" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_CurrentFloor" Source="Controller1.DataItem11" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_FloorCall1" Source="Controller1.DataItem12" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_FloorCall2" Source="Controller1.DataItem13" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_FloorCall3" Source="Controller1.DataItem14" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_ServiceTime1" Source="Controller1.DataItem15" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_ServiceTime2" Source="Controller1.DataItem16" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_ServiceTime3" Source="Controller1.DataItem17" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_ServiceTime4" Source="Controller1.DataItem18" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_Reset" Source="Controller1.DataItem5" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_Fault_Status_201" Source="Controller1.DataItem20" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_Fault_Status_202" Source="Controller1.DataItem21" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_Fault_Status_203" Source="Controller1.DataItem22" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_HPBE5" Source="Controller1.DataItem4" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_Fault_Status_1001" Source="Controller1.DataItem25" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_Fault_Status_1002" Source="Controller1.DataItem26" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_Fault_Status_1003" Source="Controller1.DataItem27" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_ResetFloor1" Source="Controller1.DataItem28" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_ResetFloor2" Source="Controller1.DataItem29" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_ResetFloor3" Source="Controller1.DataItem30" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_ResetFloor4" Source="Controller1.DataItem31" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_IL4" Source="Controller1.DataItem32" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_IL3" Source="Controller1.DataItem33" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_IL2" Source="Controller1.DataItem34" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_IL1" Source="Controller1.DataItem35" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_HPB4" Source="Controller1.DataItem36" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_HPB3" Source="Controller1.DataItem37" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_HPB2" Source="Controller1.DataItem38" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_HPB1" Source="Controller1.DataItem39" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_HPBO" Source="Controller1.DataItem40" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_HPBC" Source="Controller1.DataItem41" />
+        <Item Target="Tags" TargetProperty="HMI_Elevator_DCLS" Source="Controller1.DataItem19" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_MaintenanceRequiredFloor1" Source="Controller1.DataItem23" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_MaintenanceRequiredFloor2" Source="Controller1.DataItem24" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_MaintenanceRequiredFloor3" Source="Controller1.DataItem42" />
+        <Item Target="Tags" TargetProperty="HMI_SharedData_MaintenanceRequiredFloor4" Source="Controller1.DataItem43" />
+        <Item Target="Tags" TargetProperty="MaintenanceRequiredFloor1" Source="Controller1.DataItem44" />
+        <Item Target="Tags" TargetProperty="MaintenanceRequiredFloor2" Source="Controller1.DataItem45" />
+        <Item Target="Tags" TargetProperty="MaintenanceRequiredFloor3" Source="Controller1.DataItem46" />
+        <Item Target="Tags" TargetProperty="MaintenanceRequiredFloor4" Source="Controller1.DataItem47" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items />
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

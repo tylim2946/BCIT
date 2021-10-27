@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.44.53.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="DiagnosticsScreen.Text" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Button4" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Button3" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Button2" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Button1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Text5" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Text4" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Text2" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Text3" TargetProperty="FontFamily" Source="SEGUISB.TTF" />
+        <Item Target="DiagnosticsScreen.Group1.Text1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Text9" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Text8" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Text7" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="DiagnosticsScreen.Text6" TargetProperty="FontFamily" Source="SEGUISB.TTF" />
+        <Item Target="DiagnosticsScreen.Button6" TargetProperty="FontFamily" Source="ARIAL.TTF" />
+        <Item Target="DiagnosticsScreen.Button5" TargetProperty="FontFamily" Source="ARIAL.TTF" />
+        <Item Target="DiagnosticsScreen.Button" TargetProperty="FontFamily" Source="ARIAL.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button4" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor1" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button4" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button3" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor2" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button3" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor2" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button2" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor3" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button2" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor3" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor4" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor4" Event="Click" Action="Reset Tag" Param="" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox7" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.MaintenanceRequiredFloor4" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox8" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.MaintenanceRequiredFloor3" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox9" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.MaintenanceRequiredFloor2" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox10" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.MaintenanceRequiredFloor1" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox11" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_Fault_Status_1001" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox12" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_Fault_Status_1002" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox13" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_Fault_Status_1003" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button6" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button5" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="DiagnosticsScreen.Group1.SymbolViewbox3" Source="DiagnosticsScreen.m_SymbolViewbox3.bmp" />
+        <Item Target="DiagnosticsScreen.Group1.SymbolViewbox2" Source="DiagnosticsScreen.m_SymbolViewbox2.bmp" />
+        <Item Target="DiagnosticsScreen.Group1.SymbolViewbox" Source="DiagnosticsScreen.m_SymbolViewbox.bmp" />
+        <Item Target="DiagnosticsScreen.Group1.SymbolViewbox1" Source="DiagnosticsScreen.m_SymbolViewbox1.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox6" Source="DiagnosticsScreen.m_SymbolViewbox6.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox5" Source="DiagnosticsScreen.m_SymbolViewbox5.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox4" Source="DiagnosticsScreen.m_SymbolViewbox4.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox7" Source="DiagnosticsScreen.m_SymbolViewbox7.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox8" Source="DiagnosticsScreen.m_SymbolViewbox8.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox9" Source="DiagnosticsScreen.m_SymbolViewbox9.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox10" Source="DiagnosticsScreen.m_SymbolViewbox10.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox11" Source="DiagnosticsScreen.m_SymbolViewbox11.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox12" Source="DiagnosticsScreen.m_SymbolViewbox12.bmp" />
+        <Item Target="DiagnosticsScreen.SymbolViewbox13" Source="DiagnosticsScreen.m_SymbolViewbox13.bmp" />
+        <Item Target="DiagnosticsScreen.Button6" Source="1250273231_Normal.bmp" />
+        <Item Target="DiagnosticsScreen.Button6" Source="1250273231_Pressed.bmp" />
+        <Item Target="DiagnosticsScreen.Button6" Source="1250273231_Disabled.bmp" />
+        <Item Target="DiagnosticsScreen.Button5" Source="1250273231_Normal.bmp" />
+        <Item Target="DiagnosticsScreen.Button5" Source="1250273231_Pressed.bmp" />
+        <Item Target="DiagnosticsScreen.Button5" Source="1250273231_Disabled.bmp" />
+        <Item Target="DiagnosticsScreen.Button" Source="1250273231_Normal.bmp" />
+        <Item Target="DiagnosticsScreen.Button" Source="1250273231_Pressed.bmp" />
+        <Item Target="DiagnosticsScreen.Button" Source="1250273231_Disabled.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button6" TargetProperty="Actions" Source="FaultDialog" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button5" TargetProperty="Actions" Source="FaultDialog" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button" TargetProperty="Actions" Source="FaultDialog" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>DiagnosticsScreen</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>52</ObjectsCount>
+          <ScreenName>DiagnosticsScreen</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button4" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor1" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button4" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor1" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button3" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor2" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button3" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor2" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button2" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor3" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button2" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor3" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor4" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Group1.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_ResetFloor4" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button6" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button5" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="DiagnosticsScreen.Button" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

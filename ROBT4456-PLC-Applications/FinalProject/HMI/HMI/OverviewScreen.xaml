@@ -1,0 +1,1946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.44.53.0'?>
+<nacs:ScreenWindow Topmost="False" Title="OverviewScreen" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="800, 480" PopupScreen="False" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="800" Height="480" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Operators" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacs2="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" x:Class="Neo.ApplicationFramework.Generated.OverviewScreen">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="MainScreen" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="800" Height="480" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
+    <nacc:Rectangle Fill="#FF2B2B2B" Stroke="{x:Null}" Name="m_Rectangle2" Width="368" Height="352" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="False" Panel.ZIndex="2" Canvas.Left="80" Canvas.Top="112" nac:EnabledProperties.EnabledDynamicsValue="False" />
+    <nacc:Rectangle Fill="#FF2B2B2B" Stroke="{x:Null}" Name="m_Rectangle3" Width="320" Height="160" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="False" Panel.ZIndex="3" Canvas.Left="464" Canvas.Top="112" nac:EnabledProperties.EnabledDynamicsValue="False" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Operators" />
+    <nac:Label Text="Door Control" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI Semibold" FontSize="20" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5,0,5,1" Name="m_Title" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="480" Canvas.Top="120" />
+    <nacs2:Picture SymbolName="door-close" Stretch="False" Name="m_Picture" Width="80" Height="96" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11">
+      <nacs2:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:LinearConverter x:Key="TopConverter" StartDataValue="1" EndDataValue="4" StartPropertyValue="360" EndPropertyValue="120" />
+          <nacd1:LinearConverter x:Key="LeftConverter" StartDataValue="1" EndDataValue="4" StartPropertyValue="104" EndPropertyValue="104" />
+        </ResourceDictionary>
+      </nacs2:Picture.Resources>
+      <Canvas.Left>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_CurrentFloor].Value" Converter="{StaticResource LeftConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>104</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </Canvas.Left>
+      <Canvas.Top>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_CurrentFloor].Value" Converter="{StaticResource TopConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>360</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </Canvas.Top>
+    </nacs2:Picture>
+    <nacs2:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox" Width="40" Height="32" RenderTransform="Identity" Panel.ZIndex="14" Canvas.Left="328" Canvas.Top="152">
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF4B9C08" Offset="0" />
+                        <GradientStop Color="#FF407E0A" Offset="0.41" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF578E2E" Offset="0" />
+                        <GradientStop Color="#FF85A56F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF85A56F" Offset="0" />
+                        <GradientStop Color="#FF28510E" Offset="0.33" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox1" Width="40" Height="32" RenderTransform="Identity" Panel.ZIndex="15" Canvas.Left="392" Canvas.Top="152">
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF4B9C08" Offset="0" />
+                        <GradientStop Color="#FF407E0A" Offset="0.41" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF578E2E" Offset="0" />
+                        <GradientStop Color="#FF85A56F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF85A56F" Offset="0" />
+                        <GradientStop Color="#FF28510E" Offset="0.33" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nac:Label Text="Inside" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="16" Canvas.Left="384" Canvas.Top="120" />
+    <nac:Label Text="Floor" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI" FontSize="16" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="4,0,4,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="18" Canvas.Left="324" Canvas.Top="120" />
+    <nacs2:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox2" Width="40" Height="32" RenderTransform="Identity" Panel.ZIndex="20" Canvas.Left="328" Canvas.Top="232">
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF4B9C08" Offset="0" />
+                        <GradientStop Color="#FF407E0A" Offset="0.41" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF578E2E" Offset="0" />
+                        <GradientStop Color="#FF85A56F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF85A56F" Offset="0" />
+                        <GradientStop Color="#FF28510E" Offset="0.33" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox3" Width="40" Height="32" RenderTransform="Identity" Panel.ZIndex="21" Canvas.Left="392" Canvas.Top="232">
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF4B9C08" Offset="0" />
+                        <GradientStop Color="#FF407E0A" Offset="0.41" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF578E2E" Offset="0" />
+                        <GradientStop Color="#FF85A56F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF85A56F" Offset="0" />
+                        <GradientStop Color="#FF28510E" Offset="0.33" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox4" Width="40" Height="32" RenderTransform="Identity" Panel.ZIndex="22" Canvas.Left="328" Canvas.Top="312">
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF4B9C08" Offset="0" />
+                        <GradientStop Color="#FF407E0A" Offset="0.41" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF578E2E" Offset="0" />
+                        <GradientStop Color="#FF85A56F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF85A56F" Offset="0" />
+                        <GradientStop Color="#FF28510E" Offset="0.33" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox5" Width="40" Height="32" RenderTransform="Identity" Panel.ZIndex="23" Canvas.Left="392" Canvas.Top="312">
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF4B9C08" Offset="0" />
+                        <GradientStop Color="#FF407E0A" Offset="0.41" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF578E2E" Offset="0" />
+                        <GradientStop Color="#FF85A56F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF85A56F" Offset="0" />
+                        <GradientStop Color="#FF28510E" Offset="0.33" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox6" Width="40" Height="32" RenderTransform="Identity" Panel.ZIndex="24" Canvas.Left="328" Canvas.Top="392">
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF4B9C08" Offset="0" />
+                        <GradientStop Color="#FF407E0A" Offset="0.41" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF578E2E" Offset="0" />
+                        <GradientStop Color="#FF85A56F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF85A56F" Offset="0" />
+                        <GradientStop Color="#FF28510E" Offset="0.33" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="m_SymbolViewbox7" Width="40" Height="32" RenderTransform="Identity" Panel.ZIndex="25" Canvas.Left="392" Canvas.Top="392">
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF4B9C08" Offset="0" />
+                        <GradientStop Color="#FF407E0A" Offset="0.41" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF578E2E" Offset="0" />
+                        <GradientStop Color="#FF85A56F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF85A56F" Offset="0" />
+                        <GradientStop Color="#FF28510E" Offset="0.33" />
+                        <GradientStop Color="#FF28510E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nac:Label Text="Overview" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="6,0,6,1" Name="m_Text5" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="26" Canvas.Left="72" Canvas.Top="71" />
+    <nac:Label Text="Emergency Stop" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI Semibold" FontSize="20" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5,0,5,1" Name="m_Text6" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="480" Canvas.Top="296" />
+    <nacc:Rectangle Fill="#FF2B2B2B" Stroke="{x:Null}" Name="m_Rectangle" Width="320" Height="176" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="False" Panel.ZIndex="1" Canvas.Left="464" Canvas.Top="288" nac:EnabledProperties.EnabledDynamicsValue="False" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Operators" />
+    <nacs2:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox8" Width="32" Height="32" RenderTransform="Identity" Panel.ZIndex="28" Canvas.Left="332" Canvas.Top="152">
+      <nacs2:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs2:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_FIL4].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFCEFFAB" Offset="0" />
+                        <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox9" Width="32" Height="32" RenderTransform="Identity" Panel.ZIndex="29" Canvas.Left="396" Canvas.Top="152">
+      <nacs2:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs2:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_IL4].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFCEFFAB" Offset="0" />
+                        <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox10" Width="32" Height="32" RenderTransform="Identity" Panel.ZIndex="30" Canvas.Left="332" Canvas.Top="232">
+      <nacs2:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs2:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_FIL3].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFCEFFAB" Offset="0" />
+                        <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox11" Width="32" Height="32" RenderTransform="Identity" Panel.ZIndex="31" Canvas.Left="396" Canvas.Top="232">
+      <nacs2:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs2:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_IL3].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFCEFFAB" Offset="0" />
+                        <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox12" Width="32" Height="32" RenderTransform="Identity" Panel.ZIndex="32" Canvas.Left="332" Canvas.Top="312">
+      <nacs2:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs2:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_FIL2].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFCEFFAB" Offset="0" />
+                        <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox13" Width="32" Height="32" RenderTransform="Identity" Panel.ZIndex="33" Canvas.Left="396" Canvas.Top="312">
+      <nacs2:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs2:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_IL2].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFCEFFAB" Offset="0" />
+                        <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox14" Width="32" Height="32" RenderTransform="Identity" Panel.ZIndex="34" Canvas.Left="332" Canvas.Top="392">
+      <nacs2:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs2:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_FIL1].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFCEFFAB" Offset="0" />
+                        <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nacs2:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="m_SymbolViewbox15" Width="32" Height="32" RenderTransform="Identity" Panel.ZIndex="35" Canvas.Left="396" Canvas.Top="392">
+      <nacs2:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs2:SymbolViewbox.Resources>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_IL1].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+      <Viewbox Width="222.89" Height="222.89">
+        <Canvas Width="222.89" Height="222.89">
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M111.445,222.89C49.994,222.89 0,172.896 0,111.445 0,49.994 49.994,0 111.445,0 172.896,0 222.89,49.994 222.89,111.445 222.89,172.896 172.896,222.89 111.445,222.89z" Fill="#FF4C4C4C" />
+              <Path Data="F1M217.89,111.445C217.89,170.232 170.232,217.89 111.445,217.89 52.657,217.89 5,170.232 5,111.445 5,52.657 52.657,5 111.445,5 170.232,5 217.89,52.657 217.89,111.445z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,21.555" EndPoint="128,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF858687" Offset="0" />
+                        <GradientStop Color="#FF98999C" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M6.229,95.218C32.723,109.706 67.334,118.48 105.208,118.48 148.681,118.48 187.853,106.917 215.386,88.423 204.863,40.704 162.328,5 111.445,5 58.174,5 14.043,44.131 6.229,95.218z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="127.363,120.965" EndPoint="127.363,234.444" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF959DA1" Offset="0" />
+                        <GradientStop Color="#FFF8F9F9" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,199.671C62.798,199.671 23.219,160.093 23.219,111.445 23.219,62.797 62.798,23.219 111.445,23.219 160.093,23.219 199.671,62.797 199.671,111.445 199.671,160.093 160.093,199.671 111.445,199.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,39.773" EndPoint="128,216.225" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF8F9F9" Offset="0" />
+                        <GradientStop Color="#FF959DA1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,191.582C67.258,191.582 31.309,155.632 31.309,111.445 31.309,67.257 67.258,31.309 111.445,31.309 155.632,31.309 191.582,67.257 191.582,111.445 191.582,155.632 155.632,191.582 111.445,191.582z" Fill="#FF191919" />
+              <Path Data="F1M111.445,188.269C69.084,188.269 34.621,153.806 34.621,111.445 34.621,69.084 69.084,34.621 111.445,34.621 153.806,34.621 188.269,69.084 188.269,111.445 188.269,153.806 153.806,188.269 111.445,188.269z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="128,128" RadiusX="76.824" RadiusY="76.824" GradientOrigin="128,128" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF77F50D" Offset="0" />
+                        <GradientStop Color="#FF70DF12" Offset="0.41" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M35.472,100.008C50.875,107.215 69.598,111.445 89.797,111.445 129.279,111.445 163.139,95.297 177.525,72.305 164.122,49.762 139.52,34.621 111.445,34.621 72.97,34.621 41.012,63.052 35.472,100.008z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="123.054,128" EndPoint="123.054,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF8EE74C" Offset="0" />
+                        <GradientStop Color="#FFCEFFAB" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M111.445,181.548C72.789,181.548 41.34,150.1 41.34,111.445 41.34,72.789 72.789,41.34 111.445,41.34 150.1,41.34 181.548,72.789 181.548,111.445 181.548,150.1 150.1,181.548 111.445,181.548z M111.445,34.621C69.084,34.621 34.621,69.084 34.621,111.445 34.621,153.806 69.084,188.269 111.445,188.269 153.806,188.269 188.269,153.806 188.269,111.445 188.269,69.084 153.806,34.621 111.445,34.621z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="128,51.176" EndPoint="128,204.824" MappingMode="Absolute" Transform="1,0,0,-1,-16.555,239.445">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFCEFFAB" Offset="0" />
+                        <GradientStop Color="#FF55AA1E" Offset="0.33" />
+                        <GradientStop Color="#FF55AA1E" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Viewbox>
+    </nacs2:SymbolViewbox>
+    <nac:Button ButtonAppearance="Default" ImageMargin="0,0,0,0" Text="4" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="#FF7F7F7F" BorderThickness="4,4,4,4" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" FontWeight="Bold" Name="m_Button" Width="96" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="5" Canvas.Left="216" Canvas.Top="136" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Black}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="87, 87, 87" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="210, 0, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="87, 87, 87" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Foreground>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_FIL4].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF575757</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Foreground>
+      <nac:Button.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFBBBBBB" Offset="0" />
+              <GradientStop Color="#FFFFFFFF" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:Button.Background>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Elevator_HPB4" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Reset Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Elevator_HPB4" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Button ButtonAppearance="Default" ImageMargin="0,0,0,0" Text="2" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="#FF7F7F7F" BorderThickness="4,4,4,4" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" FontWeight="Bold" Name="m_Button1" Width="96" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="6" Canvas.Left="216" Canvas.Top="296" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Black}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="87, 87, 87" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="210, 0, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="87, 87, 87" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Foreground>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_FIL2].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF575757</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Foreground>
+      <nac:Button.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFBBBBBB" Offset="0" />
+              <GradientStop Color="#FFFFFFFF" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:Button.Background>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Elevator_HPB2" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Reset Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Elevator_HPB2" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Button ButtonAppearance="Default" ImageMargin="0,0,0,0" Text="3" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="#FF7F7F7F" BorderThickness="4,4,4,4" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" FontWeight="Bold" Name="m_Button2" Width="96" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="7" Canvas.Left="216" Canvas.Top="216" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Black}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="87, 87, 87" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="210, 0, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="87, 87, 87" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Foreground>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_FIL3].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF575757</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Foreground>
+      <nac:Button.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFBBBBBB" Offset="0" />
+              <GradientStop Color="#FFFFFFFF" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:Button.Background>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Elevator_HPB3" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Reset Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Elevator_HPB3" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Button ButtonAppearance="Default" ImageMargin="0,0,0,0" Text="1" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="#FF7F7F7F" BorderThickness="4,4,4,4" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" FontWeight="Bold" Name="m_Button3" Width="96" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="8" Canvas.Left="216" Canvas.Top="376" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Black}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="87, 87, 87" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="210, 0, 0" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="87, 87, 87" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Foreground>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_FIL1].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FF575757</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Foreground>
+      <nac:Button.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFBBBBBB" Offset="0" />
+              <GradientStop Color="#FFFFFFFF" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:Button.Background>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Elevator_HPB1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Reset Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Elevator_HPB1" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Button ButtonAppearance="Default" ImageMargin="0,0,0,0" Text="◄ ►" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="#FF7F7F7F" BorderThickness="4,4,4,4" Foreground="#FF575757" FontFamily="Times New Roman" FontSize="24" FontStyle="Normal" FontWeight="Normal" Name="m_Button4" Width="96" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="9" Canvas.Left="512" Canvas.Top="176" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Black}">
+      <nac:Button.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFBBBBBB" Offset="0" />
+              <GradientStop Color="#FFFFFFFF" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:Button.Background>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Elevator_HPBO" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Reset Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Elevator_HPBO" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Button ButtonAppearance="Default" ImageMargin="0,0,0,0" Text="►◄" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="#FF7F7F7F" BorderThickness="4,4,4,4" Foreground="#FF575757" FontFamily="Times New Roman" FontSize="24" FontStyle="Normal" FontWeight="Bold" Name="m_Button5" Width="96" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="10" Canvas.Left="640" Canvas.Top="176" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Black}">
+      <nac:Button.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+          <LinearGradientBrush.GradientStops>
+            <GradientStopCollection>
+              <GradientStop Color="#FFBBBBBB" Offset="0" />
+              <GradientStop Color="#FFFFFFFF" Offset="1" />
+            </GradientStopCollection>
+          </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+      </nac:Button.Background>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Elevator_HPBC" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Reset Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Elevator_HPBC" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Button ButtonAppearance="Default" ImageMargin="0,0,0,0" Text="STOP" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="#FF7F7F7F" BorderThickness="4,4,4,4" Background="#FFFF0000" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" FontWeight="Bold" Name="m_Button6" Width="96" Height="64" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="True" Panel.ZIndex="13" Canvas.Left="576" Canvas.Top="352" nacb:BlinkProperties.IsBlinkEnabled="False" nacb:BlinkProperties.BlinkInterval="1200" nac:EnabledProperties.EnabledDynamicsValue="True" Style="{nac1:StyleMarkupExtension Black}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="ForegroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval End="3">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="3" End="3">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="186, 20, 25" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="White" EndColor="" FillDirection="None" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Foreground>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Main_Status].Value" Converter="{StaticResource ForegroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <SolidColorBrush>#FFFFFFFF</SolidColorBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Foreground>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.HMI_Elevator_HPBE5" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Reset Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.HMI_Elevator_HPBE5" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nacs2:Picture SymbolName="door-open" Stretch="True" Name="m_Picture1" Width="80" Height="96" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="36">
+      <nacs2:Picture.Resources>
+        <ResourceDictionary>
+          <nacd1:LinearConverter x:Key="TopConverter" StartDataValue="1" EndDataValue="4" StartPropertyValue="360" EndPropertyValue="120" />
+          <nacd1:LinearConverter x:Key="LeftConverter" StartDataValue="1" EndDataValue="4" StartPropertyValue="104" EndPropertyValue="104" />
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs2:Picture.Resources>
+      <Canvas.Left>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_CurrentFloor].Value" Converter="{StaticResource LeftConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>104</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </Canvas.Left>
+      <Canvas.Top>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_CurrentFloor].Value" Converter="{StaticResource TopConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>360</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </Canvas.Top>
+      <nacb:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Elevator_DCLS].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb:BlinkProperties.VisibleDynamicsValue>
+    </nacs2:Picture>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity name="HMI" version="1.0.0.0" processorArchitecture="x86"></assemblyIdentity>
+  <file name="BEDriverAboutPPG1.dll" hashalg="SHA1">
+    <comClass clsid="{979F085E-5334-11D5-BB84-00609763D82E}" tlbid="{979F0851-5334-11D5-BB84-00609763D82E}" description="BEDriverAboutPPG Class"></comClass>
+    <typelib tlbid="{979F0851-5334-11D5-BB84-00609763D82E}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="BEDriverSettingsPpg2.dll" hashalg="SHA1">
+    <comClass clsid="{F3433772-749A-11D6-BC0B-0002A531389F}" tlbid="{F3433765-749A-11D6-BC0B-0002A531389F}" description="DriverSettingsPpg2 Class"></comClass>
+    <typelib tlbid="{F3433765-749A-11D6-BC0B-0002A531389F}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="BeImportDevices1.dll" hashalg="SHA1">
+    <comClass clsid="{84EC1BD5-087A-4030-8F84-558326B33658}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" description="BeImportDevices Class"></comClass>
+    <comClass clsid="{915839F4-8300-4E1D-9BCF-8222C232EBE1}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" description="BeImportDevice Class"></comClass>
+    <typelib tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="BEObjectBrowserTool.dll" hashalg="SHA1">
+    <comClass clsid="{6E7BB507-E85A-11D4-BB71-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" description="BEObjectsCollection Class" threadingModel="Apartment" progid="BEObjectBrowserTool.BEObjectsCollection">
+      <progid>BEObjectBrowserTool.BEObjectsCollection.1</progid>
+    </comClass>
+    <comClass clsid="{6E7BB504-E85A-11D4-BB71-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" description="BEObjectBrowserTool Class"></comClass>
+    <comClass clsid="{8AA50887-0EE1-11D5-BB98-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" description="BEStringCollectionObject Class"></comClass>
+    <comClass clsid="{C4FFFCC7-16B6-11D5-BCD1-0020AF9F306B}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" description="BEObjectBrowserDlg Class"></comClass>
+    <typelib tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="BEUpdateDriverTool1.dll" hashalg="SHA1">
+    <comClass clsid="{2836AE80-21D5-47EC-B253-584984BD5A69}" tlbid="{3275C406-ABD0-45A5-8354-EBF2838EBBC7}" description="BeUpdateDriverTool Class"></comClass>
+    <typelib tlbid="{3275C406-ABD0-45A5-8354-EBF2838EBBC7}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="BEHelpMgr1.dll" hashalg="SHA1">
+    <comClass clsid="{293AC08F-ED25-11D4-BABA-00A02458E6C6}" tlbid="{293AC081-ED25-11D4-BABA-00A02458E6C6}" description="BEHelpTool Class"></comClass>
+    <typelib tlbid="{293AC081-ED25-11D4-BABA-00A02458E6C6}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="BEPropertySheet.dll" hashalg="SHA1">
+    <comClass clsid="{A8372D7F-AFF3-11D4-BAF1-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" description="BEPropertySheetCtl Class"></comClass>
+    <comClass clsid="{A8372D83-AFF3-11D4-BAF1-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" description="BEDefaultPpg Class"></comClass>
+    <comClass clsid="{A8372D84-AFF3-11D4-BAF1-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" description="DefaultPPG Class"></comClass>
+    <comClass clsid="{84CAAE04-A8CF-11D4-BAEA-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" description="BEPropertySheetObjects Class"></comClass>
+    <comClass clsid="{AB6F0AA2-F5C3-11D4-BB26-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" description="DefaultSizePage Class"></comClass>
+    <typelib tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="PropertyBag.dll" hashalg="SHA1">
+    <comClass clsid="{F6EE34CE-9EA2-11D4-BAFD-0020AF36E641}" tlbid="{F6EE34C1-9EA2-11D4-BAFD-0020AF36E641}" description="BEPropertyBag Class" threadingModel="both" progid="PropertyBag.BEPropertyBag">
+      <progid>PropertyBag.BEPropertyBag.1</progid>
+    </comClass>
+    <comClass clsid="{B05D8CF1-A007-11D4-BAFF-0020AF36E641}" tlbid="{F6EE34C1-9EA2-11D4-BAFD-0020AF36E641}" description="BEFileStream Class"></comClass>
+    <typelib tlbid="{F6EE34C1-9EA2-11D4-BAFD-0020AF36E641}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="OPCDAWrapper.dll" hashalg="SHA1">
+    <comClass clsid="{11D0AC6B-8A3B-49B5-998A-78BE293258E0}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BeDataSource class" threadingModel="both" progid="OPCDAWrapper.BeDataSource">
+      <progid>OPCDAWrapper.BeDataSource.1</progid>
+    </comClass>
+    <comClass clsid="{754FC16A-2665-40DA-91AF-5DC0E2B38602}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BeDataItem Class"></comClass>
+    <comClass clsid="{9F43F1C6-180B-4D3C-A184-C1DBD2E0548F}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BeDataItems Class"></comClass>
+    <comClass clsid="{39BE62A6-881B-11D6-BB42-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BeDataItemCountTool Class"></comClass>
+    <comClass clsid="{C6C267E0-E047-11D6-BB66-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BeDataConnectionSettingsTool Class"></comClass>
+    <comClass clsid="{C6C267E1-E047-11D6-BB66-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BeDataConnectionSettingsPpg Class"></comClass>
+    <comClass clsid="{278DB973-848E-11D4-BAEA-0020AF53FF43}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="Settings Class"></comClass>
+    <comClass clsid="{8639EE03-4A8F-11D5-BB7F-00609763D82E}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BEOPCConfigurationPPG Class"></comClass>
+    <comClass clsid="{5B1D6AA7-6846-11D4-BAC5-0020AF53FF43}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BEItemIDPpg Class"></comClass>
+    <comClass clsid="{BCBE41FA-0FE4-412F-8888-3932E1D5509F}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BEDataItemPpg Class"></comClass>
+    <comClass clsid="{F1F6FF9A-D000-11D4-BAAF-0020AF53FF43}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="BEDataSourceToolbar Class"></comClass>
+    <comClass clsid="{677CB876-7D78-11D4-BAE0-0020AF53FF43}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" description="DataConnectionPpg Class"></comClass>
+    <typelib tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib>
+  </file>
+  <file name="BeInProcessNeo.dll" hashalg="SHA1">
+    <comClass clsid="{D6741612-8D90-4233-8960-059E13F1D5A5}" description="Beijer InProcess OPC Server Neo" threadingModel="both" progid="Beijer.InProcessNeo">
+      <progid>Beijer.InProcessNeo.1</progid>
+    </comClass>
+  </file>
+  <comInterfaceExternalProxyStub name="_IBEDriverAboutPPGEvents" iid="{979F085F-5334-11D5-BB84-00609763D82E}" tlbid="{979F0851-5334-11D5-BB84-00609763D82E}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBeImportDevicesEvents" iid="{0BA889CE-2ED7-4D67-A972-09BF0D95E5BE}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBeImportDevicesEvents2" iid="{FD506D18-2023-42E5-B9A4-18468CEA587E}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBeImportDevicesEvents3" iid="{7C65F6C2-5209-4DE3-8720-991430BC6A0C}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeImportDevice" iid="{27B584DA-0876-40BD-A43A-C73F26DB2820}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeImportDevice2" iid="{31D1A22B-2573-4392-8590-4E3852EF99FB}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeImportDevice3" iid="{2CC31ABE-8946-418A-B3A7-71BD6FAE4F74}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeImportDevices" iid="{10C0C40F-F7B0-470B-8DA8-74BBA7C10AF4}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeImportDevices2" iid="{D0AB6ACD-3395-40FD-83C9-AFD8C42D7B81}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeImportDevices3" iid="{622662F2-D7AB-41AE-93CC-BAEED17EAD35}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBeImportDeviceEvents" iid="{973DE407-87F5-4D14-B144-173E4DEB0495}" tlbid="{28BDFFAA-8510-4428-85ED-D7FFCD5C1E46}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IObjectBrowserTool" iid="{6E7BB503-E85A-11D4-BB71-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEObjectsCollection" iid="{6E7BB506-E85A-11D4-BB71-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEStringCollectionObject" iid="{8AA50886-0EE1-11D5-BB98-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IObjectBrowserToolEvents" iid="{6E7BB505-E85A-11D4-BB71-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBEObjectsCollectionEvents" iid="{6E7BB508-E85A-11D4-BB71-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBEStringCollectionObjectEvents" iid="{8AA50888-0EE1-11D5-BB98-006008D0085F}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEObjectBrowserDlg" iid="{C4FFFCC6-16B6-11D5-BCD1-0020AF9F306B}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBEObjectBrowserDlgEvents" iid="{C4FFFCC8-16B6-11D5-BCD1-0020AF9F306B}" tlbid="{6E7BB4F6-E85A-11D4-BB71-006008D0085F}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeUpdateDriverTool" iid="{E9064C7F-6559-479F-B308-37E1A546E75E}" tlbid="{3275C406-ABD0-45A5-8354-EBF2838EBBC7}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeUpdateDriverTool2" iid="{D6472851-35D5-4500-B41A-79DE93EE6320}" tlbid="{3275C406-ABD0-45A5-8354-EBF2838EBBC7}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeUpdateDriverTool3" iid="{404C1717-018B-4F26-9219-14F4D0FDD75A}" tlbid="{3275C406-ABD0-45A5-8354-EBF2838EBBC7}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeUpdateDriverTool4" iid="{E66E91BD-522E-4194-B02A-6BD6FA6381E0}" tlbid="{3275C406-ABD0-45A5-8354-EBF2838EBBC7}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBEHelpToolEvents" iid="{293AC090-ED25-11D4-BABA-00A02458E6C6}" tlbid="{293AC081-ED25-11D4-BABA-00A02458E6C6}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEHelpTool" iid="{293AC08E-ED25-11D4-BABA-00A02458E6C6}" tlbid="{293AC081-ED25-11D4-BABA-00A02458E6C6}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IPropertyPage" iid="{B196B28D-BAB4-101A-B69C-00AA00341D07}" tlbid="{293AC081-ED25-11D4-BABA-00A02458E6C6}" proxyStubClsid32="{B196B28D-BAB4-101A-B69C-00AA00341D07}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IPropertyPageSite" iid="{B196B28C-BAB4-101A-B69C-00AA00341D07}" tlbid="{293AC081-ED25-11D4-BABA-00A02458E6C6}" proxyStubClsid32="{B196B28C-BAB4-101A-B69C-00AA00341D07}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEPropertySheetCtl" iid="{A8372D7E-AFF3-11D4-BAF1-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEPropertySheetObjects" iid="{84CAAE03-A8CF-11D4-BAEA-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEPropertySheetCtl2" iid="{A91DAE81-3D97-11D6-BAB8-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" proxyStubClsid32="{A91DAE81-3D97-11D6-BAB8-00609763D82E}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IOpenHelpCallback" iid="{1AEC5B17-5AC8-4D73-B953-A924BC7D543C}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" proxyStubClsid32="{1AEC5B17-5AC8-4D73-B953-A924BC7D543C}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEPropertySheetDynHelp" iid="{72048A47-6163-40EF-A373-8E0458C5D0A3}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" proxyStubClsid32="{72048A47-6163-40EF-A373-8E0458C5D0A3}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBEPropertySheetCtlEvents" iid="{A8372D80-AFF3-11D4-BAF1-00609763D82E}" tlbid="{A8372D71-AFF3-11D4-BAF1-00609763D82E}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEPropertyBag" iid="{F6EE34CD-9EA2-11D4-BAFD-0020AF36E641}" tlbid="{F6EE34C1-9EA2-11D4-BAFD-0020AF36E641}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEFileStream" iid="{B05D8CF0-A007-11D4-BAFF-0020AF36E641}" tlbid="{F6EE34C1-9EA2-11D4-BAFD-0020AF36E641}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeDataSource" iid="{1D363E4F-8466-11D7-BB97-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeDataItems" iid="{92A6D381-8466-11D7-BB97-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeDataItem" iid="{92A6D37E-8466-11D7-BB97-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="DBeDataSource" iid="{1D363E50-8466-11D7-BB97-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBeDataItemEvents" iid="{92A6D380-8466-11D7-BB97-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeDataItemCountTool" iid="{39BE62A5-881B-11D6-BB42-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBeDataConnectionSettingsTool" iid="{C6C267DF-E047-11D6-BB66-0002A555A627}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBEOPCConfigurationPPGEvents" iid="{8639EE04-4A8F-11D5-BB7F-00609763D82E}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="_IBEDataSourceToolbarEvents" iid="{F1F6FF9B-D000-11D4-BAAF-0020AF53FF43}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020420-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+  <comInterfaceExternalProxyStub name="IBEDataSourceToolbar" iid="{F1F6FF99-D000-11D4-BAAF-0020AF53FF43}" tlbid="{1D363E47-8466-11D7-BB97-0002A555A627}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+</assembly>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<BacklightSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AutomaticallyTurnOffBacklight>false</AutomaticallyTurnOffBacklight>
+  <BacklightTimeout>900</BacklightTimeout>
+  <KeepBacklightOnIfNotifierWindowIsVisible>false</KeepBacklightOnIfNotifierWindowIsVisible>
+</BacklightSettings>

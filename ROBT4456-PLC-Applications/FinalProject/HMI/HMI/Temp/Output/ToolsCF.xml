@@ -1,0 +1,2709 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToolsCF</name>
+    </assembly>
+    <members>
+        <member name="F:Neo.ApplicationFramework.Tools.AddressBook.AddressBook.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.AddressBook.AddressBook.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.AddressBook.AddressBook.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.AddressBook.Contact.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.AddressBook.Contact.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.AddressBook.Contact.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.AlarmDistributorServer.AlarmDistributorServer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.AlarmDistributorServer.AlarmDistributorServer.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.AlarmDistributorServer.AlarmDistributorServer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.AlarmDistributorServer.Route.Dispose">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Alarm.AlarmComparer.#ctor(System.Object,Neo.ApplicationFramework.Interfaces.ComparerTypes)">
+            <summary>
+            Initializes a new instance of the AlarmComparer class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Alarm.AlarmEvent">
+            <summary>
+            Save alarmtext with values, ready to use and name of alarmgroup
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmEvent.Text">
+            <summary>
+             This property is save to the database with the default language
+             since the requirement is that the database should be read by service personal.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmEvent.DisplayText">
+            <summary>
+            This property is the display text in the alarmviwer and should be translated when using multilanguage
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmEventBase.Text">
+            <summary>
+             This property is save to the database with the default language
+             since the requirement is that the database should be read by service personal.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Alarm.AlarmEventList.GetSortedEventList(System.Collections.Generic.IComparer{Neo.ApplicationFramework.Interfaces.IAlarmEventBase})">
+            <summary>
+            Returns a copy of the alarm event list sorted by a comparer.
+            </summary>
+            <param name="alarmComparer">Comparer to sort the list</param>
+            <returns>A sorted copy of the alarm event list.</returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Alarm.AlarmItemRepository">
+            <summary>
+            Database interface for AlarmItemEntity using Repository pattern
+            Per default every change is persisted to database.
+            Use AutomaticallyPersistToStorage to postpone writing to database.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.History">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:AlarmItem"/> has history.
+            </summary>
+            <value><c>true</c> if history; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.DynamicString">
+            <summary>
+            Gets or sets the dynamic string.
+            </summary>
+            <value>The dynamic string.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.GroupId">
+            <summary>
+            Gets or sets the group id.
+            </summary>
+            <value>The group id.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.GroupText">
+            <summary>
+            Gets Text of the group.
+            </summary>
+            <value>The Text property on group.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.GroupName">
+            <summary>
+            Gets or sets the name of the group.
+            </summary>
+            <value>The name of the group.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.Server">
+            <summary>
+            Gets or sets the server.
+            </summary>
+            <value>The server.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.Id">
+            <summary>
+            Gets or sets the id.
+            </summary>
+            <value>The id.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.DisplayName">
+            <summary>
+            Gets or sets the display name. In the property grid it will show as "Name".
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.Name">
+            <summary>
+            Gets the full name. ({GroupName}_{DisplayName}). The full name is used by the designer host
+            and when importing/exporting alarms.
+            </summary>
+            <value>The full name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.CompositeOutputDevices">
+            <summary>
+            Gets or sets the CompositeOutputDevices object.
+            </summary>
+            <value>The CompositeOutputDevices object.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.AcknowledgeRequired">
+            <summary>
+            Gets or sets a value indicating whether acknowledge is required.
+            </summary>
+            <value><c>true</c> if acknowledge is required; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.EnableDistribution">
+            <summary>
+            Gets or sets a value indicating whether enable is distribution.
+            </summary>
+            <value><c>true</c> if distribution is enable; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.Acknowledge">
+            <summary>
+            Acknowledges an alarm.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Alarm.AlarmItem.Init(Neo.ApplicationFramework.Interfaces.IAlarmEvent)">
+            <summary>
+            Initializes the specified alarm event.
+            </summary>
+            <param name="alarmEvent">The alarm event.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Alarm.AlarmItems.#ctor(System.ComponentModel.IComponent)">
+            <summary>
+            Initializes a new instance of the AlarmItemList class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Alarm.AlarmServer.GetAlarmEvents(System.Guid)">
+            <summary>
+            An alarm is either counted as UnAcknowledged(==Inactive) or Active not both
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Alarm.AlarmItemSorter.Instance">
+            <summary>
+            The Singleton instance.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Alarm.Remoting.SerializationManager">
+            <summary>
+            Handles registration of fast serializers for the DotNetRemoting framework. The reason for not calling 
+            BaseCommunication.AddFastSerializerType outside this class is that we don't want it to get loaded and 
+            thus be dependent upon the AsyncWinLib assembly if not a remote alarm server or any remote alarm 
+            viewers, since assembly might not be available.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Alarm.Remoting.NeoSyncServer.FinalizeNewConnection(DotNetRemoting.BaseChannelWrapper)">
+            <summary>
+            Code in this method "inspired" by looking at the baseclass via .NET Reflector
+            Is only used to inject the NeoSyncChannelWrapper for each client connection.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Alarm.TransferAlarmStorableItem.#ctor(System.Guid,System.Guid,Neo.ApplicationFramework.Interfaces.AlarmState,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the DummyItem class.
+            </summary>
+            <param name="guid"></param>
+            <param name="id"></param>
+            <param name="state"></param>
+            <param name="text"></param>
+            <param name="alarmGroupName"></param>
+            <param name="alarmItemDisplayName"></param>
+            <param name="acknowledgeTime"></param>
+            <param name="activeTime"></param>
+            <param name="inActiveTime"></param>
+            <param name="normalTime"></param>
+            <param name="count"></param>
+            <param name="toBeDistributed"></param>
+            <param name="ipAddress"></param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.AuditTrail.UserChangedAuditTrailToolCF">
+            <summary>
+            Listens to CurrentUserChanged and writes in AuditTrail
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.#ctor">
+            <summary>
+            Initializes a new instance of the BacklightController class.
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Tools.Backlight.BacklightController.BacklightTurnedOff">
+            <summary>
+            Event fired when backlight is turened off.
+            </summary>
+            
+        </member>
+        <member name="E:Neo.ApplicationFramework.Tools.Backlight.BacklightController.BacklightTurnedOn">
+            <summary>
+            Event fired when backlight is turened on.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.TurnBacklightOn">
+            <summary>
+            Force backlight on if backlight is off 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.SetBacklightTimout(System.Double)">
+            <summary>
+            Backlight timeout in seconds only affected if AutomaticallyTurnOfBacklight is true
+            </summary>
+            <param name="backlightTimeout"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.GetBacklightTimout">
+            <summary>
+             Get backlight timeout in seconds default value is 120
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.SetAutomaticallyTurnOnBacklightWhenKeyIsPressedOrTouchIsTapped(System.Boolean)">
+            <summary>
+            Automatically turn on backlight when key is pressed or touch is tapped
+            </summary>
+            <param name="enable"></param>     
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.GetAutomaticallyTurnOnBacklightWhenKeyIsPressedOrTouchIsTapped">
+            <summary>
+            Get automatically turn on backlight when key is pressed or touch is tapped
+            </summary>        
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.SetAutomaticallyTurnOfBacklight(System.Boolean)">
+            <summary>
+            Set Enable/Disabable if backlight should be turned off automatically after the timeout
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.GetAutomaticallyTurnOfBacklight">
+            <summary>
+            Get if backlight should be turned off automatically after the timeout
+            </summary>  
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.SetBacklightBrightLevel(System.Int32)">
+            <summary>
+            Sets the brightness of backlight
+            </summary>
+            <param name="level"> Value should be between 0 = Off 100 = full power </param>        
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightController.GetBacklightBrightLevel">
+            <summary>
+            Get the brightness of backlight
+            </summary>   
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.#ctor">
+            <summary>
+            Initializes a new instance of the BacklightControllerBeHwApi class.
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.BacklightTurnedOff">
+            <summary>
+            Event fired when backlight is turened off.
+            </summary>
+            
+        </member>
+        <member name="E:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.BacklightTurnedOn">
+            <summary>
+            Event fired when backlight is turened on.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.TurnBacklightOn">
+            <summary>
+            Force backlight on if backlight is off 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.SetBacklightTimout(System.Double)">
+            <summary>
+            Backlight timeout in seconds only affected if AutomaticallyTurnOfBacklight is true
+            </summary>
+            <param name="backlightTimeout"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.GetBacklightTimout">
+            <summary>
+             Get backlight timeout in seconds default value is 120
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.SetAutomaticallyTurnOfBacklight(System.Boolean)">
+            <summary>
+            Set Enable/Disabable if backlight should be turned off automatically after the timeout
+            </summary>
+            <param name="enable"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.GetAutomaticallyTurnOfBacklight">
+            <summary>
+            Get if backlight should be turned off automatically after the timeout
+            </summary>  
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.SetBacklightBrightLevel(System.Int32)">
+            <summary>
+            Sets the brightness of backlight
+            </summary>
+            <param name="level"> Value should be between 0 = Off 100 = full power </param>        
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightControllerBeHwApi.GetBacklightBrightLevel">
+            <summary>
+            Get the brightness of backlight
+            </summary>   
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Backlight.BacklightSettingsForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Backlight.BacklightSettingsForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Backlight.NullPowerLeds">
+            <summary>
+            Implements a null object for IPowerLeds (Null Object pattern)
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.AuditTrailDatabase">
+            <summary>
+              Looks up a localized string similar to Audit trail.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.Browse">
+            <summary>
+              Looks up a localized string similar to Browse.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.ConfigureButtonText">
+            <summary>
+              Looks up a localized string similar to Configure....
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseFilesFilter">
+            <summary>
+              Looks up a localized string similar to Database files.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreFileSelectionDialog_DatabaseFile">
+            <summary>
+              Looks up a localized string similar to Database File.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreFileSelectionDialog_DontRestore">
+            <summary>
+              Looks up a localized string similar to Don&apos;t Restore.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreFileSelectionDialog_Location">
+            <summary>
+              Looks up a localized string similar to Location.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreFileSelectionDialog_ModifiedDate">
+            <summary>
+              Looks up a localized string similar to Modified Date.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreFileSelectionDialog_Size">
+            <summary>
+              Looks up a localized string similar to Size.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreFileSelectionDialog_Title">
+            <summary>
+              Looks up a localized string similar to Select database file to restore.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreSelectionControl_Remove_existing_file_selection">
+            <summary>
+              Looks up a localized string similar to Remove existing file selection?.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreSelectionControl_Remove_selection">
+            <summary>
+              Looks up a localized string similar to Remove selection?.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreSelectionControl_SelectDatabaseFile">
+            <summary>
+              Looks up a localized string similar to [Select database file].
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DatabaseRestoreSelectionDialog_SelectDatabasesToRestore">
+            <summary>
+              Looks up a localized string similar to Select databases to restore.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DialogSubTitle">
+            <summary>
+              Looks up a localized string similar to Select databases to backup and backup destination.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.DialogTitle">
+            <summary>
+              Looks up a localized string similar to Back up Databases.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.Internal">
+            <summary>
+              Looks up a localized string similar to Internal for corrupt database recovery.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.InternalSimple">
+            <summary>
+              Looks up a localized string similar to Internal.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.MainDatabase">
+            <summary>
+              Looks up a localized string similar to Database.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.MemoryCard">
+            <summary>
+              Looks up a localized string similar to Memory card.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.MemoryCardRestore">
+            <summary>
+              Looks up a localized string similar to Memory card for project restore.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.MemoryCardRestoreSimple">
+            <summary>
+              Looks up a localized string similar to Memory card restore.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.NonVolatileDatabase">
+            <summary>
+              Looks up a localized string similar to Non-volatile database.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.NonVolatileSimple">
+            <summary>
+              Looks up a localized string similar to Non-volatile.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.SelectBackupDestination">
+            <summary>
+              Looks up a localized string similar to Select backup destination.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.SelectDatabasesToBackup">
+            <summary>
+              Looks up a localized string similar to Select databases to backup.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Database.BackupDatabasesResources.USB">
+            <summary>
+              Looks up a localized string similar to USB memory.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Database.DatabaseBackupDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseBackupDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseBackupDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreFileSelectionDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreFileSelectionDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreFileSelectionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreSelectionControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreSelectionControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreSelectionControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreSelectionDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreSelectionDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreSelectionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseRestoreListViewModel.GetNameSourceFromFilePath(System.String)">
+            <summary>
+            Lookup a DatabasePathInfo from a file path
+            </summary>
+            <param name="path"></param>
+            <returns>The found path info, or *null* if no appropriate path info exists</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Database.DatabaseToolCF.#ctor">
+            <summary>
+            Initializes a new instance of the DatabaseToolCF class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.#ctor(Core.Api.Utilities.ILazy{Neo.ApplicationFramework.Threading.IScopeService},Core.Api.Utilities.ILazy{Neo.ApplicationFramework.Interfaces.ISystemInformationService},Core.Api.Utilities.ILazy{Neo.ApplicationFramework.Interfaces.IFastLoggingFeatureLogicService},Core.Api.Utilities.ILazy{Neo.ApplicationFramework.Interfaces.IDateTimeEditService},Core.Api.Utilities.ILazy{Core.Component.Api.Instantiation.IRootComponentService})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Neo.ApplicationFramework.Tools.DataLogger.DataLogger"/> class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.Log">
+            <summary>
+            Logs once.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.Start">
+            <summary>
+            Enables the logger.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.Stop">
+            <summary>
+            Disables the logger.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.Clear(System.Boolean)">
+            <summary>
+            Clears the data logger.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.StartLogTread">
+            <summary>
+            Starts the log tread.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.LogThread">
+            <summary>
+            The thread that does the actual logging.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.LogTrigger">
+            <summary>
+            Gets or sets the log trigger.
+            If logging on event is selected, this is the trigger for to start a log.
+            </summary>
+            <value>LogDataOnObjectEvent or LogDataOnTimerEvent</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.LogInterval">
+            <summary>
+            Gets or sets the log interval.
+            If time logging is selected, this is the log interval.
+            </summary>
+            <value>Seconds</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.DatabaseTableName">
+            <summary>
+            Gets the name of the database table.
+            </summary>
+            <value>The name of the database table.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.TriggerObject">
+            <summary>
+            Gets or sets the data connection.
+            </summary>
+            <value>The data connection.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLogger.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.DataLogger.DataLoggerStorage.Storage">
+            <summary>
+            Gets the storage manager.
+            </summary>
+            <value>The storage manager.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.DataLoggerStorage.DropInvalidLoggerTable(Neo.ApplicationFramework.Interfaces.ILogEntry)">
+            <summary>
+            Checks validity of table returns true when a table has been removed or if everything is correct.
+            </summary>
+            <param name="logEntry"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.LogItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LogItem"/> class.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.DataLogger.LogItem.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.LogItem.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DataLogger.LogItem.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.DateTimeEdit.DateTimeEditForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DateTimeEdit.DateTimeEditForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DateTimeEdit.DateTimeEditToolCF.#ctor">
+            <summary>
+            Initializes a new instance of the DateTimeEditTool class.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.DateTimeEdit.TimeZoneForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DateTimeEdit.TimeZoneForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DateTimeEdit.TimeZoneForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Notifications.NotifierView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Notifications.NotifierView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Notifications.NotifierView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.OpcClient.LookupIndex.TagPathLookupIndex">
+            <summary>
+            Only supports simple tags; not structured tags
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcClient.LookupIndex.TagPathLookupIndex.IsCandidate``1">
+            <summary>
+            It is only relevant if we can assign an instance of T to either IDataSourceValue or IBasicTag, 
+            because this is what tags can be (2 different inheritance chains)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.OpcClient.NullOpcUaDaClientService">
+            <summary>
+            Implements a null object for IOpcUaDaClientService (Null Object pattern)
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.OpcClient.OpcUaDataItem">
+            <summary>
+            Here we store things that in OPC Classic is stored in native BeDataItem
+            Do not duplicate things stored in DataItem
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.OpcClient.DataTrigger.TimeSpan">
+            <summary>
+            Gets or sets the trigger interval for when to kick in a batch write.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItems.GetItemProperties(System.ComponentModel.PropertyDescriptor[])">
+            <summary>
+            Make sure a new PropertyDescriptorCollection is created and returned, we should not 
+            modify the cached PropertyDescriptorCollection returned by TypeDescriptor.GetProperties.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.OpcClient.DataItem">
+            <summary>
+            This object is a wrapper(aggregate) for the DataItem in interrop dll for COM dataitem.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.OpcClient.DataItem.ItemID">
+            <summary>
+            The ItemID of the DataItem.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcClient.DataItem.UpdateInternalActiveState(Neo.ApplicationFramework.Interop.DataSource.BEACTIVETYPE)">
+            <summary>
+            A placeholder to avoid breaking the wall of managed and unmanaged to many times.
+            Is updated by DataItemActiveState only!
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.OpcClient.DataItem.IsActive">
+            <summary>
+            Just a reflection of the actual state of the underlying dataitem without breaking the wall of managed and unmanaged
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.OpcClient.DataItem.ShouldGetWrappedObjectsValue">
+            <summary>
+            When to get the actual value, should only be done in runtime, having a actual dataitem and not being active,
+            If we're not active the wrapped dataitem will not fire any events to us, therefore we need to get it ourselves.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcClient.DataItem.Read">
+            <summary>
+            Forces a read of this DataItem from the source (PLC). USE WITH CAUTION (since it affects performance).
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.OpcClient.DataSourceContainer">
+             <summary>
+             A DataSourceContainer contains a collection of DataItems.  This container uses
+             two designers:  a root designer that allows the container to be a top
+             level component where DataItems can be visually added, and a normal designer
+             that is used when the DataSource container is added to another object like
+             a form.
+            
+             DataSourceContainer also defines a custom serializer.  This serializer is used
+             to generate code for an "adapter" class that can be used to fit a shape
+             to a Windows Forms paint event.
+            
+             Finally, placing a DataSourceContainer on another DataSource container is of
+             limited value, while placing it on other types of designers is
+             what we intend.  So, we override the toolbox item filter that sits
+             on our base Shape class.
+             </summary>
+            
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.OpcClient.DataSourceContainer.DataItems">
+             <summary>
+              The collection of dataitems within this container.
+             </summary>
+            
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem.Value">
+            <remarks>
+            Setting this property ONLY has effect if the <see cref="T:Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem"/> is referenced
+            in the current(active) screen. If you want to guarantee a value-change regardless of active screen, please
+            use <see cref="M:Neo.ApplicationFramework.Tools.OpcClient.GlobalDataItem.SetAnalog(Neo.ApplicationFramework.Interfaces.VariantValue)"/>.
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcClient.OpcClientServiceCF.InitializeDynamicControllers">
+            <summary>
+            Now at least, when no or an empty Tags.override exists, there will be very little penalty
+            However, when there exists 
+            </summary>
+            <returns>key is tagname, value is corresponding dataitem name</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcClient.OpcClientToolCF.#ctor">
+            <summary>
+            Initializes a new instance of the OpcClientToolCF class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.MultiLanguage.UniscribeHelperCF">
+            <summary>
+            Uniscribe is Microsofts' handler of complicated scripts, like Arabic and Thai
+            read more at https://msdn.microsoft.com/en-US/Library/ee490956(v=winembedded.60).aspx
+            "DisableUniscribe" key in registry enables or disables uniscribe
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServer.CurrentLanguageTag">
+            <summary>
+            Gets or sets the data connection for currentLanguage.
+            </summary>
+            <value>The data connection.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServer.CurrentLanguageExpressionName">
+            <summary>
+            Gets or sets the expression name for current language.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServiceCF.ChangeLanguageOnUIThread">
+            <summary>
+            Perform on UI thread since load language needs to be finished before text is updated on UI objects.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServiceCF.TryChangeLanguage(System.Int32,System.Boolean@)">
+            <summary>
+            TO BE CALLED BY MultiLanguageServer ONLY
+            Tries to change language.
+            </summary>
+            <param name="newLanguageIndex">The index of the new language.</param>
+            <param name="rebootRequired">If true a reboot is required to complete the language change.</param>
+            <returns>True if the language was succesfully changed. False otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServiceCF.SetCurrentLanguageAtStartUp(Neo.ApplicationFramework.Tools.MultiLanguage.StartupLanguageInfo)">
+            <summary>
+            TO BE CALLED BY MultiLanguageServer ONLY
+            Checks if the correct IME is preloaded for the language selected by user or
+            the default language. If the IME is not preloaded settings are changed and
+            the panel needs to be rebooted.
+            </summary>
+            <param name="startupLanguageInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServiceCF.GetLanguageChangeFromTemporaryStorage">
+            <summary>
+            TO BE CALLED BY MultiLanguageServer ONLY
+            </summary>
+            <returns>null if not found else StartupLanguageInfo</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.MultiLanguageServiceCF.AddMissingCarriageReturnToResourceItem(Neo.ApplicationFramework.Interfaces.IResourceItem)">
+            <summary>
+            This method is needed since XamlReader.Load will remove \r from \r\n due to standard behaviour.
+            </summary>
+            <param name="resourceItem"> The resource item. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.ResourceItem.UpdateDynamicStringsForAllLanguages(System.Object)">
+            <summary>
+            All languages must contain dynamic strings otherwise the tag binding(s) is/are deleted 
+            when building using a DT language where the CurrentValue lacks the dynamics.
+            </summary>
+            <param name="value"></param>
+            <returns>true if other languages are updated. False if current language is updated</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MultiLanguage.ResourceItemList`2.GetItemProperties(System.ComponentModel.PropertyDescriptor[])">
+            <summary>
+            Make sure a new PropertyDescriptorCollection is created and returned, we should not 
+            modify the cached PropertyDescriptorCollection returned by TypeDescriptor.GetProperties.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Recipe.TemporaryRecipeItem">
+            <summary>
+            This class is only used when temporarily filling the RecipeFields to insert into the database during start up.
+            During this operation, we only need a class to hold the data, nothing else (this will speed up the operation).
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeDeleteDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RecipeDeleteDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ShowSelectRecipeDialog(Neo.ApplicationFramework.Interfaces.DialogKind)">
+            <summary>
+            Prompts the user to select a recipe.
+            </summary>
+            <param name="dialogKind">The type of dialog to use (e.g. Load/Save/Delete).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.LoadRecipe">
+            <summary>
+            Loads the recipe selected by the user. The user will be prompted to select a recipe.
+            </summary>
+            <remarks>
+            Allows scripting with no recipe name.
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.LoadRecipe(System.String)">
+            <summary>
+            Loads the recipe with the given name.
+            </summary>
+            <param name="recipeFieldName">The runtime recipe name of the recipe to load.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.LoadRecipe(System.String,System.Boolean)">
+            <summary>
+            Loads the recipe with the given name.
+            </summary>
+            <param name="recipeFieldName">The runtime recipe name of the recipe to load.</param>
+            <param name="showDialogWhenCommError">The dialog can be used to cancel the action.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.DeleteRecipe">
+            <summary>
+            Deletes the recipe selected by the user. The user will be prompted to select a recipe.
+            </summary>
+            <remarks>
+            Allows scripting with no recipe name.
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.DeleteRecipe(System.String)">
+            <summary>
+            Deletes the recipe with the given name.
+            </summary>
+            <param name="recipeFieldName">The runtime recipe name of the recipe to delete.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.StartOfflineRecipeEditing">
+            <summary>
+            Starts recipe offline editing.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.EndOfflineRecipeEditing">
+            <summary>
+            Ends recipe offline editing.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.SaveRecipe">
+            <summary>
+            Saves the recipe. The user will be prompted to select a recipe name.
+            The user will be asked to confirm if this will overwrite an existing recipe.
+            </summary>
+            <remarks>
+            Allows scripting with no recipe name.
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.SaveRecipe(System.Boolean)">
+            <summary>
+            Saves the recipe. The user will be prompted to select a recipe name.
+            </summary>
+            <param name="userConfirmation">Should the user confirm a replace of existing recipe?</param>
+            <remarks>
+            Allows scripting with no recipe name.
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.SaveRecipe(System.String)">
+            <summary>
+            Saves the recipe with the given name. 
+            The user will be asked to confirm if this will overwrite an existing recipe.
+            </summary>
+            <param name="recipeFieldName">The name for the recipe.</param>
+            <remarks>
+            Allows scripting with no recipe name.
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.SaveRecipe(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Saves the recipe with the given name. 
+            </summary>
+            <param name="recipeFieldName">The name for the recipe.</param>
+            <param name="userConfirmation">Should the user confirm a replace of existing recipe?</param>
+            <param name="showDialogWhenCommError">The dialog can be used to cancel the action.</param>
+            <remarks>
+            Allows scripting with no recipe name.
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ExportRecipe">
+            <summary>
+            Exports a recipe to project files folder. The filename of the csv-file will be the same as the recipe. Data is delimited with comma.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ExportRecipe(System.String)">
+            <summary>
+            Exports a recipe to project files folder. Data is delimited with comma.
+            </summary>
+            <param name="fileName">File name for exported csv-file.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ExportRecipe(System.String,System.Boolean)">
+            <summary>
+            Exports a recipe to project files folder.
+            </summary>
+            <param name="fileName">File name for exported csv-file.</param>
+            <param name="delimitedWithComma">True if data is delimited by comma, false if semicolon is used</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ExportRecipe(Neo.ApplicationFramework.Interfaces.FileDirectory,System.String,System.Boolean)">
+            <summary>
+            Exports a recipe. CsvFileDirecory could either be CsvFileDirectory.Browse (only PC), CsvFileDirectory.MemoryCard (only CE panel) or CsvFileDirectory.USB (only CE panel).
+            </summary>
+            <param name="csvFileDirectory">Browse, MemoryCard, ProjectFiles or USB</param>
+            <param name="fileName">File name for exported csv-file.</param>
+            <param name="delimitedWithComma">True if data is delimited by comma, false if semicolon is used</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ExportRecipe(System.String,System.String,System.Boolean)">
+            <summary>
+            Exports a recipe to selected path. Only available for PC-projects.
+            </summary>
+            <param name="fileName">File name for exported csv-file.</param>
+            <param name="csvPath">Target path for csv file</param>
+            <param name="delimitedWithComma">True if data is delimited by comma, false if semicolon is used</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ExportRecipe(System.String,Neo.ApplicationFramework.Interfaces.FileDirectory,System.String,System.String,System.Boolean)">
+            <summary>
+            Exports a recipe.
+            </summary>
+            <param name="databaseName">Name of the database ie Database</param>
+            <param name="csvFileDirectory">Browse, FilePath, MemoryCard, ProjectFiles or USB</param>
+            <param name="fileName">File name for exported csv-file. If overwrite is false, the date and time for the export will be added to this name.</param>
+            <param name="csvPath">Target path for csv file</param>
+            <param name="delimitedWithComma">True if data is delimited by comma, false if semicolon is used</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ImportRecipe">
+            <summary>
+            Imports a recipe from a csv-file project files folder. The filename of the csv-file is the same as the recipe. Data is delimited with comma. Existing recipes will be overridden.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ImportRecipe(System.String,System.Boolean)">
+            <summary>
+            Imports a recipe from a csv-file project files folder. Data is delimited with comma.
+            </summary>
+            <param name="fileName">File name of the csv-file to import recipes from.</param>
+            <param name="overwrite">If true existing recipes will be overridden, otherwise ignored. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ImportRecipe(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Imports a recipe from a csv-file project files folder.
+            </summary>
+            <param name="fileName">File name of the csv-file to import recipes from.</param>
+            <param name="overwrite">If true existing recipes will be overridden, otherwise ignored. </param>
+            <param name="delimitedWithComma">True if data is delimited by comma, false if semicolon is used</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ImportRecipe(Neo.ApplicationFramework.Interfaces.FileDirectory,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Imports a recipe from a csv-file.
+            </summary>
+            <param name="csvFileDirectory">Browse, MemoryCard, ProjectFiles or USB</param>
+            <param name="fileName">File name for exported csv-file.</param>
+            <param name="overwrite">If true existing recipes will be overridden, otherwise ignored. </param>
+            <param name="delimitedWithComma">True if data is delimited by comma, false if semicolon is used</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ImportRecipe(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Imports a recipe from selected path. Only available for PC-projects.
+            </summary>
+            <param name="fileName">File name for csv-file.</param>
+            <param name="csvPath">Source path for csv file</param>
+            <param name="overwrite">If true existing recipes will be overridden, otherwise ignored. </param>
+            <param name="delimitedWithComma">True if data is delimited by comma, false if semicolon is used</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.ImportRecipe(System.String,Neo.ApplicationFramework.Interfaces.FileDirectory,System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Imports a recipe.
+            </summary>
+            <param name="databaseName">Name of the database.</param>
+            <param name="csvFileDirectory">Browse/FilePath/MemoryCard/ProjectFiles/USB</param>
+            <param name="fileName">File name of the csv-file to import recipe from.</param>
+            <param name="csvPath">Source path for csv file</param>
+            <param name="overwrite">If true existing recipes will be overridden, otherwise ignored. </param>
+            <param name="delimitedWithComma">True if data is delimited by comma, false if semicolon is used</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Recipe.Recipe.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.Recipe.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeDialogBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RecipeSaveDialog"/> class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Recipe.RecipeDialogBase.DataSource">
+            <summary>
+            Sets the data source.
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Recipe.RecipeDialogBase.SelectedField">
+            <summary>
+            Gets the selected recipe field.
+            </summary>
+            <value>The selected recipe field.</value>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Recipe.RecipeDialogBase.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeDialogBase.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeField.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the RecipeField class.
+            </summary>
+            <param name="tableName"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeField.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the RecipeField class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeField.#ctor(System.String,System.String,Neo.ApplicationFramework.Tools.Recipe.RecipeItems)">
+            <summary>
+            Initializes a new instance of the RecipeField class.
+            </summary>
+            <param name="fieldValues"></param>
+            <param name="tableName"></param>
+            <param name="fieldName"></param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Recipe.RecipeField.TableName">
+            <summary>
+            Gets or sets the name of the database table.
+            </summary>
+            <value>The name of the table.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Recipe.RecipeField.FieldName">
+            <summary>
+            Gets or sets the name of the recipe field.
+            </summary>
+            <value>The name of the recipe field.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Recipe.RecipeField.FieldValues">
+            <summary>
+            Gets or sets the recipe field values.
+            </summary>
+            <value>The recipe field values.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeItem.#ctor(Core.Api.Utilities.ILazy{Core.Api.GlobalReference.IGlobalReferenceService})">
+            <summary>
+            Initializes a new instance of the <see cref="T:RecipeItem"/> class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Recipe.RecipeItem.DataConnection">
+            <summary>
+            Gets or sets the data connection.
+            </summary>
+            <value>The data connection.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeItem.CreateDesignTimeBinding(System.String)">
+            <summary>
+            Creates a binding in designtime, in order for crossreference to find the dataitem reference. The binding will not be serialized.
+            </summary>
+            <param name="dataItemFullName">Fullname of dataitem as binding source.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeItem.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Recipe.RecipeItem.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeItem.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeItems.#ctor(System.ComponentModel.IComponent)">
+            <summary>
+            Initializes a new instance of the RecipeItems class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeItems.InsertItem(System.Int32,Neo.ApplicationFramework.Interfaces.IRecipeItem)">
+            <summary>
+            Inserts the specified item in the list at the specified index.
+            Also adds the item to the owning container.
+            </summary>
+            <param name="index">The zero-based index where the item is to be inserted.</param>
+            <param name="item">The item to insert in the list.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeLoadDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RecipeLoadDialog"/> class.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Recipe.RecipeLoadDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeLoadDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeSaveDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RecipeSaveDialog"/> class.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Recipe.RecipeSaveDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeSaveDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Recipe.RecipeToolCF.RegisterServices">
+            <summary>
+            All services provided by the tool should be registered here.
+            Register services is called first for every tool, before any of them are being initialized.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Reporting.ReportOwnedList.FindByReportName(System.String)">
+            <summary>
+            Finds a report based on report name
+            </summary>
+            <param name="reportName"></param>
+            <returns>Matching Report, null if not found</returns>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Reporting.Reports.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Reporting.Reports.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.MessageLibrary.MessageItem.DisplayName">
+            <summary>
+            Gets or sets the display name. In the property grid it will show as "Name".
+            </summary>
+            <value>The display name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.MessageLibrary.MessageItem.GroupName">
+            <summary>
+            Gets or sets the name of the group.
+            </summary>
+            <value>The name of the group.</value>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.MessageLibrary.MessageLibrary.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MessageLibrary.MessageLibrary.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MessageLibrary.MessageLibrary.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Expressions.ExpressionManager.OnCreated">
+            <summary>
+            Is called after control is created
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Expressions.ExpressionManager.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Expressions.ExpressionManager.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Expressions.ExpressionManager.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.License.LicenseRootComponent">
+            <summary>
+            Root component for License settings
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.License.InfoLicenseFormCF.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the InfoLicenseForm class.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.License.InfoLicenseFormCF.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.License.InfoLicenseFormCF.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.License.InfoLicenseFormCF.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.License.LicenseServiceFactory.Instance">
+            <summary>
+            Gets the singleton instance of this factory.
+            </summary>
+            <value>The instance.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Network.NetworkServiceCF.ValidatedAddressList(System.Collections.Generic.IDictionary{System.String,System.Int32})">
+            <summary>
+            Removes all ip addresses on interfaces with duplicate addresses. This is needed to handle that during 
+            startup, for a short while, an interface can have an extra invalid default address (169.x.x.x). The invalid
+            ip address causes the opcua server to crash during startup. By removing all ip addresses on the interface
+            it's prevented to be used until rechecked to have only one ip addresses.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.ProjectSupport.ProjectTool.#ctor">
+            <summary>
+            Initializes a new instance of the DateTimeEditTool class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Run.RunTool.#ctor">
+            <summary>
+            Initializes a new instance of the RunTool class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Screen.InitialStubScreen">
+            <summary>
+            This class serves the puropse of acting as a temporary screen during initialization of the system since actions on for example tags may
+            try to close/navigate to a screen. Since ActiveScreen is used in all implicit navigation, an instance of this class is returned instead of
+            null so that no crashing occures
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Screen.NavigationStackManager.#ctor">
+            <summary>
+            Initializes a new instance of the NavigationStackManager class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Screen.ScreenManager.#ctor">
+            <summary>
+            Initializes a new instance of the ScreenManager class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Screen.ScreenManager.RegisterScreenInternal(Neo.ApplicationFramework.Interfaces.IScreen,System.Func{System.Int32})">
+            <summary>
+            Handles registration of screens.
+            Due to some differences on PC or CE we use this internal method.
+            </summary>
+            <param name="screen">A screen instance</param>
+            <param name="screenCollectionHandlerFunc">
+            A method returning -1 if the calling function should return false, 1 if the calling function should return true
+            and 0 if the calling function should continue.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.ScriptModule.ScriptModule.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.ScriptModule.ScriptModule.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.ScriptModule.ScriptModule.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Security.UsersWizardForm">
+            <summary>
+            User interface for setting information about a user.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.UsersWizardForm.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:UserFormCF"/> class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.UsersWizardForm.#ctor(Neo.ApplicationFramework.Interfaces.ISecurityUser)">
+            <summary>
+            Initializes a new instance of the UserFormCF class.
+            </summary>
+            <param name="securityUser"></param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Security.UsersWizardForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.LoginForm.#ctor(System.Boolean)">
+            <summary>
+            LoginForm constructor.
+            </summary>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.LoginForm.#ctor(System.String,System.Boolean)">
+            <summary>
+            LoginForm constructor.
+            </summary>
+            <param name="userName">Username for the user to login.</param>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Security.LoginForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.PasswordComplexity.AssertPasswordCriteria(System.String)">
+            <summary>
+            This method will throw a PasswordComplexityNotMetException if the password is not meeting the criterias for a correct password.
+            </summary>
+            <param name="password"></param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Security.LoginChangePasswordForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.LoginChangePasswordForm.OnInitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SecurityManager"/> class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.LoginRequired">
+            <summary>
+            Gets or sets a value indicating whether login is required.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.MinimumPasswordLength">
+            <summary>
+            Gets or sets a minimum number of characters in user's password.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.AutomaticLogoutEnabled">
+            <summary>
+            Gets or sets a value indicating whether automatic logout is enabled.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.AutomaticLogoutMinutes">
+            <summary>
+            Gets or sets the time for automatic logout in minutes.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.ShowAutomaticLogoutSucceededDialog">
+            <summary>
+            Gets or sets whether the Logout succeeded dialog should be displayed
+            when the user is automatically logged out. 
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.VisibilityOnAccessDenied">
+            <summary>
+            Gets or sets the visibility mode for controls.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.ActionOnAccessDenied">
+            <summary>
+            Gets or sets the access denies action for controls.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.SecurityFile">
+            <summary>
+            Gets or sets the security settings file.
+            Exists in order for the filename to be set in runtime, when it also loads the security file.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.Groups">
+            <summary>
+            Gets the security groups.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.Users">
+            <summary>
+            Gets the security users.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManager.CurrentUser">
+            <summary>
+            Get name of current loged in user.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.UpdateVisibility(System.Object)">
+            <summary>
+            Updates the visibility.
+            </summary>
+            <param name="rootObject">The root object.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.AddGroup(Neo.ApplicationFramework.Interfaces.ISecurityGroup)">
+            <summary>
+            Adds a security group, sorted after the security groups enumeration.
+            </summary>
+            <param name="securityGroup">The security group to add.</param>
+            <returns>True if added successfully, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.RemoveGroup(Neo.ApplicationFramework.Interfaces.ISecurityGroup)">
+            <summary>
+            Removes an existing security group.
+            </summary>
+            <param name="securityGroup">The security group to remove.</param>
+            <returns>True if removed successfully, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.AddUser(System.String,System.Byte[])">
+            <summary>
+            Adds a new user.
+            </summary>
+            <param name="name">The username for this user.</param>
+            <param name="password">The password for this user.</param>
+            <returns>
+            A reference to the newly added security user, null on failure.
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.RemoveUser(Neo.ApplicationFramework.Interfaces.ISecurityUser)">
+            <summary>
+            Removes an existing user.
+            </summary>
+            <param name="securityUser">The security user to remove.</param>
+            <returns>True if successfully removed, otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.Login">
+            <summary>
+            Action for bringing up the login dialog.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.Login(System.Boolean)">
+            <summary>
+            Open the login dialog and then login the user with the details entered.
+            </summary>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed.
+            False otherwise (e.g. required user input may not be wanted when scripting).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.Login(System.String)">
+            <summary>
+            Open the login dialog and then login the user with the details entered.
+            </summary>
+            <param name="userName">The user's username.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.Login(System.String,System.Boolean)">
+            <summary>
+            Open the login dialog and then login the user with the details entered.
+            </summary>
+            <param name="userName">The user's username.</param>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed.
+            False otherwise (e.g. required user input may not be wanted when scripting).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.Login(System.String,System.String)">
+            <summary>
+            Login the user with the details provided.
+            </summary>
+            <param name="userName">The user's username.</param>
+            <param name="password">The user's password.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.Login(System.String,System.String,System.Boolean)">
+            <summary>
+            Login the user with the details provided.
+            </summary>
+            <param name="userName">The user's username.</param>
+            <param name="password">The user's password.</param>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.Logout">
+            <summary>
+            Action for logging out the current user.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.Logout(System.Boolean)">
+            <summary>
+            Logout the current user.
+            </summary>
+            <param name="showLogoutSucceededDialog">True if the logout succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManager.ShowUsersDialog">
+            <summary>
+            Action for bringing up the add/edit users dialog.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF">
+            <summary>
+            Tool for setting up security services in runtime.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.RegisterServices">
+            <summary>
+            All services provided by the tool should be registered here.
+            Register services is called first for every tool, before any of them are being initialized.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.Init">
+            <summary>
+            Initializes the tool, all services should now have been registered, but the message pump is not up.
+            It's now possible to connect to other services, since they should all have been registered.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.SecurityManager">
+            <summary>
+            Gets or sets a reference to the security manager.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.Groups">
+            <summary>
+            Gets a collection with all security groups.
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.AddUser(System.String,System.String)">
+            <summary>
+            Adds a new user.
+            </summary>
+            <param name="name">The username for this user.</param>
+            <param name="password">The password for this user.</param>
+            <returns>
+            A reference to the newly added security user, null on failure.
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.RemoveUser(Neo.ApplicationFramework.Interfaces.ISecurityUser)">
+            <summary>
+            Removes an existing user.
+            </summary>
+            <param name="securityUser">The security user to remove.</param>
+            <returns>
+            True if removed successfully, false otherwise.
+            </returns>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.Users">
+            <summary>
+            Gets a collection with all security users.
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.Load(System.String)">
+            <summary>
+            Loads the users.
+            </summary>
+            <param name="fileName">Full path to the destination file.</param>
+            <returns>
+            True if successfully loaded, false otherwise.
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.Save(System.String)">
+            <summary>
+            Saves the users.
+            </summary>
+            <param name="fileName">Full path to the source file.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.LoginUser(System.String,System.String,System.Boolean)">
+            <summary>
+            Tries to login user.
+            </summary>
+            <param name="username">Username for the user to login.</param>
+            <param name="password">Password for the user to login.</param>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+            <returns>True if the user was successfully logged in, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.LogoutUser(System.Boolean)">
+            <summary>
+            Logs out the current user.
+            </summary>
+            <param name="showLogoutSucceededDialog">True if the logout succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.ShowLoginDialog(System.Boolean)">
+            <summary>
+            Brings up the login dialog.
+            </summary>
+            <param name="showLoginSucceededDialog">Enabling or disabling Login Succeeded dialog display.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.ShowLoginDialog(System.String,System.Boolean)">
+            <summary>
+            Brings up the login dialog.
+            </summary>
+            <param name="userName">Username</param>
+            <param name="showLoginSucceededDialog">Enabling or disabling Login Succeeded dialog display.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.ShowMessageBoxWithTimeout(System.String,System.String,System.Action)">
+            <summary>
+            Shows a modal MessageBox with a timeout
+            </summary>
+            <param name="text"></param>
+            <param name="caption"></param>
+            <param name="messageBoxClosedAction"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.UpdateVisibility">
+            <summary>
+            Updates the visibility for all containing objects,
+            depending on the security level for the current user.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.UpdateVisibility(System.Object)">
+            <summary>
+            Updates the visibility for all containing objects,
+            depending on the security level for the current user.
+            </summary>
+            <param name="rootObject">Root object to update visibility for.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.IsAccessGranted(System.Object,System.Object)">
+            <summary>
+            Checks if the current user has enough security to access control.
+            </summary>
+            <param name="secureObject">The object to check access against.</param>
+            <param name="rootObject">The topmost parent control, for performance on CE.</param>
+            <returns>
+            True if access is granted, false otherwise.
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.IsAccessGranted(Neo.ApplicationFramework.Interfaces.SecurityGroups)">
+            <summary>
+            Checks if the current user has the right security clearance.
+            </summary>
+            <param name="securityGroups">Security groups allowed to access object.</param>
+            <returns>True if access is granted, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.GetSecurityGroups(System.String)">
+            <summary>
+            Returns SecurityGroups enumeration value (can be bitted) for the comma separated SecurityGroupsRequired string
+            </summary>
+            <param name="value">SecurityGroupsRequired string</param>
+            <returns>SecurityGroups enumeration</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.GetSecurityGroupsRequired(Neo.ApplicationFramework.Interfaces.SecurityGroups)">
+            <summary>
+            Gets the comma separated SecurityGroupsRequired string from the given <see cref="T:Neo.ApplicationFramework.Interfaces.SecurityGroups"/>
+            </summary>
+            <param name="groups">Security groups enumeration</param>
+            <returns>SecurityGroupsRequired string</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityManagerToolCF.GetSecurityGroupsOfControlOrItsParent(System.Windows.Forms.Control,Neo.ApplicationFramework.Interfaces.ISecurityExtenderCF)">
+            <summary>
+            This assumes that security is only applied at one level in the hierarchy of controls,
+            i.e. the first one found (other than SecurityGroups.None) is returned.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Security.SecurityUser">
+             <summary>
+             Represents a user with certain security credentials.
+             </summary>
+            
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityUser.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SecurityUser"/> class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityUser.#ctor(System.String,System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:SecurityUser"/> class.
+            </summary>
+            <param name="username">The username.</param>
+            <param name="passwordHash">The password hash.</param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityUser.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityUser.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityUser.Description">
+             <summary>
+             Gets or sets the description, e.g. full name of user.
+             </summary>
+            
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityUser.Groups">
+             <summary>
+             Gets or sets the security groups (enumeration) that this user belongs to.
+             </summary>
+            
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Security.SecurityUser.SecurityGroups">
+            <summary>
+            Gets or sets the security group objects that this user belongs to.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityUser.FirePropertyChanged(System.String)">
+            <summary>
+            Fires the property changed event.
+            </summary>
+            <param name="propertyName">Name of the property that has changed.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.SecurityUserSerializer.LoadXElement(System.Xml.Linq.XElement,System.Collections.Generic.IList{Neo.ApplicationFramework.Interfaces.ISecurityUser}@,System.Collections.Generic.IList{Neo.ApplicationFramework.Interfaces.ISecurityGroup}@)">
+            <summary>
+            Needed for testing
+            </summary>
+            <param name="xmlDocument"></param>
+            <param name="users"></param>
+            <param name="groups"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Security.UsersForm">
+            <summary>
+            User interface for adding, removing and editing security users.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.UsersForm.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:UsersForm"/> class.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Security.UsersForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Security.UsersForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility">
+            <summary>
+            System.Web.HttpUtility.UrlEncode need to refer to System.Web.dll assembly, but this assembly cannot support .Net Compact Framework.
+            This SMSHttpUtility class refer to //iron9light.wordpress.com/2008/07/04/systemwebhttputility-for-net-compact-edition-or-sliverlight/ web site 
+            without UrlDecode members.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncode(System.Byte[])">
+            <summary>Converts a byte array into an encoded URL string.</summary>
+            <returns>An encoded string.</returns>
+            <param name="bytes">The array of bytes to encode. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncode(System.String)">
+            <summary>Encodes a URL string.</summary>
+            <returns>An encoded string.</returns>
+            <param name="str">The text to encode. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncode(System.String,System.Text.Encoding)">
+            <summary>Encodes a URL string using the specified encoding object.</summary>
+            <returns>An encoded string.</returns>
+            <param name="e">The <see cref="T:System.Text.Encoding"></see> object that specifies the encoding scheme. </param>
+            <param name="str">The text to encode. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncode(System.Byte[],System.Int32,System.Int32)">
+            <summary>Converts a byte array into a URL-encoded string, starting at the specified position in the array and continuing for the specified number of bytes.</summary>
+            <returns>An encoded string.</returns>
+            <param name="offset">The position in the byte array at which to begin encoding. </param>
+            <param name="count">The number of bytes to encode. </param>
+            <param name="bytes">The array of bytes to encode. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncodeToBytes(System.String)">
+            <summary>Converts a string into a URL-encoded array of bytes.</summary>
+            <returns>An encoded array of bytes.</returns>
+            <param name="str">The string to encode. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncodeToBytes(System.Byte[])">
+            <summary>Converts an array of bytes into a URL-encoded array of bytes.</summary>
+            <returns>An encoded array of bytes.</returns>
+            <param name="bytes">The array of bytes to encode. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncodeToBytes(System.String,System.Text.Encoding)">
+            <summary>Converts a string into a URL-encoded array of bytes using the specified encoding object.</summary>
+            <returns>An encoded array of bytes.</returns>
+            <param name="e">The <see cref="T:System.Text.Encoding"></see> that specifies the encoding scheme. </param>
+            <param name="str">The string to encode </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)">
+            <summary>Converts an array of bytes into a URL-encoded array of bytes, starting at the specified position in the array and continuing for the specified number of bytes.</summary>
+            <returns>An encoded array of bytes.</returns>
+            <param name="offset">The position in the byte array at which to begin encoding. </param>
+            <param name="count">The number of bytes to encode. </param>
+            <param name="bytes">The array of bytes to encode. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncodeUnicode(System.String)">
+            <summary>Converts a string into a Unicode string.</summary>
+            <returns>A Unicode string in %UnicodeValue notation.</returns>
+            <param name="str">The string to convert. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlEncodeUnicodeToBytes(System.String)">
+            <summary>Converts a Unicode string into an array of bytes.</summary>
+            <returns>A byte array.</returns>
+            <param name="str">The string to convert. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSHttpUtility.UrlPathEncode(System.String)">
+            <summary>Encodes the path portion of a URL string for reliable HTTP transmission from the Web server to a client.</summary>
+            <returns>The URL-encoded text.</returns>
+            <param name="str">The text to URL-encode. </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SMS.SMSDevice.#ctor">
+            <summary>
+            Initializes a new instance of the SMSDevice class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.SMS.SMSDevice.URL">
+            <summary>
+            Gets or sets the URL address.
+            </summary>
+            <value>The url address.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.SMS.SMSDevice.Body">
+            <summary>
+            Gets or sets the body.
+            </summary>
+            <value>The body.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.SMS.SMSDevice.RetrySending">
+            <summary>
+            Gets or sets the retry sending.
+            </summary>
+            <value>The retry sending.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.SMS.SMSDevice.TimeInterval">
+            <summary>
+            Gets or sets the time interval.
+            </summary>
+            <value>The time interval.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.SMS.SMSDevice.CodePage">
+            <summary>
+            Gets or sets the Code page.
+            </summary>
+            <value>The Code page.</value>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Storage.StorageClientToolCF">
+            <summary>
+            StorageClientToolCF leaves a database file (using the correct storage provider)
+            with all existing tables having the proper schema according to the project, and
+            with as much data as possible from previous version of the storage. Also, the
+            NEO_SYSTEM_TABLE_VERSIONS table shall be up to date and contain all possible
+            tables that belong to the project, even if they are not yet created.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Storage.StorageClientToolCF.VerifyAndRepair(Neo.ApplicationFramework.Storage.Common.IStorage,System.Boolean)">
+             <summary>
+            
+             </summary>
+             <param name="storage"></param>
+             <param name="allowInternalBackup"></param>
+             <returns></returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Storage.StorageTableVersionComparer">
+            <summary>
+            Used to compare IStorageTableVersion objects to see if the old tables in the storage should be kept (and possibly updated) or removed.
+            
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Storage.StorageTableVersionComparer.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Compares <see cref="T:Neo.ApplicationFramework.Tools.Storage.SystemTable.StorageTableVersion"/>s.
+            </summary>
+            <param name="compareOnSchemaVersion">Whether or not to compare on SchemaVersion.</param>
+            <param name="schemaVersionNeedsToHaveChangedForEquality">Set true to make items not equal if their SchemaVersions are equal, to find schematically changed tables. compareOnSchemaVersion needs to be true for this to make a difference.</param>
+            <param name="compareOnDataVersion">Whether or not to compare on DataVersion.</param>
+            <param name="dataVersionNeedsToHaveChangedForEquality">Set true to make items not equal if their DataVersion are equal, to find tables where the data has changed. compareOnDataVersion needs to be true for this to make a difference.</param>
+            <param name="compareOnStorageTableName">Whether or not to compare on StorageTableName. Only applies for StorageTableVersions where Guid is not null.</param>
+            <param name="storageTableNameNeedsToHaveChangedForEquality">Set true to make items equal only if their Guids are equal (and not null) and their StorageTableNames are different, to find renamed Recipes and DataLoggers. compareOnStorageTableName needs to be true for this to make a difference.</param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent">
+            <summary>
+            Root component for OpcUaServer functionality
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.OnNetworkChange(System.Object,System.EventArgs)">
+            <summary>
+            Called when Networkservice, that holds a list of operational ip addresses,
+            catches a cable connected event and detects a change in the list of operational
+            ip addresses
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.InitializeStartupOrRestart">
+            <summary>
+            Initializes a first time init or a restart of the opcua server
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.Restart">
+            <summary>
+            Initializes a restart of the opcua server, the first
+            step is to stop the server
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.SoftStop">
+            <summary>
+            SoftStop of opcua server in the native layer, first step of the restart
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.OnInitTimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Runs SoftInit in the native layer,
+            a delay is needed between SoftStop and SoftInit in the native layer
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.OnStartTimerTick(System.Object,System.EventArgs)">
+            <summary>
+            Starts the opcua server in the native layer after an initial Init() or SoftInit(),
+            a delay is needed between init and start in the native layer
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.OpcUaServerInit">
+            <summary>
+            First time initialization of the opcua server 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.SoftInit">
+            <summary>
+            Reinit of a opcua server that has been stopped by SoftStop()  
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.OpcUaServer.OpcUaServerRootComponent.Start">
+            <summary>
+            Startup of opcua server that has been initalized by a 
+            first time Init() or a SoftInit()
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.InProcess.InProcessReferencedFilesCF">
+            <summary>
+            Placeholder for referenced files that must be transfered to target, for platform factory to work correctly
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Printer.PrinterDevice">
+            <summary>
+            Contains printer settings for a specific printer.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.ConnectionType">
+            <summary>
+            Gets or sets the type of the connection.
+            Possible types are USB, ETHERNET and SERIAL.
+            </summary>
+            <value>The type of the connection.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.PrinterType">
+            <summary>
+            Gets or sets the type of the printer.
+            Possible types are PCLINKJET and PCLLASERJET.
+            </summary>
+            <value>The type of the printer.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.SupportsPCL5c">
+            <summary>
+            Gets or sets if the printer supports PCL 5c.
+            </summary>
+            <value>If printer supports PCL 5c or not.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.ColorType">
+            <summary>
+            Gets or sets the type of the color.
+            Possible types are MONOCHROME and COLOR.
+            </summary>
+            <value>The type of the color.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.PaperSize">
+            <summary>
+            Gets or sets the type of the paper size.
+            Possible types are LETTER, LEGAL, A4, B4 and B5.
+            </summary>
+            <value>The type of the paper size.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.Orientation">
+            <summary>
+            Gets or sets the type of the orientation.
+            Possible types are PORTRAIT and LANDSCAPE.
+            </summary>
+            <value>The type of the orientation.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.NetworkPath">
+            <summary>
+            Gets or sets the network path.
+            </summary>
+            <value>The network path.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.HandshakeType">
+            <summary>
+            Gets or sets the type of the handshake.
+            Possible types are XON/XOFF, CTS/RTS.
+            </summary>
+            <value>The type of the handshake.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.NewLineCharType">
+            <summary>
+            Gets or sets the type of the New line character.
+            Possible types are None, CR/LF,CR and LF.
+            </summary>
+            <value>The type of new line character.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.PageLength">
+            <summary>
+            Gets or sets the page length in number of lines.
+            </summary>
+            <value>The page length.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.PageWidth">
+            <summary>
+            Gets or sets the page width, in characters.
+            </summary>
+            <value>The page width.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.COMPort">
+            <summary>
+            gets or sets the COM Port
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.BaudRate">
+            <summary>
+            gets or sets the Baud Rate of Serial printer 
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.DataBit">
+            <summary>
+            gets or sets the Data bit of the serial printer 
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.ParityType">
+            <summary>
+            gets or sets the Parity of the serial printer 
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.StopBit">
+            <summary>
+            gets or sets the Stop bit of the serial printer 
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.RetrySending">
+            <summary>
+            Gets or sets the retry sending.
+            </summary>
+            <value>The retry sending.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Printer.PrinterDevice.TimeInterval">
+            <summary>
+            Gets or sets the time interval.
+            </summary>
+            <value>The time interval.</value>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Printer.PrinterFactory">
+            <summary>
+            Creates a new target specific printer, depending 
+            on the execution environment, i.e. Windows or Windows CE.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.ReferenceSample.Service.ReferenceSampleTool">
+            <summary>
+            To get this Tool to run in Runtime, activate ReferenceSampleFeature
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.SDCardBackup.CopyProjectToSDCardFeature.#ctor">
+            <summary>
+            Run time-features should always be active!
+            Default ctor is needed for xml-deserialization  
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.StructuredType.Model.StructuredTypeRootComponent">
+            <summary>
+            RootComponent that describes a scriptable structured type 
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.SNTP.SntpClientRootComponent">
+            <summary>
+            Root component for SNTP Client functionality
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.SNTP.SntpClientRootComponent.UpdateInterval">
+            <summary>
+            Update Interval in minutes
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Symbol.SymbolsZipFileTamperProtection">
+            <summary>
+            Signs and verifies files to avoid tampering
+            after projects have been deployed. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Symbol.SymbolsZipFileTamperProtection.VerifySymbolFile(System.String,System.String)">
+            <summary>
+            Calculates the MD5 hash of the symbolFile and
+            verifies it towards the encrypted key stored on 
+            disk when the project was downloaded from iX Developer.
+            </summary>
+            <param name="symbolFilePath">Path to Symbols.zip</param>
+            <param name="encryptedMd5FilePath">Path to the encrypted MD5.</param>
+            <returns>False if the symbol file is tampered or the encrypted hash key file has been removed.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Symbol.SymbolsZipFileTamperProtection.CreateEncryptedMd5(System.String,System.String)">
+            <summary>
+            Calculates MD5 hash from file and stores the key
+            encrypted in a new file on disk.
+            </summary>
+            <param name="filePath">Path to the file (symbols.zip)</param>
+            <param name="encryptedKeyFilePath">Where to store the encrypted MD5 key</param>
+            <returns>Path to the stored (and encrypted) MD5 hash</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.TimerService.TimerToolCF.#ctor">
+            <summary>
+            Initializes a new instance of the BacklightTool class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.CommandLine.CommandLineTool">
+            <summary>
+            Arguments class
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.SystemTag.SystemTagInfoDuplex">
+            <summary>
+            An extension of SystemTagInfo which adds the abilitiy to listen for value change events from underlying data items.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.DeviceManager.CompositeOutputDevices">
+            <summary>
+            Holds the output buffers. 
+            An object that want to send information to an output device (eg. printer)
+            needs an instance of <see cref="T:CompositeOutputDevices"/>.
+            One buffer for each connected output device is needed.
+            The <see cref="T:CompositeOutputDevices"/> can be connected to each other
+            in a tree structure. The root object handles which output devices that should
+            recieve the output info.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.CompositeOutputDevices.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CompositeOutputDevices"/> class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerServiceCF">
+            <summary>
+            Handles the connection between output devices and buffers. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerServiceCF.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the DeviceManagerServiceCF class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerServiceCF.OutputDevices">
+            <summary>
+            Gets the output devices.
+            </summary>
+            <value>The output devices.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerServiceCF.CreateBuffer(System.String)">
+            <summary>
+            Creates a buffer with a specific size. The size of the buffer is specified
+            by the related OutputDevice object.
+            </summary>
+            <param name="deviceName">Name of the device.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerServiceCF.CreateCompositeOutputDevicesObject">
+            <summary>
+            Creates the CompositeOutputDevices object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerServiceCF.LoadDevices">
+            <summary>
+            Loads the devices from .xml file.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerToolCF">
+            <summary>
+            Handles the connection between output devices and buffers. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerToolCF.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DeviceManagerToolCF"/> class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerToolCF.Init">
+            <summary>
+            Initializes the tool, all services should now have been registered, but the message pump is not up.
+            It's now possible to connect to other services, since they should all have been registered.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.DeviceManagerToolCF.RegisterServices">
+            <summary>
+            All services provided by the tool should be registered here.
+            Register services is called first for every tool, before any of them are being initialized.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.DeviceManager.OutputBuffer">
+            <summary>
+            Holds the output buffer.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.OutputBuffer.#ctor(Neo.ApplicationFramework.Interfaces.IOutputDevice,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OutputBuffer"/> class.
+            </summary>
+            <param name="outputDevice">The output device.</param>
+            <param name="maxBufferSize">Size of the max buffer.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.OutputBuffer.WriteToBuffer(System.String)">
+            <summary>
+            Writes to buffer.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DeviceManager.OutputBuffer.Flush">
+            <summary>
+            Flushes the buffer.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.DeviceManager.OutputDevice.Name">
+            <summary>
+            Gets or sets the name of the device.
+            The name is used in the projectmanager view.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.DeviceManager.OutputDevice.BufferSize">
+            <summary>
+            Gets or sets the size of the buffer.
+            </summary>
+            <value>The size of the buffer.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DriverProperties.DriverPropertiesServiceCF.#ctor">
+            <summary>
+            Initializes a new instance of the DriverPropertiesServiceCF class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.DriverProperties.DriverPropertiesToolCF.#ctor">
+            <summary>
+            Initializes a new instance of the DriverPropertiesTool class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.Email.EmailDevice">
+            <summary>
+            Holds the SMTP client and handles the mail settings, 
+            e.g. reciever, sender etc. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Email.EmailDevice.#ctor">
+            <summary>
+            Initializes a new instance of the EMail class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.FromName">
+            <summary>
+            Gets or sets the name of sender.
+            </summary>
+            <value>The name of the sender.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.FromEmailAddress">
+            <summary>
+            Gets or sets the email address.
+            </summary>
+            <value>The email address.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.SMTPServer">
+            <summary>
+            Gets or sets the name of the SMTP server.
+            </summary>
+            <value>The name of the server.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.Port">
+            <summary>
+            Gets or sets the Port no.
+            </summary>
+            <value>The Port no.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.CodePage">
+            <summary>
+            Gets or sets the Code page.
+            </summary>
+            <value>The Code page.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.UserName">
+            <summary>
+            Gets or sets the user name.
+            </summary>
+            <value>The user.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>The password.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.Subject">
+            <summary>
+            Gets or sets the subject.
+            </summary>
+            <value>The subject.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.Body">
+            <summary>
+            Gets or sets the body.
+            </summary>
+            <value>The body.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.AttachmentPaths">
+            <summary>
+            Gets or sets the attachmentPaths.
+            </summary>
+            <value>The attachmentPaths.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.RetrySending">
+            <summary>
+            Gets or sets the retry sending.
+            </summary>
+            <value>The retry sending.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Tools.Email.EmailDevice.TimeInterval">
+            <summary>
+            Gets or sets the time interval.
+            </summary>
+            <value>The time interval.</value>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.FunctionKey.FunctionKeyManager.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.FunctionKey.FunctionKeyManager.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.FunctionKey.FunctionKeyManager.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Leds.Led.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the Led class.
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Leds.Led.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Leds.Led.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Leds.LedManager.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Leds.LedManager.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Leds.LedManager.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MessageFilter.MessageFilterTool.#ctor">
+            <summary>
+            Initializes a new instance of the FunctionKeyTool class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MessageFilter.MessageFilterTool.Init">
+            <summary>
+            Initializes the tool, all services should now have been registered, but the message pump is not up.
+            It's now possible to connect to other services, since they should all have been registered.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.MessageFilter.MessageFilterTool.RegisterServices">
+            <summary>
+            All services provided by the tool should be registered here.
+            Register services is called first for every tool, before any of them are being initialized.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Scheduler.Scheduler.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Tools.Scheduler.Scheduler.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Scheduler.Scheduler.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Scheduler.SchedulerJob.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SchedulerJob"/> class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.Scheduler.SchedulerJob.Check(System.DateTime)">
+            <summary>
+            Calling this function with current time and the job will check if it's time to activate/deactivate.
+            </summary>
+            <param name="now"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.TrendViewer.TrendDataServiceCF.#ctor(Core.Api.Utilities.ILazy{Core.Api.GlobalReference.IGlobalReferenceService},Core.Api.Utilities.ILazy{Neo.ApplicationFramework.Interfaces.IDateTimeEditService})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Neo.ApplicationFramework.Tools.TrendViewer.TrendDataServiceCF"/> class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Codecs.MediaType">
+            <summary>
+            Represents an internet media-type as defined by RFC 2046.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Codecs.MediaWriterSelector">
+            <summary>
+            Selects the most appropriate media type writer based on the clients preferences. For example, if
+            the browser accepts html we select a writer that can output the result as html.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Pipeline.Contributor.RequestDecoding">
+            <summary>
+            Decodes the content in a request to the type of the ResourceType 
+            (ie the type of the resource associated with the route) and passes this as an argument to the operation. 
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Pipeline.Contributor.ResponseCoder">
+            <summary>
+            Encodes the operation result if any into a response sent back to the client.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Pipeline.IPipelineContributor">
+            <summary>
+            Pipeline contributors contain code that execute on every request. Pipeline Contributors have access to the whole context of the current call, 
+            can halt execution, handle redirections, or render something totally different. Contributors are singleton - so implement them to be stateless.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Pipeline.PipelineBuilder">
+            <summary>
+            Does the job of constructing the request pipeline. The ordering of pipeline contributors
+            is important since these build on the result on their predecessors.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Pipeline.PipelineContinuation">
+            <summary>
+            Instructs the pipeline runner on how to proceed after executing a pipeline contributor.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Pipeline.PipelineRunner">
+            <summary>
+            Pipeline runner executes a pipeline in the order they where received. A contributor
+            may choose to abort, continue or skip directly to rendering by returning a result of
+            PipelineContinuation. Rendering is done by the first pipeline contributor in the provided
+            contributors that implement IRender. 
+            
+            If a contributor throws the response will be set to 500 - Internal server error. To provide
+            a more friendly error message skip ahead to rendering and set the operationresult on the communication
+            context to a instance of OperationResult.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Tools.WebServer.WebFramework.Pipeline.PipelineRunner.ExecutePipeline(Neo.ApplicationFramework.Tools.WebServer.WebFramework.Host.ICommunicationContext)">
+            <summary>
+            Executes the request pipeline that was provided when creating this PipelineRunner. Errors
+            are silenly ignored and the http response is set to 500 - Internal server error.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebFramework.RemObjectsHost.ServerConnectionFactory">
+            <summary>
+            Work-around to make the connection timeout work for the web server since the third party lib InternetPack built for Compact Framework
+            does not propagate the timeout settings from the Server class to the Connection class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Tools.WebServer.WebServerRootComponent">
+            <summary>
+            Root component for WebServer functionality
+            </summary>
+        </member>
+    </members>
+</doc>

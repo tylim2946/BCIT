@@ -1,0 +1,788 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Controls</name>
+    </assembly>
+    <members>
+        <member name="M:Neo.ApplicationFramework.Controls.ActionMenu.ActionMenuControl.TryAdjustPixelFormat(System.Drawing.Bitmap,System.Drawing.Bitmap@)">
+            <summary>
+            During drawing of some images with Resco controls (and maybe others), they seem the get out of synch with the PixelFormat, due to a bug in GDI+ and therefore we need to adjust it to the correct one.
+            This is simply done by calling the GetThumbNailImage. The maneuver will only be performed when running on XP/Vista machines, since they are the only ones having this issue.
+            </summary>
+            <param name="bitmap">The original bitmap that needs adjustment</param>
+            <param name="adjustedBitmap">If adjusted needed this is the new bitmap</param>
+            <returns>True if a new adjusted bitmap has been created, false otherwise</returns>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Controls.Alarm.AlarmEventFilterViewerControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Alarm.AlarmEventFilterViewerControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Alarm.AlarmEventFilterViewerControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.Alarm.AlarmItemViewerPopupFx">
+            <summary>
+            Interaction logic for AlarmItemViewerPopupFx.xaml
+            </summary>
+            <summary>
+            AlarmItemViewerPopupFx
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Alarm.AlarmItemViewerPopupFx.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.AlarmViewerFX">
+            <summary>
+            Interaction logic for AlarmViewerFX.xaml
+            </summary>
+            <summary>
+            AlarmViewerFX
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.AlarmViewerFX.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.AnalogNumericFX">
+            <summary>
+            Interaction logic for AnalogNumericFX.xaml
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.AnimatedLabel.AnimatedLabelHost.MultiLine">
+            <summary>
+            Exists for PropertyGrid editor to support multiline editing in a common way.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.ThirdPartyControlContentHost.ForceStaticConstructor">
+            <summary>
+            This methods only use it to make sure that the static constructor is executed before the subclass' (who calls it) static constructor.
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Controls.Controls.ThirdPartyControlContentHost.MouseEnter">
+            <summary>
+            MouseEnter event is not supported in compact framework.
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Controls.Controls.ThirdPartyControlContentHost.MouseLeave">
+            <summary>
+            MouseLeave event is not supported in compact framework.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.ThirdPartyHost`1.ForceStaticConstructor">
+            <summary>
+            This methods only use it to make sure that the static constructor is executed before the subclass' (who calls it) static constructor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.ThirdPartyHost`1.#ctor">
+            <summary>
+            Initializes a new instance of the ThirdPartyHost class.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Controls.Controls.InactiveForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.InactiveForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.InactiveForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the MainWindow class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.Meter.#ctor">
+            <summary>
+            Initializes a new instance of the Meter class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Controls.RenderableControl.LeftIndicatorMargin">
+            <summary>
+            Property only exists for backward compatibility, i.e. in order to be able to load XAML.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Controls.RenderableControl.RightIndicatorMargin">
+            <summary>
+            Property only exists for backward compatibility, i.e. in order to be able to load XAML.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Controls.RenderableControl.TopIndicatorMargin">
+            <summary>
+            Property only exists for backward compatibility, i.e. in order to be able to load XAML.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Controls.RenderableControl.BottomIndicatorMargin">
+            <summary>
+            Property only exists for backward compatibility, i.e. in order to be able to load XAML.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Controls.Controls.SettingsForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.SettingsForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Controls.SettingsForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.ClassicTrueColor.ClassicTrueColorResourceFinder">
+            <summary>
+            Used for getting correct ResourceDictionary merged into ribbon, depending on ClassicTrueColor feature enabled or not
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Help.WindowHelper.#ctor(Neo.ApplicationFramework.Interfaces.WindowManagement.IWindowService)">
+            <summary>
+            Initializes a new instance of the WindowHelper class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Layout.LayoutObjectAdapter.#ctor(System.Windows.FrameworkElement)">
+            <summary>
+            Initializes a new instance of the LayoutObjectAdapter class.
+            </summary>
+            <param name="element">Element to layout.</param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Layout.LayoutObjectAdapter.AllowChangingBoundProperties">
+            <summary>
+            When true, we don't check if properties are bound. This speeds up performance 
+            for grouped objects and also makes the grouped objects resize correctly.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Layout.LayoutObjectAdapter.ResizeWhenNotTransformed(System.Double,System.Double,Neo.ApplicationFramework.Controls.Layout.Corner)">
+            <summary>
+            This method is optimized for a faster resize when element has no transformation.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Layout.LayoutObjectAdapter.ResizeWhenTransformed(System.Double,System.Double,Neo.ApplicationFramework.Controls.Layout.Corner)">
+            <summary>
+            This method handles resizing when element contains a transformation. It takes more 
+            time since it lets WPF calulate the position we end up in after the resize, in order 
+            to perform any compensatation, by using the UpdateLayout method.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Layout.LayoutObjectAdapter.SetActualSize">
+            <summary>
+            Needed for autosized controls that otherwise has Height and Width determined by the mousecursor
+            on the adorner or tool, and not by logic inside the control.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Layout.LayoutObjectAdapterLine.#ctor(System.Windows.Shapes.Line)">
+            <summary>
+            Initializes a new instance of the LayoutObjectAdapterLine class.
+            </summary>
+            <param name="line">The line to layout.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Layout.LayoutObjectAdapterPolyline.#ctor(System.Windows.Shapes.Polyline)">
+            <summary>
+            Initializes a new instance of the LayoutObjectAdapterPolyline class.
+            </summary>
+            <param name="polyline">The polyline to layout.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Layout.LayoutObjectAdapterPolyline.Normalize(System.Windows.Shapes.Polyline)">
+            <summary>
+            Normalizes the polyline, i.e. the point located at x-min is set to zero, 
+            the same goes for the point at y-min. Every other point is offseted by 
+            subtracting x-min and y-min. The polyline is then positioned to x-min and 
+            y-min by setting Canvas.Left and Canvas.Top.
+            Doing this makes the adorner position itself at the correct location with 
+            the correct size.
+            </summary>
+            <param name="polyline">The polyline to normalize.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Logic.FontSizeCalculationHelper.CalculateFontSize(System.Windows.Controls.Control,System.Double)">
+            <summary>
+            Calculate a suitable font size based on a Control object, its font properties and the height available to display text.
+            </summary>
+            <param name="control">The control for which a font size will be calculated. Properties such as FontFamily and Padding
+            will be used in the calculation.</param>
+            <param name="availableHeight">The height available. The font size will not be affected by the width.</param>
+            <returns>A suitable font size.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Logic.FontSizeCalculationHelper.CalculateFontSize(System.Windows.Controls.Control,System.String,System.Double)">
+            <summary>
+            Calculate a suitable font size based on a Control object, its font properties and the height available to display text.
+            </summary>
+            <param name="control">The control for which a font size will be calculated. Properties such as FontFamily and Padding
+            will be used in the calculation.</param>
+            <param name="text">The text used for font calculation.</param>
+            <param name="availableHeight">The height available. The font size will not be affected by the width.</param>
+            <returns>A suitable font size.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Logic.TextHelper.#ctor(Neo.ApplicationFramework.Interfaces.ITextItem)">
+            <summary>
+            Initializes a new instance of the TextHelper class.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Controls.PdfViewer.PdfViewerDesign.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.PdfViewer.PdfViewerDesign.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.PdfViewer.PdfViewerDesign.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Controls.PdfViewer.PdfViewerError.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.PdfViewer.PdfViewerError.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.PdfViewer.PdfViewerError.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.PropertyAdapters.Appearance.AppearanceAdapterService.GetAdapter(System.Object)">
+            <summary>
+            Find an instance of our self and return the adapter.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.Screen.ScreenWindowStyle">
+            <summary>
+            ScreenWindowStyle
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Screen.ScreenWindowStyle.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Screen.ScreenWindow.ChangeScreenAsynchronous(System.Action)">
+            <summary>
+            Called asynchronous in order for objects on closing screen
+            to be able to complete their call stack before being disposed.
+            </summary>
+            <param name="screenAction">Action to perform in order to change screen.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Screen.ScreenWindow.Close">
+            <summary>
+            Closes the screen, if not the last one, and shows the previous screen, if any.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Screen.ScreenWindow.ApplyLanguageIfNecessary">
+            <summary>
+            This code was added and called in ShowScreen in order to fix
+            situations where multi actions containing screen jumps as well as SetLanguage (both explicit action and tag induced language change)
+            causes screens to be partially updated.
+            Since a lot of code is asynchronous and since the design of ScreenManager is only partially responsible of a screen
+            this ugly fix was done.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Script.AlarmViewerAdapter.#ctor">
+            <summary>
+            Initializes a new instance of the AlarmViewerAdapter class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Script.AnalogNumericAdapter.Value">
+            <summary>
+            Gets or sets value of AnalogNumeric
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Controls.Script.ScreenWindowAdapter.Closing">
+            <summary>
+            Cancel of closing a screen is only valid on popup screens
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.RescoHostCFContentHost.ForceStaticConstructor">
+            <summary>
+            This methods only use it to make sure that the static constructor is executed before the subclass' (who calls it) static constructor.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.ReferenceEnforcer.ControlsReferenceEnforcer">
+            <summary>
+            When refering an assembly in xaml, no assembly manifest dependency is genererated 
+            TransferClientToolsIde does exactly this by using style imports of ButtonStyle.xaml 
+            The export-routine uses assembly manifest in order to find out which files are disitributed. 
+            By calling this method an assembly manifest reference is aquired. 
+            Better than hardcoded text strings even though it would be better to be able to solve the problem at its root (opinion)
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.Symbol.SymbolPickerStateAttribute">
+            <summary>
+            Attribute placed on screen objects that configure the options available in the symbol picker.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Symbol.SymbolPickerStateAttribute.IsSupportingComponentLibrary">
+            <summary>
+            Gets or sets a value indicating whether screen object supports symbols in the Component Library.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Symbol.SymbolPickerStateAttribute.IsSupportingBrowseFile">
+            <summary>
+            Gets or sets a value indicating whether screen object supports symbols originating from browsed files.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Symbol.SymbolPickerStateAttribute.IsSupportingClearSymbol">
+            <summary>
+            Gets or sets a value indicating whether screen object supports clearing symbol.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Symbol.SymbolPickerStateAttribute.IsSupportingProjectPictures">
+            <summary>
+            Gets or sets a value indicating whether screen object supports symbols from Project Pictures.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Symbol.SymbolViewbox.Fill">
+            <summary>
+            Hardcoded rule for Brush category and name configures this property in the property grid
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Symbol.SymbolViewbox.Stroke">
+            <summary>
+            Hardcoded rule for Brush category and name configures this property in the property grid
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Symbol.SymbolViewbox.StrokeThickness">
+            <summary>
+            PropertyApppearance.xml-based category and name rule for StrokeThickness configures this property in the property grid
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Symbol.SymbolViewbox.SymbolColor">
+            <summary>
+            This property should be removed in the future since 
+            Fill replaces it! 
+            In order to do this a large number of lib:s must be converted,
+            also projects containing these components needs to be converted
+            or XamlParseExceptions will occur.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.TagMonitor.TagMonitorFX">
+            <summary>
+            TagMonitorFX
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.TagMonitor.TagMonitorFX.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Trend.TrendViewer.#ctor">
+            <summary>
+            Initializes a new instance of the TrendViewer class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Trend.TrendViewer.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the TrendViewer class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Trend.TrendViewer.ShowLegend(System.Int32,System.Int32)">
+            <summary>
+            Allows scripting with position.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Trend.TrendViewerCanvas.RemoveCurves(System.Collections.ObjectModel.Collection{Neo.ApplicationFramework.Interfaces.ICurve})">
+            <summary>
+            Removes all curves that are not in list.
+            </summary>
+            <param name="curves">Curves to keep.</param>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Controls.Trend.Curve.ValueProperty">
+            <summary>
+            Only exists for binding in design time, in order to be detected by cross reference.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Trend.Curve.#ctor(Core.Api.Utilities.ILazy{Core.Api.GlobalReference.IGlobalReferenceService})">
+            <summary>
+            Initializes a new instance of the Curve class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Trend.Curve.Value">
+            <summary>
+            Only exists for binding in design time, in order to be detected by cross reference.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.AuditTrail.AuditTrailViewer">
+            <summary>
+            AuditTrailViewer
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.AuditTrail.AuditTrailViewer.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Button.#ctor">
+            <summary>
+            Initializes a new instance of the Button class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Button.ImageSize">
+            <summary>
+            Only exists for backward compatibility.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Button.ForceStateUpdate">
+            <summary>
+            Performing a temporary parent change, together with Refresh, is yet the only known way to force the rendering when not loaded.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Button.MakeAnyXamlContentAppear">
+            <summary>
+            Needed to make any XAML content appear the first time a symbol is set as that.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.DatabaseViewerFX">
+            <summary>
+            DatabaseViewerFX
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.DatabaseViewerFX.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Group.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing">
+            <c>true</c> to release both managed and unmanaged resources; <c>false</c> to release
+            only unmanaged resources.
+            </param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Group.System#IDisposable#Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting
+            unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Label.#ctor">
+            <summary>
+            Initializes a new instance of the Label class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.ConceptualPanel">
+            <summary>
+            This panel maintains a collection of conceptual children that are neither logical
+            children nor visual children of the panel.  This allows those visuals to be connected 
+            to other parts of the UI, if necessary, or even to remain disconnected. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.ConceptualPanel.OnChildrenCollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            For simplicity, this class will listen to change notifications on the DisconnectedUIElementCollection
+            and provide them to descendants through the OnChildAdded and OnChildRemoved members.  
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.#ctor(System.Windows.UIElement)">
+            <summary>
+            This collection can be used by a panel to maintain a collection of child elements 
+            that are *not* connected to their owner as visual children or logical children.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.Add(System.Windows.UIElement)">
+            <summary>
+            Adds the element to the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.Clear">
+            <summary>
+            Removes all elements from the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.Contains(System.Windows.UIElement)">
+            <summary>
+            Determines whether an element is in the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the collection into the Array
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.CopyTo(System.Windows.UIElement[],System.Int32)">
+            <summary>
+            Strongly typed version of CopyTo
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.Count">
+            <summary>
+            Gets the number of elements in the collection.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that can iterate through the collection.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.IndexOf(System.Windows.UIElement)">
+            <summary>
+            Returns the index of the element in the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.Insert(System.Int32,System.Windows.UIElement)">
+            <summary>
+            Inserts an element into the DisconnectedUIElementCollection at the specified index
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.Remove(System.Windows.UIElement)">
+            <summary>
+            Removes the specified element from the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes the element at the specified index from the DisconnectedUIElementCollection 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.RemoveRange(System.Int32,System.Int32)">
+            <summary>
+            Removes the specified number of elements starting at the specified index from the DisconnectedUIElementCollection
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.Initialize">
+            <summary>
+            The Initialize method is simply exposed as an accessible member that can
+            be called from the ConceptualPanel's Loaded event.  Accessing this member 
+            via the Children property will implicitly cause CreateUIElementCollection
+            to be called to create the disconnected collection.  This method exists
+            because simple access of a property like Count might be optimized away by 
+            an aggressive compiler.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.VerifyWriteAccess">
+            <summary>
+            If the owner is an items host, we need to enforce the rule that elements
+            cannot be explicitly added to the disconnected collection.  However, it is still
+            possible to modify the visual or logical "connected" children of a ConceptualPanel 
+            while it is an items host by simply calling the AddVisualChild, RemoveVisualChild, 
+            AddLogicalChild, or RemoveLogicalChild methods.  Logic within ConceptualPanel
+            ensures that any visual children added in this manner will be returned within 
+            a GetVisualChild() enumeration.
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.DisconnectedUIElementCollection.CollectionChanged">
+            <summary>
+            Since the owner of the collection is not the parent of the elements, it needs
+            a mechanism by which to monitor its collection of child visuals.
+            This class provides such notifications via INotifyCollectionChanged.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.LogicalPanel">
+            <summary>
+            This panel extends ConceptualPanel by ensuring that its conceptual children are also "logical" children.  
+            Because certain things like property inheritance and resource resolution work through the logical
+            tree, this allows the disconnected visuals to be connected to the panel's ancestor tree
+            in a logical manner without being part of it's visual tree. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.LogicalPanel.OnLogicalChildrenChanged(System.Windows.UIElement,System.Windows.UIElement)">
+            <summary>
+            This class uses the OnLogicalChildrenChanged method to provide notification to descendants 
+            when its logical children change.  Note that this is intentionally
+            similar to the OnVisualChildrenChanged approach supported by all visuals.
+            </summary>
+            <param name="childAdded"></param>
+            <param name="childRemoved"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.#ctor">
+            <summary>
+            Initialises the Viewport3D by loading it as a component, and then adds the
+            Viewport3D to a 3dTools <see cref="T:_3DTools.TrackballDecorator">TrackballDecorator</see>
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.GetIndexForViewableWindowModelVisual(System.Int32)">
+            <summary>
+            Returns an index into the collection of children elements 
+            to as a VisualBrush
+            on one of the visible GeometryModel3D models
+            </summary>
+            <param name="index">Index of child element to get</param>
+            <returns>the corrected index (caters for wrapping to start 
+            of children)</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.GetWrapValue(System.Int32)">
+            <summary>
+            Returns an index into the collection of children elements 
+            to as a VisualBrush
+            on one of the visible GeometryModel3D models
+            </summary>
+            <param name="index">Index of child element to get</param>
+            <returns>the corrected index (caters for wrapping to start 
+            of children)</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.SetModelWithNewVisual(System.Int32,System.Windows.UIElement)">
+            <summary>
+            Updates one of the contained GeometryModel3D models
+            based on the input parameters
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.CreateBrush(System.Windows.Media.Visual)">
+            <summary>
+            Either creates a standard VisualBrush of the visual using the opacity
+            provided, or in the case where the UseReflections DP is set true, will
+            create a reflective Visual Brush of the visual
+            </summary>
+            <param name="visual">The visual to create the VisualBrush for</param>
+            <returns>A VisualBrush of the visual</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.CreateMesh">
+            <summary>
+            Creates a mesh to be used with a ModelVisual3D
+            </summary>
+            <returns>The Point3D[] array representing the Mesh</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.BuildModel(System.Windows.Media.Visual,System.Double)">
+            <summary>
+            Creates a new ModelVisual3D based on the input parameters
+            </summary>
+            <param name="visual"></param>
+            <param name="angle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            Required as we are dealing with a specialized Panel, so we need to
+            tell WPF layout system what to do
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.MeasureOverride(System.Windows.Size)">
+            <summary>
+            Required as we are dealing with a specialized Panel, so we need to
+            tell WPF layout system what to do
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.NavigationControls.Carousel.Panel3D.OnChildAdded(System.Windows.UIElement)">
+            <summary>
+            Creates a ModelVisual3D for each child added. Though these are never
+            actual children they are conceptual thanks to Dr WPFs excellent article
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Shapes.Arc.#ctor">
+            <summary>
+            Initializes a new instance of the Arc class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.Shapes.TickText.#ctor">
+            <summary>
+            Initializes a new instance of the Tick class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.TextBox.#cctor">
+            <summary>
+            Initializes the TextBox type.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.TextBox.ReadOnly">
+            <summary>
+            Only exists for backward compatibility.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.TextBoxBase.UndoTransparentBackgroundColor">
+            <summary>
+            Only exists for backward compatibility.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Controls.TextBoxBase.UndoTransparentBorderColor">
+            <summary>
+            Only exists for backward compatibility.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Controls.themes.DialogStyle">
+            <summary>
+            DialogStyle
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.themes.DialogStyle.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Controls.WebBrowser.WebBrowserControl.#ctor">
+            <summary>
+            Initializes a new instance of the Browser class.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

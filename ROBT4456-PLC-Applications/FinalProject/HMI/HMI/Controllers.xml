@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ArrayOfControllerInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ControllerInfo>
+    <Name>Controller1</Name>
+  </ControllerInfo>
+</ArrayOfControllerInfo>

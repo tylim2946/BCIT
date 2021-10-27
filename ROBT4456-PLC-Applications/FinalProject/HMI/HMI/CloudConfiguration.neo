@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.44.53.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Smith.IXExtension.CloudConfigurationCF.CloudConfiguration, Smith.IXExtension.CloudConfigurationCF, Version=1.0.16.0, Culture=neutral, PublicKeyToken=null" NamespaceId="00000000-0000-0000-0000-000000000000" Name="CloudConfiguration" d1p1:Site.Name="CloudConfiguration">
+    <Uris d1p1:arrayLength="1">
+      <Object d1p1:type="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <InstanceDescriptor DeclaringType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name=".ctor" MemberType="Constructor">
+          <Parameter Name="UriString">
+            <Object d1p1:type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="https://configuration.service.acirroplus.com" />
+          </Parameter>
+          <Parameter Name="UriKind">
+            <Object d1p1:type="System.UriKind, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+              <InstanceDescriptor DeclaringType="System.UriKind, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Absolute" MemberType="Field" />
+            </Object>
+          </Parameter>
+        </InstanceDescriptor>
+      </Object>
+    </Uris>
+  </Object>
+</NeoItem>

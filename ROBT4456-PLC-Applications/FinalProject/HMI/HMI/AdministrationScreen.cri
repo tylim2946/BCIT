@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.44.53.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="AdministrationScreen.Title" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text9" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text8" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text7" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text6" TargetProperty="FontFamily" Source="SEGUISB.TTF" />
+        <Item Target="AdministrationScreen.AnalogNumeric7" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.AnalogNumeric6" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.AnalogNumeric5" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.AnalogNumeric4" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.AnalogNumeric3" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.AnalogNumeric2" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.AnalogNumeric1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.AnalogNumeric" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text5" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text4" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text3" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text1" TargetProperty="FontFamily" Source="SEGUISB.TTF" />
+        <Item Target="AdministrationScreen.Text2" TargetProperty="FontFamily" Source="SEGUISB.TTF" />
+        <Item Target="AdministrationScreen.Text10" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Text11" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="AdministrationScreen.Button6" TargetProperty="FontFamily" Source="ARIAL.TTF" />
+        <Item Target="AdministrationScreen.Button5" TargetProperty="FontFamily" Source="ARIAL.TTF" />
+        <Item Target="AdministrationScreen.Button" TargetProperty="FontFamily" Source="ARIAL.TTF" />
+        <Item Target="AdministrationScreen.Button1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="AdministrationScreen.AnalogNumeric7" TargetProperty="Value" Source="Tags.HMI_SharedData_ServiceTime1" />
+        <Item Target="AdministrationScreen.AnalogNumeric6" TargetProperty="Value" Source="Tags.HMI_SharedData_FloorCall1" />
+        <Item Target="AdministrationScreen.AnalogNumeric5" TargetProperty="Value" Source="Tags.HMI_SharedData_ServiceTime2" />
+        <Item Target="AdministrationScreen.AnalogNumeric4" TargetProperty="Value" Source="Tags.HMI_SharedData_FloorCall2" />
+        <Item Target="AdministrationScreen.AnalogNumeric3" TargetProperty="Value" Source="Tags.HMI_SharedData_ServiceTime3" />
+        <Item Target="AdministrationScreen.AnalogNumeric2" TargetProperty="Value" Source="Tags.HMI_SharedData_FloorCall3" />
+        <Item Target="AdministrationScreen.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_SharedData_ServiceTime4" />
+        <Item Target="AdministrationScreen.AnalogNumeric" TargetProperty="Value" Source="Tags.HMI_SharedData_FloorCall4" />
+        <Item Target="AdministrationScreen.SymbolViewbox7" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_MaintenanceRequiredFloor4" />
+        <Item Target="AdministrationScreen.SymbolViewbox8" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_MaintenanceRequiredFloor3" />
+        <Item Target="AdministrationScreen.SymbolViewbox9" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_MaintenanceRequiredFloor2" />
+        <Item Target="AdministrationScreen.SymbolViewbox10" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_MaintenanceRequiredFloor1" />
+        <Item Target="AdministrationScreen.SymbolViewbox11" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_Fault_Status_201" />
+        <Item Target="AdministrationScreen.SymbolViewbox12" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_Fault_Status_202" />
+        <Item Target="AdministrationScreen.SymbolViewbox13" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_SharedData_Fault_Status_203" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button6" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button5" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_Reset" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_Reset" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen" TargetProperty="Actions" Source="Tags.HMI_Main_CurrentScreen" Event="Opened" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="AdministrationScreen.SymbolViewbox6" Source="AdministrationScreen.m_SymbolViewbox6.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox5" Source="AdministrationScreen.m_SymbolViewbox5.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox4" Source="AdministrationScreen.m_SymbolViewbox4.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox3" Source="AdministrationScreen.m_SymbolViewbox3.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox2" Source="AdministrationScreen.m_SymbolViewbox2.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox" Source="AdministrationScreen.m_SymbolViewbox.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox1" Source="AdministrationScreen.m_SymbolViewbox1.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox7" Source="AdministrationScreen.m_SymbolViewbox7.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox8" Source="AdministrationScreen.m_SymbolViewbox8.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox9" Source="AdministrationScreen.m_SymbolViewbox9.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox10" Source="AdministrationScreen.m_SymbolViewbox10.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox11" Source="AdministrationScreen.m_SymbolViewbox11.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox12" Source="AdministrationScreen.m_SymbolViewbox12.bmp" />
+        <Item Target="AdministrationScreen.SymbolViewbox13" Source="AdministrationScreen.m_SymbolViewbox13.bmp" />
+        <Item Target="AdministrationScreen.Button6" Source="1250273231_Normal.bmp" />
+        <Item Target="AdministrationScreen.Button6" Source="1250273231_Pressed.bmp" />
+        <Item Target="AdministrationScreen.Button6" Source="1250273231_Disabled.bmp" />
+        <Item Target="AdministrationScreen.Button5" Source="1250273231_Normal.bmp" />
+        <Item Target="AdministrationScreen.Button5" Source="1250273231_Pressed.bmp" />
+        <Item Target="AdministrationScreen.Button5" Source="1250273231_Disabled.bmp" />
+        <Item Target="AdministrationScreen.Button" Source="1250273231_Normal.bmp" />
+        <Item Target="AdministrationScreen.Button" Source="1250273231_Pressed.bmp" />
+        <Item Target="AdministrationScreen.Button" Source="1250273231_Disabled.bmp" />
+        <Item Target="AdministrationScreen.Button1" Source="-217453980_Normal.bmp" />
+        <Item Target="AdministrationScreen.Button1" Source="-217453980_Pressed.bmp" />
+        <Item Target="AdministrationScreen.Button1" Source="-217453980_Disabled.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button6" TargetProperty="Actions" Source="FaultDialog" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button5" TargetProperty="Actions" Source="FaultDialog" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button" TargetProperty="Actions" Source="FaultDialog" Event="Click" Action="Show Screen" Param="" />
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>AdministrationScreen</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>62</ObjectsCount>
+          <ScreenName>AdministrationScreen</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button6" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button5" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button" TargetProperty="Actions" Source="Tags.HMI_Fault_ErrorCode" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_Reset" Event="Click" Action="Set Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen.Button1" TargetProperty="Actions" Source="Tags.HMI_Elevator_Reset" Event="Click" Action="Reset Tag" Param="" />
+        <Item xsi:type="ActionItem" Target="AdministrationScreen" TargetProperty="Actions" Source="Tags.HMI_Main_CurrentScreen" Event="Opened" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

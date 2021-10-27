@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.44.53.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.License.LicenseRootComponent, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ProjectPanelName="X2 pro 7" ProjectPanelTypeGroup="X2" ProductFamilyRegistryPath="SOFTWARE\Beijer Electronics AB\iX Developer 2.40 SP4\Install" IsRc="True" d1p1:Site.Name="LicenseRootComponent" ProjectGuid="bf2b7cd7-8b0a-4823-8953-3e5689edf1ec">
+    <PanelHardwareIDs>
+      <KeyValuePair>
+        <Key>
+          <Object d1p1:type="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="BoX2" MemberType="Field" />
+          </Object>
+        </Key>
+        <Value>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.License.PanelHardwareIdList, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <IdList>
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="220" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="221" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="222" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="223" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="224" />
+            </IdList>
+          </Object>
+        </Value>
+      </KeyValuePair>
+      <KeyValuePair>
+        <Key>
+          <Object d1p1:type="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="PC" MemberType="Field" />
+          </Object>
+        </Key>
+        <Value>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.License.PanelHardwareIdList, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <IdList>
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="74" />
+            </IdList>
+          </Object>
+        </Value>
+      </KeyValuePair>
+      <KeyValuePair>
+        <Key>
+          <Object d1p1:type="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="TxF" MemberType="Field" />
+          </Object>
+        </Key>
+        <Value>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.License.PanelHardwareIdList, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <IdList>
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="35" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="35" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="59" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="59" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="65" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="65" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="86" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="86" />
+            </IdList>
+          </Object>
+        </Value>
+      </KeyValuePair>
+      <KeyValuePair>
+        <Key>
+          <Object d1p1:type="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="TxA" MemberType="Field" />
+          </Object>
+        </Key>
+        <Value>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.License.PanelHardwareIdList, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <IdList>
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="23" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="24" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="25" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="32" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="33" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="34" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="37" />
+            </IdList>
+          </Object>
+        </Value>
+      </KeyValuePair>
+      <KeyValuePair>
+        <Key>
+          <Object d1p1:type="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="TxB" MemberType="Field" />
+          </Object>
+        </Key>
+        <Value>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.License.PanelHardwareIdList, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <IdList>
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="26" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="27" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="28" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="38" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="39" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="40" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="41" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="42" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="43" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="47" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="48" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="48" />
+            </IdList>
+          </Object>
+        </Value>
+      </KeyValuePair>
+      <KeyValuePair>
+        <Key>
+          <Object d1p1:type="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="TxC" MemberType="Field" />
+          </Object>
+        </Key>
+        <Value>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.License.PanelHardwareIdList, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <IdList>
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="29" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="30" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="31" />
+            </IdList>
+          </Object>
+        </Value>
+      </KeyValuePair>
+      <KeyValuePair>
+        <Key>
+          <Object d1p1:type="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="QTermAx" MemberType="Field" />
+          </Object>
+        </Key>
+        <Value>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.License.PanelHardwareIdList, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <IdList>
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="18" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="19" />
+            </IdList>
+          </Object>
+        </Value>
+      </KeyValuePair>
+      <KeyValuePair>
+        <Key>
+          <Object d1p1:type="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.PanelTypeGroup, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="X2" MemberType="Field" />
+          </Object>
+        </Key>
+        <Value>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.License.PanelHardwareIdList, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <IdList>
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="78" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="79" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="80" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="128" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="129" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="131" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="132" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="134" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="135" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="137" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="138" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="140" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="141" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="143" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="144" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="148" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="149" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="150" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="151" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="152" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="153" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="154" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="155" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="157" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="180" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="181" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="182" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="184" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="185" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="187" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="188" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="189" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="190" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="192" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="193" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="195" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="196" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="197" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="199" />
+              <Object d1p1:type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="200" />
+            </IdList>
+          </Object>
+        </Value>
+      </KeyValuePair>
+    </PanelHardwareIDs>
+  </Object>
+</NeoItem>

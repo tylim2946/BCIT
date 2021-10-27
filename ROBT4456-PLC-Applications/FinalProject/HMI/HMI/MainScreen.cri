@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.44.53.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="MainScreen.Bar_Status.Time" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="MainScreen.Bar_Status.User.Text2" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="MainScreen.Bar_Status.Status.Text1" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+        <Item Target="MainScreen.Bar_Menu.Menu_Overview.Button_Overview" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MainScreen.Bar_Menu.Menu_Diagnostics.Button_Diagnostics" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MainScreen.Bar_Menu.Menu_Admin.Button_Admin" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MainScreen.Bar_Menu.Menu_LogIn.Button_LogIn" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MainScreen.Bar_Menu.Menu_Settings.Button_Settings" TargetProperty="FontFamily" Source="TAHOMA.TTF" />
+        <Item Target="MainScreen.Bar_Status.Text" TargetProperty="FontFamily" Source="SEGOEUI.TTF" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="MainScreen.Bar_Status.Time" TargetProperty="Text" Source="Tags.SystemTagDateTime" />
+        <Item Target="MainScreen.Bar_Status.User.Text2" TargetProperty="Text" Source="Tags.SystemTagCurrentUser" />
+        <Item Target="MainScreen.Bar_Status.Status.Text1" TargetProperty="Text" Source="Tags.HMI_Main_Status" />
+        <Item Target="MainScreen.Bar_Status.Status.Ellipse" TargetProperty="Fill" Source="Tags.HMI_Main_Status" />
+        <Item Target="MainScreen.Bar_Menu.Menu_Overview.Box_Overview" TargetProperty="Fill" Source="Tags.HMI_Main_CurrentScreen" />
+        <Item xsi:type="ActionItem" Target="MainScreen.Bar_Menu.Menu_Overview.Button_Overview" TargetProperty="Actions" Source="Tags.HMI_Main_CurrentScreen" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="MainScreen.Bar_Menu.Menu_Diagnostics.Box_Diagnostics" TargetProperty="Fill" Source="Tags.HMI_Main_CurrentScreen" />
+        <Item xsi:type="ActionItem" Target="MainScreen.Bar_Menu.Menu_Diagnostics.Button_Diagnostics" TargetProperty="Actions" Source="Tags.HMI_Main_CurrentScreen" Event="Click" Action="Set Analog" Param="" />
+        <Item Target="MainScreen.Bar_Menu.Menu_Admin.Box_Admin" TargetProperty="Fill" Source="Tags.HMI_Main_CurrentScreen" />
+        <Item Target="MainScreen.Bar_Status.Text" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Main_Status" />
+        <Item Target="MainScreen.Bar_Menu.Menu_Admin.Rectangle" TargetProperty="BlinkProperties.VisibleDynamicsValue" Source="Tags.HMI_Main_Status" />
+      </Items>
+    </Category>
+    <Category Name="IntegratorSwapActiveProjectAction">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="MainScreen.Bar_Menu.Menu_Overview.Button_Overview" TargetProperty="Actions" Source="OverviewScreen" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="MainScreen.Bar_Menu.Menu_Diagnostics.Button_Diagnostics" TargetProperty="Actions" Source="DiagnosticsScreen" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="MainScreen.Bar_Menu.Menu_Admin.Button_Admin" TargetProperty="Actions" Source="AdministrationScreen" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>MainScreen</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>19</ObjectsCount>
+          <ScreenName>MainScreen</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items>
+        <Item xsi:type="ActionItem" Target="MainScreen.Bar_Menu.Menu_Overview.Button_Overview" TargetProperty="Actions" Source="Tags.HMI_Main_CurrentScreen" Event="Click" Action="Set Analog" Param="" />
+        <Item xsi:type="ActionItem" Target="MainScreen.Bar_Menu.Menu_Diagnostics.Button_Diagnostics" TargetProperty="Actions" Source="Tags.HMI_Main_CurrentScreen" Event="Click" Action="Set Analog" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="MainScreen.Bar_Status.User.Picture5" Source="ic_profile" Width="18" Height="18" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="MainScreen.Bar_Menu.Menu_Overview.Button_Overview" Source="ic_overview (2)" Width="39" Height="34" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="MainScreen.Bar_Menu.Menu_Diagnostics.Button_Diagnostics" Source="ic_diagnostics" Width="32" Height="32" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="MainScreen.Bar_Menu.Menu_Admin.Button_Admin" Source="ic_administration" Width="28" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="MainScreen.Bar_Menu.Menu_LogIn.Button_LogIn" Source="ic_login" Width="29" Height="31" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="MainScreen.Bar_Menu.Menu_Settings.Button_Settings" Source="ic_settings" Width="32" Height="32" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextLibrary">
+      <Items>
+        <Item xsi:type="TextLibraryItem" Target="MainScreen.Bar_Status.Status.Text1" TargetProperty="Text" Source="StatusBar_Status" />
+      </Items>
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

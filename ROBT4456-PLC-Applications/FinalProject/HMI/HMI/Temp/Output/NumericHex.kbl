@@ -1,0 +1,153 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:customCtrl="clr-namespace:OnScreenKeyboardLayouts"
+    x:Class="OnScreenKeyboardLayouts.OnScreenKeyboardLayout"
+	SipClassId="42429667-ae04-11d0-a4f8-00aa00a749b9"
+    Title="Layout" SizeToContent="WidthAndHeight" IsNumeric="True" xmlns:d="http://schemas.microsoft.com/expression/blend/2006" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" ResizeMode="NoResize">
+    <StackPanel Background="#FF000000">
+        <customCtrl:KeyboardLayout Width="210" Height="210" Visibility="Collapsed" Background="#FFF0F0F0" ButtonBackground="#FFFFFFFF" ButtonDownBackground="#FF0D2CFA" ButtonDownBorderBrush="#FF000000" ButtonDownForeground="#FFFFFFFF" ButtonBorderBrush="#FF0B27DE" ButtonForeground="#FF000000" x:Name="Numeric">
+            <Grid Height="Auto" Visibility="Visible" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <customCtrl:KeyboardButton Content="7" Grid.Row="0" Grid.Column="0" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="7" CapsLockChar="7" NormalChar="7" PageIndex="0" ShiftChar="7" VK_Value="0x67" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="8" Grid.Row="0" Grid.Column="1" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="8" CapsLockChar="8" NormalChar="8" PageIndex="0" ShiftChar="8" VK_Value="0x68" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="9" Grid.Row="0" Grid.Column="2" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="9" CapsLockChar="9" NormalChar="9" PageIndex="0" ShiftChar="9" VK_Value="0x69" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="A" Grid.Row="0" Grid.Column="3" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent NormalChar="A" VK_Value="0x41" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="Esc" ButtonType="System" Grid.Row="0" Grid.Column="4">
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="Esc" CapsLockChar="Esc" NormalChar="Esc" PageIndex="0" ShiftChar="Esc" VK_Value="0x1B" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+
+                <customCtrl:KeyboardButton Content="4" Grid.Row="1" Grid.Column="0" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="4" CapsLockChar="4" NormalChar="4" PageIndex="0" ShiftChar="4" VK_Value="0x64" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="5" Grid.Row="1" Grid.Column="1" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="5" CapsLockChar="5" NormalChar="5" PageIndex="0" ShiftChar="5" VK_Value="0x65" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="6" Grid.Row="1" Grid.Column="2" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="6" CapsLockChar="6" NormalChar="6" PageIndex="0" ShiftChar="6" VK_Value="0x66" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="B" Grid.Row="1" Grid.Column="3" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent NormalChar="B" VK_Value="0x42" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="Back" ButtonType="System" Grid.Column="4" Grid.Row="1" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="0x2190" CapsLockChar="0x2190" NormalChar="0x2190" PageIndex="0" ShiftChar="0x2190" VK_Value="0x08" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+
+                <customCtrl:KeyboardButton Content="1" Grid.Row="2" Grid.Column="0" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="1" CapsLockChar="1" NormalChar="1" PageIndex="0" ShiftChar="1" VK_Value="0x61" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="2" Grid.Row="2" Grid.Column="1" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="2" CapsLockChar="2" NormalChar="2" PageIndex="0" ShiftChar="2" VK_Value="0x62" />
+                        <customCtrl:PageContent AltGrChar="0x2193" CapsLockChar="0x2193" NormalChar="0x2193" PageIndex="1" ShiftChar="0x2193" VK_Value="0x28" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="3" Grid.Row="2" Grid.Column="2" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="3" CapsLockChar="3" NormalChar="3" PageIndex="0" ShiftChar="3" VK_Value="0x63" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="C" Grid.Row="2" Grid.Column="3" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent NormalChar="C" VK_Value="0x43" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+
+                <customCtrl:KeyboardButton Content="-" Grid.Row="3" Grid.Column="0" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="-" CapsLockChar="-" NormalChar="-" PageIndex="0" ShiftChar="-" VK_Value="0x6D" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="0" Grid.Row="3" Grid.Column="1">
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="0" CapsLockChar="0" NormalChar="0" PageIndex="0" ShiftChar="0" VK_Value="0x60" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="," Grid.Row="3" Grid.Column="2" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="," CapsLockChar="," NormalChar="," PageIndex="0" ShiftChar="," VK_Value="0x6E" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="D" Grid.Row="3" Grid.Column="3" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent NormalChar="D" VK_Value="0x44" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="Del" Grid.Row="2" Grid.Column="4" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="Del" CapsLockChar="Del" NormalChar="Del" PageIndex="0" ShiftChar="Del" VK_Value="0x2E" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+
+                <customCtrl:KeyboardButton Content="Left" Grid.Row="4" Grid.Column="0" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="0x2190" CapsLockChar="0x2190" NormalChar="0x2190" PageIndex="0" ShiftChar="0x2190" VK_Value="0x25" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="Right" Grid.Row="4" Grid.Column="1" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="0x2192" CapsLockChar="0x2192" NormalChar="0x2192" PageIndex="0" ShiftChar="0x2192" VK_Value="0x27" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="E" Grid.Row="4" Grid.Column="2" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent NormalChar="E" VK_Value="0x45" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="F" Grid.Row="4" Grid.Column="3" >
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent NormalChar="F" VK_Value="0x46" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+                <customCtrl:KeyboardButton Content="Ent" Grid.Row="4" Grid.Column="4" ButtonType="System">
+                    <customCtrl:KeyboardButton.PageContent>
+                        <customCtrl:PageContent AltGrChar="Ent" CapsLockChar="Ent" NormalChar="Ent" PageIndex="0" ShiftChar="Ent" VK_Value="0x0D" />
+                    </customCtrl:KeyboardButton.PageContent>
+                </customCtrl:KeyboardButton>
+            </Grid>
+        </customCtrl:KeyboardLayout>
+    </StackPanel>
+</Window>

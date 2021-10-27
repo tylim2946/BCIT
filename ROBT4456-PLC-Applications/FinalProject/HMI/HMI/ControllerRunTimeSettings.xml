@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Controller Name="Controller1" IsActive="true" Node="" ServerName="Beijer.InprocessNeo.1" Driver="BEControlLogix_PRE2.CLX_PRE2.1" Url="" DataSourceType="DataSourceOpcClassicInprocess" />
+</Configuration>

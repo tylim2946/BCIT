@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AlarmSettings>
+  <AlarmClients />
+  <AlarmServer ServerMode="Local" ServerPort="1000" MaximumAlarmEvents="100" />
+</AlarmSettings>

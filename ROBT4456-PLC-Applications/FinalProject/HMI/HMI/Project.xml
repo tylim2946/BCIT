@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project SchemaVersion="2.44.53.0" ProjectRevision="151">
+  <Guid>bf2b7cd7-8b0a-4823-8953-3e5689edf1ec</Guid>
+  <ProjectFiles>
+    <ProjectFile Name="ProjectImages.neo" ModifiedDate="2021-05-08T18:13:28.923-07:00" Length="454" />
+    <ProjectFile Name="Symbols\door-close.png" ModifiedDate="2021-05-08T10:22:34.063-07:00" Length="1678" />
+    <ProjectFile Name="Symbols\zoom in.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="7296" />
+    <ProjectFile Name="Symbols\help.png" ModifiedDate="2019-10-04T10:29:22-07:00" Length="7337" />
+    <ProjectFile Name="Symbols\play.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="3747" />
+    <ProjectFile Name="Symbols\ic_overview (2).png" ModifiedDate="2021-05-06T13:30:34.98-07:00" Length="498" />
+    <ProjectFile Name="Symbols\zoom out.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="7084" />
+    <ProjectFile Name="Symbols\tags.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="13452" />
+    <ProjectFile Name="Symbols\close.png" ModifiedDate="2019-10-04T10:29:22-07:00" Length="7189" />
+    <ProjectFile Name="Symbols\ic_diagnostics.png" ModifiedDate="2021-05-06T13:28:12.137-07:00" Length="381" />
+    <ProjectFile Name="Symbols\ic_administration.png" ModifiedDate="2021-05-06T13:30:41.827-07:00" Length="335" />
+    <ProjectFile Name="Symbols\last.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="4131" />
+    <ProjectFile Name="Symbols\ic_overview.png" ModifiedDate="2021-05-06T13:15:15.547-07:00" Length="328" />
+    <ProjectFile Name="Symbols\pause.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="3645" />
+    <ProjectFile Name="Symbols\ic_settings.png" ModifiedDate="2021-05-06T13:30:54.543-07:00" Length="911" />
+    <ProjectFile Name="Symbols\ic_overview (1).png" ModifiedDate="2021-05-06T13:24:35.117-07:00" Length="745" />
+    <ProjectFile Name="Symbols\edit user.png" ModifiedDate="2019-10-04T10:29:22-07:00" Length="5419" />
+    <ProjectFile Name="Symbols\untitled.png" ModifiedDate="2021-04-29T16:59:45.717-07:00" Length="1089" />
+    <ProjectFile Name="Symbols\ic_login.png" ModifiedDate="2021-05-06T13:30:47.98-07:00" Length="1018" />
+    <ProjectFile Name="Symbols\pandown.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="4231" />
+    <ProjectFile Name="Symbols\semitransparent_background.png" ModifiedDate="2021-05-06T18:33:53.807-07:00" Length="2661" />
+    <ProjectFile Name="Symbols\close (1).png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="7168" />
+    <ProjectFile Name="Symbols\ic_profile.png" ModifiedDate="2021-05-06T13:39:24.507-07:00" Length="286" />
+    <ProjectFile Name="Symbols\panup.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="4136" />
+    <ProjectFile Name="Symbols\alarm (1).png" ModifiedDate="2019-10-04T10:29:22-07:00" Length="12464" />
+    <ProjectFile Name="Symbols\backward.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="3987" />
+    <ProjectFile Name="Symbols\door-open.png" ModifiedDate="2021-05-08T10:38:32.91-07:00" Length="2459" />
+    <ProjectFile Name="Symbols\trend.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="5796" />
+    <ProjectFile Name="Symbols\forward.png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="4073" />
+    <ProjectFile Name="Symbols\next (1).png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="4019" />
+    <ProjectFile Name="Symbols\previous (1).png" ModifiedDate="2019-10-04T10:29:24-07:00" Length="4078" />
+    <ProjectFile Name="Symbols\warning.gif" ModifiedDate="2019-10-04T10:29:22-07:00" Length="3391" />
+    <ProjectFile Name="Symbols\stop button a.gif" ModifiedDate="2021-05-08T10:53:08.707-07:00" Length="4397" />
+    <ProjectFile Name="Symbols\stop button b.gif" ModifiedDate="2021-05-08T10:53:09.037-07:00" Length="4589" />
+    <ProjectFile Name="Symbols\beijer-electronics1 (1).lib" ModifiedDate="2019-10-04T10:29:24-07:00" Length="9452" />
+    <ProjectFile Name="Symbols\beijer-electronics1.lib" ModifiedDate="2019-10-04T10:29:22-07:00" Length="9452" />
+    <ProjectFile Name="SntpClientRootComponent.neo" ModifiedDate="2021-04-29T15:42:54.73-07:00" Length="515" />
+    <ProjectFile Name="ProjectConfiguration.neo" ModifiedDate="2021-05-06T18:22:07.537-07:00" Length="6419" />
+    <ProjectFile Name="Security.neo" ModifiedDate="2021-05-06T16:33:43.313-07:00" Length="517" />
+    <ProjectFile Name="Security.xml" ModifiedDate="2021-05-06T16:33:43.317-07:00" Length="1010" />
+    <ProjectFile Name="LicenseRootComponent.neo" ModifiedDate="2021-04-29T15:42:59.533-07:00" Length="19393" />
+    <ProjectFile Name="Expressions.neo" ModifiedDate="2021-05-06T17:36:01.853-07:00" Length="457" />
+    <ProjectFile Name="MultipleLanguages.neo" ModifiedDate="2021-05-08T16:23:43.14-07:00" Length="53038" />
+    <ProjectFile Name="Tags.neo" ModifiedDate="2021-05-08T18:17:50.86-07:00" Length="183525" />
+    <ProjectFile Name="AlarmServer.neo" ModifiedDate="2021-04-29T15:42:55.42-07:00" Length="1053" />
+    <ProjectFile Name="CloudConfiguration.neo" ModifiedDate="2021-04-29T15:42:55.48-07:00" Length="1548" />
+    <ProjectFile Name="TextLibrary.neo" ModifiedDate="2021-05-08T16:23:43.65-07:00" Length="8309" />
+    <ProjectFile Name="MainScreen.neoxaml" ModifiedDate="2021-05-08T15:22:47.727-07:00" Length="799" />
+    <ProjectFile Name="MainScreen.Script.cs" ModifiedDate="2021-05-08T15:22:47.733-07:00" Length="867" />
+    <ProjectFile Name="MainScreen.xaml" ModifiedDate="2021-05-08T15:22:47.823-07:00" Length="36990" />
+    <ProjectFile Name="DiagnosticsScreen.neoxaml" ModifiedDate="2021-05-08T18:17:51.023-07:00" Length="806" />
+    <ProjectFile Name="DiagnosticsScreen.xaml" ModifiedDate="2021-05-08T18:17:51.297-07:00" Length="120456" />
+    <ProjectFile Name="FaultDialog.neoxaml" ModifiedDate="2021-05-08T19:02:59.84-07:00" Length="800" />
+    <ProjectFile Name="FaultDialog.xaml" ModifiedDate="2021-05-08T19:03:00.143-07:00" Length="7971" />
+    <ProjectFile Name="OverviewScreen.neoxaml" ModifiedDate="2021-05-08T19:11:57.523-07:00" Length="803" />
+    <ProjectFile Name="OverviewScreen.Script.cs" ModifiedDate="2021-05-08T19:11:57.53-07:00" Length="789" />
+    <ProjectFile Name="OverviewScreen.xaml" ModifiedDate="2021-05-08T19:11:57.803-07:00" Length="143117" />
+    <ProjectFile Name="AdministrationScreen.neoxaml" ModifiedDate="2021-05-08T18:17:52.023-07:00" Length="809" />
+    <ProjectFile Name="AdministrationScreen.xaml" ModifiedDate="2021-05-08T18:17:52.303-07:00" Length="131932" />
+    <ProjectFile Name="StartScreen.neoxaml" ModifiedDate="2021-05-06T18:10:34.13-07:00" Length="800" />
+    <ProjectFile Name="StartScreen.xaml" ModifiedDate="2021-05-06T18:10:34.163-07:00" Length="5556" />
+    <ProjectFile Name="Printer1.xml" ModifiedDate="2021-04-29T15:42:56.03-07:00" Length="850" />
+    <ProjectFile Name="Controller1.neo" ModifiedDate="2021-05-08T18:17:53.167-07:00" Length="14026" />
+  </ProjectFiles>
+</Project>

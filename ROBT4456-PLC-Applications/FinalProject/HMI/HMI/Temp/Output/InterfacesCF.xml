@@ -1,0 +1,1931 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterfacesCF</name>
+    </assembly>
+    <members>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ActionAttribute.TargetDeviceDependent">
+            <summary>
+            Gets or sets whether the action is only supported on some targets
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ActionAttribute.SupportedTargets">
+            <summary>
+            Gets or sets the supported targets
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ActionAttribute.KeyPanelIsSupported">
+            <summary>
+            Gets or sets whether the action is supported on key panels
+            Must be set on every action
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ActionAttribute.IsUserTriggered">
+            <summary>
+            Gets or sets if the action can be triggered by the user in the applicaton. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Bindings.IBindingSourceDescriptionProvider.TryGetTypeOfSource(System.Windows.Forms.Binding,System.Type@)">
+            <summary>
+            If the binding has a known data source, return the <see cref="T:System.Type"/> of it's value.
+            </summary>
+            <param name="binding">The binding to analyze.</param>
+            <param name="type">The type of the data source (if the method returns true).</param>
+            <returns>True if a type could be resolved, otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Bindings.IBindingSourceDescriptionProvider.TryGetTypeOfSource(Core.Controls.Api.Bindings.DataSources.BindingSourceDescription,Core.Controls.Api.Bindings.DataSources.BindingTargetDescription,System.Type@)">
+            <summary>
+            If the binding has a known data source, return the <see cref="T:System.Type"/> of it's value.
+            </summary>
+            <param name="bindingSourceDescription">Information about the data source to analyze.</param>
+            <param name="bindingTargetDescription">Information about the target.</param>
+            <param name="type">The type of the data source (if the method returns true).</param>
+            <returns>True if a type could be resolved, otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFastLoggingFeatureLogicService.IsFeatureAvailable(System.String,System.Boolean)">
+            <summary>
+            Checks if feature is available
+            </summary>
+            <param name="panelName">if panelName is null, the panel name of the project used</param>
+            <param name="checkStorageSetting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFastLoggingFeatureLogicService.GetMinLogInterval(System.String)">
+            <summary>
+            Gets the minimum Datalogger log interval in seconds
+            </summary>
+            <param name="panelName">if panelName is null, the panel name of the project used</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFastLoggingFeatureLogicService.GetPollGroupMinInterval(System.String)">
+            <summary>
+            Gets the minimum Poll Group interval in milliseconds
+            </summary>
+            <param name="panelName">if panelName is null, the panel name of the project used</param>
+            <returns></returns>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Reporting.IReport.FileName">
+            <summary>
+            Report filename
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReport.Print">
+            <summary>
+            Prints the report
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReport.Save(System.String)">
+            <summary>
+            Saves the report to disk
+            </summary>
+            <param name="destinationPath">The save path for the report</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReport.Save(Neo.ApplicationFramework.Interfaces.FileDirectory)">
+            <summary>
+            Saves the report to disk
+            </summary>
+            <param name="fileDirectory">The save directory for the report</param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Reporting.IReport.Name">
+            <summary>
+            The name of the report
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Reporting.IReport.ReportFormat">
+            <summary>
+            Requested output format of the generated report
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Interfaces.Reporting.IReport.ReportSaved">
+            <summary>
+            Event triggered when report is saved
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Interfaces.Reporting.IReport.ReportPrinted">
+            <summary>
+            Event triggered when report is printed
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Interfaces.Reporting.IReport.ReportGenerationFailed">
+            <summary>
+            Event triggered when report printing or saving fails
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReportHandling.PrintAsync(Neo.ApplicationFramework.Interfaces.Reporting.IReport)">
+            <summary>
+            Prints a Report
+            </summary>
+            <param name="report">The report</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReportHandling.Save(Neo.ApplicationFramework.Interfaces.Reporting.IReport,System.String)">
+            <summary>
+            Saves a Report
+            </summary>
+            <param name="report">The report</param>
+            <param name="destinationPath">The destination folders path</param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Reporting.IReportTemplatePathDetails.TemplateFilename">
+            <summary>
+            The templates file name
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Reporting.IReportTemplatePathDetails.TemplateFilePath">
+            <summary>
+            The full path to the temlate file
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReportTemplatePathDetails.CreateTimeStampedFileName">
+            <summary>
+            Creates a time stamped file name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReportExcelProvider.GenerateAndSave(System.String,System.String)">
+            <summary>
+            Generates and saves the report
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReportExcelProvider.Generate(System.String)">
+            <summary>
+            Generates the report in memory
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReportGenerator.GenerateAndSave(Neo.ApplicationFramework.Interfaces.Reporting.IReport,System.String)">
+            <summary>
+            Saves a generated report
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Reporting.IReportGenerator.Generate(Neo.ApplicationFramework.Interfaces.Reporting.IReport)">
+            <summary>
+            Saves a generated report
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.Storage.DatabaseParams">
+            <summary>
+            Defines the backup files to use when performing a database back up/restore.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Storage.DatabaseParams.MainDatabaseFilepath">
+            <summary>
+            The main database backup file path. The main database will be saved/restored only if this property is defined.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Storage.DatabaseParams.AuditTrailDatabaseFilepath">
+            <summary>
+            The audit trail database backup file path. The audit trail database will be saved only if this property is defined. Restore is not supported.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Storage.DatabaseParams.NonVolatileDatabaseFilepath">
+            <summary>
+            The non-volatile database backup file path. The non-volatile database will be saved/restored only if this property is defined.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Storage.IDatabaseBackupService.BackupDatabases(Neo.ApplicationFramework.Interfaces.Storage.DatabaseParams)">
+            <summary>
+            Back ups the main and non-volatile databases. Overwrites any existing files with the same name.
+            </summary>
+            <param name="backupParams">The object containing information about the databases to back up. Databases with the filepath undefined are ignored.</param>
+            <returns>True if successful, otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Storage.IDatabaseRestoreService.RestoreDatabases(Neo.ApplicationFramework.Interfaces.Storage.DatabaseParams)">
+            <summary>
+            Restores the specified databases. Triggers a restart of the application.
+            </summary>
+            <param name="restoreParams">The object containing information about the databases to restore. Databases with the filepath undefined are ignored.</param>
+            <returns>True if restore scheduled and restart triggered, otherwise false.</returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.Storage.IStorageCacheService">
+            <summary>
+            Creates and caches <see cref="T:Neo.ApplicationFramework.Storage.Common.IStorage"/>s using the <see cref="T:Neo.ApplicationFramework.Storage.Settings.IStorageProviderSettings"/> for the current project.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Storage.IStorageCacheService.GetStorage(System.String)">
+            <summary>
+            Gets a cached <see cref="T:Neo.ApplicationFramework.Storage.Common.IStorage"/> or creates a new <see cref="T:Neo.ApplicationFramework.Storage.Common.IStorage"/>.
+            </summary>
+            <param name="storageName">The name of the <see cref="T:Neo.ApplicationFramework.Storage.Common.IStorage"/>.</param>
+            <returns>An <see cref="T:Neo.ApplicationFramework.Storage.Common.IStorage"/> with the specified name.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Storage.IStorageCacheService.GetDatabaseManagerLegacy(System.String)">
+            <summary>
+            Gets a cached <see cref="T:Neo.ApplicationFramework.Storage.Legacy.IDatabaseManagerLegacy"/> or creates a new <see cref="T:Neo.ApplicationFramework.Storage.Legacy.IDatabaseManagerLegacy"/>.
+            Should not be used, will be removed in the future.
+            </summary>
+            <param name="storageName">The name of the <see cref="T:Neo.ApplicationFramework.Storage.Legacy.IDatabaseManagerLegacy"/>.</param>
+            <returns>An <see cref="T:Neo.ApplicationFramework.Storage.Legacy.IDatabaseManagerLegacy"/> with the specified name.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Storage.IStorageCacheService.RemoveStorage(System.String)">
+            <summary>
+            Removes the <see cref="T:Neo.ApplicationFramework.Storage.Common.IStorage"/> with the provided name from the cache.
+            </summary>
+            <param name="storageName">The name of the <see cref="T:Neo.ApplicationFramework.Storage.Common.IStorage"/>.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Storage.IDatabaseImportExportService.Export(System.String,System.String,Neo.ApplicationFramework.Interfaces.FileDirectory,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+            <summary>
+            Exports a database table into a csv file.
+            </summary>
+            <param name="databaseName">The database name. Without file extension.</param>
+            <param name="tableName">The table name.</param>
+            <param name="csvFileDirectory"></param>
+            <param name="groupName"></param>
+            <param name="fileName"></param>
+            <param name="csvPath"></param>
+            <param name="overwrite"></param>
+            <param name="delimitedWithComma"></param>
+            <param name="showMilliseconds"></param>
+            <param name="sortedColumns"></param>
+            <param name="overwriteOlderFiles">Deletes older exports to make space for new. Rotates between 900 exports.</param>
+            <param name="groupByDate">Exported files are grouped by date in a folder.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Storage.IDatabaseImportExportService.Export(System.String,System.String,Neo.ApplicationFramework.Interfaces.FileDirectory,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Exports a database table into a csv file.
+            </summary>
+            <param name="databaseName">The database name. Without file extension.</param>
+            <param name="tableName">The table name.</param>
+            <param name="csvFileDirectory"></param>
+            <param name="groupName"></param>
+            <param name="fileName"></param>
+            <param name="csvPath"></param>
+            <param name="overwrite"></param>
+            <param name="delimitedWithComma"></param>
+            <param name="showMilliseconds"></param>
+            <param name="overwriteOlderFiles">Deletes older exports to make space for new. Rotates between 900 exports.</param>
+            <param name="groupByDate">Exported files are grouped by date in a folder.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Storage.IDatabaseImportExportService.Export(System.String,System.String,Neo.ApplicationFramework.Interfaces.FileDirectory,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Obsolete. Exports a database table into a csv file.
+            </summary>
+            <param name="databaseName">The database name. Without file extension.</param>
+            <param name="tableName">The table name.</param>
+            <param name="csvFileDirectory"></param>
+            <param name="groupName"></param>
+            <param name="fileName"></param>
+            <param name="csvPath"></param>
+            <param name="overwrite"></param>
+            <param name="delimitedWithComma"></param>
+            <param name="showMilliseconds"></param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IPropertyBinder">
+            <summary>
+            Interface responsible for modifying bindings on objects.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IPropertyBinder.BindToDataItem(System.Object,System.String,System.String,System.Object)">
+            <summary>
+            Create a binding and sets it on the target. Currently only for tags.
+            </summary>
+            <param name="bindable">The target object.</param>
+            <param name="source">The source. Currently ALWAYS the name of a tag.</param>
+            <param name="propertyName">The target property.</param>
+            <param name="converter">A converter to be placed between the source and the target.</param>
+            <returns>True if the binding was added successfully, otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IPropertyBinder.BindToRealtimeDataItem(System.Object,System.String,System.String,System.Object)">
+            <summary>
+            Create a binding and sets it on the target. Currently only for tags.
+            </summary>
+            <param name="bindable">The target object.</param>
+            <param name="source">The source. Currently ALWAYS the name of a tag.</param>
+            <param name="propertyName">The target property.</param>
+            <param name="converter">A converter to be placed between the source and the target.</param>
+            <returns>True if the binding was added successfully, otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IPropertyBinder.ClearAllBindings(System.Object)">
+            <summary>
+            Remove all bindings from the object.
+            </summary>
+            <param name="bindable">The object that owns the bindings.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IPropertyBinder.ClearBinding(System.Object,System.String,System.Boolean)">
+            <summary>
+            Remove a specific binding from an object.
+            </summary>
+            <param name="bindable">The object that owns the binding.</param>
+            <param name="propertyName">The property which the binding is attached to.</param>
+            <param name="restoreFallbackValue">Restores a fallback value, if one exists, after binding is removed.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IPropertyBinder.GetDataSourceType(System.Object,System.String)">
+            <summary>
+            If the property with the name <paramref name="propertyName"/> on the object <paramref name="target"/> is bound
+            to a known data source, return the Type of it's value.
+            </summary>
+            <param name="target">The object on which to look for a binding.</param>
+            <param name="propertyName">The property on the <paramref name="target"/> on which to look for a binding.</param>
+            <returns>The type of the data source if bound, otherwise null.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IPropertyBinder.GetDataSourceType(Core.Controls.Api.Bindings.DataSources.BindingDescription)">
+            <summary>
+            Return the Type of the data source's value, if it can be determined.
+            </summary>
+            <param name="bindingDescription">Information (metadata) about the data source and target.</param>
+            <returns>The type of the data source if it can be determined, otherwise null.</returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IScreenCacheInfo">
+            <summary>
+            Represents a cachable screen or form.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IScreenCacheInfo.Created">
+            <summary>
+            A date instance when the screen was created.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IScreenCacheInfo.UsageCount">
+            <summary>
+            Statistical value on usage
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IScreenCacheInfo.Age">
+            <summary>
+            Calculates the lifetime since created.
+            </summary>
+            <returns>Ticks from when created.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IScreenCacheInfo.IncreaseUsage">
+            <summary>
+            Adds usage count.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IXmlEncryptionStrategyRuntime.DecryptDocument(System.Xml.XmlDocument)">
+            <summary>
+            Decrypts the document
+            </summary>
+            <param name="xmlDocument">The document to be decrypted</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IXmlEncryptionStrategyRuntime.EncryptDocument(System.Xml.XmlDocument)">
+            <summary>
+            Encrypts the document
+            </summary>
+            <param name="xmlDocument">The document to be decrypted</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IXmlEncryptionStrategyRuntime.IsDocumentEcrypted(System.Xml.XmlDocument)">
+            <summary>
+            Checks if the document is encoded with this strategy
+            </summary>
+            <param name="document"></param>
+            <returns>true if encoded</returns>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.S_OK">
+            <summary>
+            Success code
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.NO_ERROR">
+            <summary>
+            Success code
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.NOERROR">
+            <summary>
+            Success code
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.S_FALSE">
+            <summary>
+            Success code false
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_UNEXPECTED">
+            <summary>
+            Catastrophic failure
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_NOTIMPL">
+            <summary>
+            Not implemented
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_OUTOFMEMORY">
+            <summary>
+            Ran out of memory
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_INVALIDARG">
+            <summary>
+            One or more arguments are invalid
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_NOINTERFACE">
+            <summary>
+            No such interface supported
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_POINTER">
+            <summary>
+            Invalid pointer
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_HANDLE">
+            <summary>
+            Invalid handle
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_ABORT">
+            <summary>
+            Operation aborted
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_FAIL">
+            <summary>
+            Unspecified error
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_ACCESSDENIED">
+            <summary>
+            General access denied error
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.HRESULT.E_PENDING">
+            <summary>
+            The data necessary to complete this operation is not yet available.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.Constants.PropertyConstants.MiscCategoryName">
+            <summary>
+            It's a good purpose to have the key simply be named Misc, since it's a default 
+            category name for many standard controls and will therefore automatically be localized.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.DataLoggerEventArgs">
+            <summary>
+            Event argument describing a specific data logger.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Events.OpcUaDataChangeEventArgs.#ctor(System.UInt32,System.Int32[],System.Object[],System.Int16[])">
+            <summary>
+            Initializes a new instance of the OpcUaDataChangeEventArgs class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Events.DataItemCountEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the DataItemCountEventArgs class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.Events.ErrorEventArgs">
+            <summary>
+            Does exist in FF, this class should only be used for CF
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Events.TerminalKeyEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the FunctionKeyEventArgs class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.IsEditable">
+            <summary>
+            returns true if the control is editable,
+            e.g. Slider and Analog Numeric
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.IsSelectable">
+            <summary>
+            returns true if the control is selectable,
+            i.e. the user can move the cursor to it,
+            e.g. Button is selectable but not editable
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.IsSelected">
+            <summary>
+            returns true if the control is selected 
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.InEditMode">
+            <summary>
+            returns true if the control is in edit mode
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.Toggle">
+            <summary>
+            toggles a control
+            </summary>
+            <returns>returns true if the control was toggled</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.Select">
+            <summary>
+            selects a control
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.EnsureEditControlExists">
+            <summary>
+            creates the edit part of a control if it doesn't exist
+            </summary>
+            <returns>returns true if edit part of the control exists</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.HandleKeyEvent(Neo.ApplicationFramework.Interfaces.Events.TerminalKeyEventArgs)">
+            <summary>
+            called if a special event handler is needed on a control
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.KeyPanel.IKeyPanelEditControl.KeyPanelCancelEdit">
+            <summary>
+            cancel edit operation
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.Security.ISecurityPropertiesCF">
+            <summary>
+            CF Interface responsible for holding the CF version of Security properties
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.Help.IAlternativeHelpProvider">
+            <summary>
+            Interface responible for launching other Helpfiles than the std chm-file
+            such as Macro help
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IGlobalDataItemBase">
+            <summary>
+            This interface describes what is common between GlobalDataItem and GlobalDataItemMapping.
+            It was invented since DT and RT differs with regards to type describing a tag and is used as 
+            a common ground of finding out tag-data when having a path.
+            At first, the thought of using IGlobalDataItemData was considered but that interfaces is conceptually 
+            wider than this interface should be, therefor IGlobalDataItemData inherits IGlobalDataItemBase
+            Perhaps IGlobalDataItemBase interface will vansish when structured tags are completely implemented
+            Also see: IGlobalDataItem, IGlobalDataItemData and IGlobalDataItemMapping
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDataItemDataSource.Read(System.Int32)">
+            <summary>
+            synchronous read
+            </summary>
+            <param name="cookie"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDataItemDataSource.Write(System.Int32,System.Object)">
+            <summary>
+             synchronous write
+            </summary>
+            <param name="cookie"></param>
+            <param name="newVal"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDataItemDataSource.GetValue(System.Int32)">
+            <summary>
+            asynchronous read
+            </summary>
+            <param name="cookie"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDataItemDataSource.SetValue(System.Int32,System.Object)">
+            <summary>
+             asynchronous write
+            </summary>
+            <param name="cookie"></param>
+            <param name="newVal"></param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IDataLoggerStorage">
+            <summary>
+            DataLogger Data Access Layer
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IGlobalDataItemData">
+            <summary>
+            This interface was invented during the implementation of array tags. 
+            This interface is used as the data complementing a IGlobalDataSubItem in describing the properties of a tag at GlobalDataSubItem-level.
+            Since the tag contains data that is not nessecarry to reproduce at each IGlobalDataSubItem-instance this was a nice complement.
+            Structured tags, alfa laval support, invented IGlobalDataItemBase as a way of describing the common ground between 
+            GlobalDataItem and GlobalDataItemMapping at design time. (At run time all tags are GlobalDataItem:s)
+            Since IGlobalDataItemData conceptually is a superset of IGlobalDataItemBase, inheritance relationship is established.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IInstantiatable.IsCacheable">
+            <summary>
+            Flag for avoiding the GlobalsBase to remove
+            instance from object cache on Close event.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IObjectDeserializer.DeseralizeFile(System.String)">
+            <summary>
+            Deserialize file
+            </summary>
+            <param name="filePath">Path to file</param>
+            <returns>Deserialzed object</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IObjectDeserializer.DeseralizeString(System.String)">
+            <summary>
+            Deserialize string
+            </summary>
+            <param name="objectString">String to deserialize</param>
+            <returns>Deserialzed object</returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IScriptObject">
+            <summary>
+            Don't change this interface unless you know what you are doing since this 
+            will effect all script actions!
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IProtectableItem">
+            <summary>
+            Applies to objects represented in UI, to determine their accessibility.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IScriptTag">
+            <summary>
+            Don't change this interface unless you know what you are doing since this 
+            will effect all script actions!
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IPublic">
+            <summary>
+            This is originally for Template Merge concept.
+            The value of IsPublic decides wether an UI element should be visible or not in a merged project.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.StructuredTag.Entities.IGlobalDataItemMapping">
+            <summary>
+            This interface describes what should be provided at runtime in order for a structured tag to initialize itself correctly.
+            The more properties that can be initilized to another value than the corresponding value in the types, the more properties we will
+            have in this interface. 
+            One future development is to make this interface and IGlobalDataItem to converge and that will open up the possiblity of
+            treating tags and structured tags equally, resulting in IGlobalDataItemBase to be removed/absored into IGlobalDataItemData
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.License.ILicenseRootComponent.IsRc">
+            <summary>
+            Gets or sets the is release candidate flag depending on if this is the real release or just a beta.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.ITask">
+            <summary>
+            Represents a unit of work that can be executed by a task scheduler.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ITask.Status">
+            <summary>
+            The status of the Task.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ITask.Exception">
+            <summary>
+            Exception thrown during execution of the task. Null if task
+            has not started or did not throw any exceptions.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ITask.ContinueWith(System.Action{Neo.ApplicationFramework.Interfaces.ITask})">
+            <summary>
+            Creates a continuation that executes asynchronously when the target ITask completes.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ITask.ContinueWith(Neo.ApplicationFramework.Interfaces.ITask)">
+            <summary>
+            Creates a continuation that executes asynchronously when the target ITask completes.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ITask.Start">
+            <summary>
+            Starts the Task, scheduling it for execution to the current TaskScheduler.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ITask.Start(Neo.ApplicationFramework.Interfaces.ITaskScheduler)">
+            <summary>
+            Starts the Task, scheduling it for execution to the specified TaskScheduler.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ITask.Wait">
+            <summary>
+            Waits for the Task to complete execution. Avoid using this method unless you absolutly must
+            as it will block the calling thread. The prefered why is to create a continuation using
+            ContinueWith method.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.Printer.ILayoutElement">
+            <summary>
+            Interface for a visual and non visual elements participating in the the 
+            layout of a FlowDocument.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Printer.ILayoutElement.DesiredSize">
+            <summary>
+            The space requested by the element. The will be 0,0 before calling Measure. 
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Printer.ILayoutElement.ActualSize">
+            <summary>
+            The space actually used after being arranged. Before a call to arrange the size
+            will be 0,0.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.Printer.ILayoutElement.BreakPageBefore">
+            <summary>
+            Determines if a page break is requested before this element is arranged.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Printer.ILayoutElement.Measure(System.Drawing.Size)">
+            <summary>
+            Calculates the space needed by the layout element, returns the DesiredSize. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Printer.ILayoutElement.Arrange(System.Drawing.Rectangle)">
+            <summary>
+            Instructs the layout element to arrange its content in the allocated rectangle. There
+            are no garrantees that the rectangle will provide a surface equal or larger than
+            the DesiredSize.
+            
+            Each layout item must implement page break functionallity.
+            </summary>
+            <returns>
+            Null if the content fit in the allocated rectangle, otherwise as new layout item should be
+            returned containg the remainder.
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.Printer.ILayoutElement.Draw">
+            <summary>
+            Draws the arranged elements on the drawing surface.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager">
+            <summary>
+            An inteface for a Cache Manager designed to manage objects that implement <see cref="T:Neo.ApplicationFramework.Interfaces.ICurveDataCache"/>. This was designed for use with Trend Viewers.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.HasAnyCaches">
+            <summary>
+            Returns true of the Cache Manager has caches. Returns false if there are no caches in the cache manager.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.DataSourcesCached">
+            <summary>
+            An enumerable property that contains a list of cached Data Sources.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.SamplingIntervals">
+            <summary>
+            An enumerable of all the sampling intervals being cached by this Cache Manager.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.AddCachesForTrendViewer(System.String,System.Collections.Generic.IEnumerable{System.String},System.Int32,System.Int32)">
+            <summary>
+            Creates new caches for each Data Source in the given Trend Viewer, in the specified sampling interval 
+            </summary>
+            <param name="trendViewerName"> the Trend Viewer's name e.g. Screen1.TrendViewer2 </param>
+            <param name="dataSourceNames"> an enumerable of Data Sources </param>
+            <param name="samplingInterval"></param>
+            <param name="bufferSize"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.GetCurveDataCache(System.String,System.String)">
+            <summary>
+            Returns an object that implements <see cref="T:Neo.ApplicationFramework.Interfaces.ICurveDataCache"/> based on the Trend Viewer's name and the Data Source's full name
+            </summary>
+            <param name="trendViewerName"> the Trend Viewer's name e.g. Screen1.TrendViewer2 </param>
+            <param name="dataSourceName"> the Data Source's full name e.g. DataLogger1.LogItem1 or Tags.Tag1 </param>
+            <returns>Returns a curve data cache</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.GetCurveDataCaches(System.Int32)">
+            <summary>
+            Returns an enumerable of all of the cached <see cref="T:Neo.ApplicationFramework.Interfaces.ICurveDataCache"/> based on their sampling interval
+            </summary>
+            <param name="samplingInterval"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.GetCurveDataCaches(System.String)">
+            <summary>
+            Returns an enumerable of all of the cached <see cref="T:Neo.ApplicationFramework.Interfaces.ICurveDataCache"/> based on Trend Viewer name
+            </summary>
+            <param name="trendViewerName"> the Trend Viewer's name e.g. Screen1.TrendViewer2 </param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.ClearCurveDataCachesForLogItems(System.Collections.Generic.IEnumerable{Neo.ApplicationFramework.Interfaces.ILogItem})">
+            <summary>
+            Clears all caching data related to each <see cref="T:Neo.ApplicationFramework.Interfaces.ILogItem"/> given in the enumerable parameter.
+            </summary>
+            <param name="logItems">An enumerable of <see cref="T:Neo.ApplicationFramework.Interfaces.ILogItem"/></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.UpdateCacheParameters(System.String,System.Int32,System.Int32)">
+            <summary>
+            UNDOCUMENTED: complex method needs further documentation and/or refactoring
+            </summary>
+            <param name="trendViewerName"> the Trend Viewer's name e.g. Screen1.TrendViewer2 </param>
+            <param name="newSamplingInterval"></param>
+            <param name="newBufferSize"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICurveDataCacheManager.AddValuesToCache(System.Int32,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IDictionary{Neo.ApplicationFramework.Interfaces.IValue,System.Collections.Generic.IList{Neo.ApplicationFramework.Interfaces.ILogData}})">
+            <summary>
+            Adds the values passed in <paramref name="curveData"/> to the appropriate caches internal to this Cache Manager.
+            The values are added for all data sources within the same sampling interval.  
+            </summary>
+            <param name="samplingInterval"></param>
+            <param name="dataSourceNames"> an enumerable of Data Sources </param>
+            <param name="curveData"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.CurveData.#ctor(System.DateTime,System.Object,System.Int32)">
+            <summary>
+            Initializes a new instance of the CurveData structure.
+            </summary>
+            <param name="time"></param>
+            <param name="value"></param>
+            <param name="pixelValue"></param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IAddressBook.AllContacts">
+            <summary>
+            Gets all contacts.
+            </summary>
+            <value>All contacts.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.CreateContact(System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a contact. The new contact is not added to the address book.
+            </summary>
+            <param name="firstName">The first name.</param>
+            <param name="lastName">The lastName.</param>
+            <param name="emailAddress">The emailAddress.</param>
+            <param name="phoneNumber">The phoneNumber.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.EditContact(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Edit a contact with respect contactId.
+            </summary>
+            <param name="contactId">The contact id.</param>
+            <param name="firstName">The first name.</param>
+            <param name="lastName">The lastName.</param>
+            <param name="emailAddress">The emailAddress.</param>
+            <param name="phoneNumber">The phoneNumber.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.RemoveContact(System.Int32)">
+            <summary>
+            remove contact by contactId.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.GetContactFromId(System.Int32)">
+            <summary>
+            get contact by contactId.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.GetContactFromFirstName(System.String)">
+            <summary>
+            get contact by firstName.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.GetContactFromEmailAddress(System.String)">
+            <summary>
+            get contact by emailAddress.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.GetContactFromPhoneNumber(System.String)">
+            <summary>
+            get contact by Phone Number.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.GetUsersWithPhoneNumbers">
+            <summary>
+            Returns the IContact object(s) who have phone numbers.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IAddressBook.GetUsersWithEmailAddresses">
+            <summary>
+            Returns the IContact object(s) who have email address.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IAuditTrailActionInfo.Name">
+            <summary>
+            Gets or sets a display name for the action.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IAuditTrailActionInfo.ActionName">
+            <summary>
+            Gets the constant action name for the action.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IAuditTrailActionInfo.LogToAuditTrail">
+            <summary>
+            Gets or sets if Action should be logged in Audit Trail.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IKeyboardLayoutInfo.DependentFontFiles">
+            <summary>
+            Handle to the keyboard layout
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IScreenOwner.ScreenOwnerName">
+            <summary>
+            Gets or sets the name of the screen owning this object, e.g. used in screens inheriting template screens.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ICommandLineService.Arguments">
+            <summary>
+            Gets or sets a string array that contains the command line 
+            arguments that were passed to the application.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ICommandLineService.Filename">
+            <summary>
+            Gets the first command line argument which is not a 'switch'. 
+            It is supposed to be a file specification.
+            Note: If the file does not exist, String.Empty is returned.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ICommandLineService.FilenameActual">
+            <summary>
+            Gets the first command line argument which is not a 'switch'. 
+            It is supposed to be a file specification.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICommandLineService.CheckSwitch(System.String)">
+            <summary>
+            Checks if the commandLineargument has been passed to the application
+            it adds / or - so if you check for "test" 
+            the passed argument checked for is "-test" or "/test"
+            </summary>
+            <param name="commandLineArgument"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICommandLineService.GetSwitchArgumentParameter(System.String)">
+            <summary>
+            Checks if the commandLineargument has been passed to the application
+            it adds / or - so if you check for "test" 
+            the passed argument checked for is "-test" or "/test"
+            the passed parameter to the argument is passed with '=' e.g. /ImportTags="ImportFile.txt" 
+            returns switch argument parameter if found else string.Empty
+            </summary>
+            <param name="commandLineArgument"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.ICompositeOutputDevices">
+            <summary>
+            Holds the output buffers. 
+            An object that want to send information to an output device (eg. printer)
+            needs an implemented instance of <see cref="T:ICompositeOutputDevices"/>.
+            One buffer for each connected output device is needed.
+            The <see cref="T:CompositeOutputDevices"/> can be connected to each other
+            in a tree structure. The root object handles which output devices that should
+            recieve the output info.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ICompositeOutputDevices.ParentCompositeOutputDevices">
+            <summary>
+            Gets or sets the parent CompositeOutputDevices.
+            </summary>
+            <value>The parent composite output devices.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICompositeOutputDevices.Output(System.String)">
+            <summary>
+            Outputs the specified text to the outputbuffers contained in the current 
+            CompositeOutputDevices instance.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ICompositeOutputDevices.Output(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            Outputs the specified text to the outputbuffers contained in the current 
+            CompositeOutputDevices instance, including the output buffers in the
+            parameter outputDeviceNames.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="outputDeviceNames">The output device names.</param>
+            <param name="contacts">Contacts.</param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ICompositeOutputDevices.OutputDevices">
+            <summary>
+            Gets the output device names.
+            </summary>
+            <value>The output device names.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContact.ContactID">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The ContactId.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContact.FirstName">
+            <summary>
+            Gets or sets the first name.
+            </summary>
+            <value>The first name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContact.LastName">
+            <summary>
+            Gets or sets the last name.
+            </summary>
+            <value>The last name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContact.EmailAddress">
+            <summary>
+            Gets or sets the address.
+            </summary>
+            <value>The address.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContact.PhoneNumber">
+            <summary>
+            Gets or sets the PhoneNumber.
+            </summary>
+            <value>The PhoneNumber.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContactBase.ContactID">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The ContactId.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContactBase.FirstName">
+            <summary>
+            Gets or sets the first name.
+            </summary>
+            <value>The first name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContactBase.LastName">
+            <summary>
+            Gets or sets the last name.
+            </summary>
+            <value>The last name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContactBase.EmailAddress">
+            <summary>
+            Gets or sets the address.
+            </summary>
+            <value>The address.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContactBase.PhoneNumber">
+            <summary>
+            Gets or sets the PhoneNumber.
+            </summary>
+            <value>The PhoneNumber.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IContactBase.ProjectGuid">
+            <summary>
+            Guid that created the contact
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.LogTriggerType">
+            <summary>
+            Enumeration containing the logtriggers.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDataLogger.LogTrigger">
+            <summary>
+            Gets or sets the log trigger.
+            If logging on event is selected, this is the trigger for to start a log.
+            </summary>
+            <value>LogDataOnObjectEvent or LogDataOnTimerEvent</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDataLogger.LogInterval">
+            <summary>
+            Gets or sets the log interval.
+            If time logging is selected, this is the log interval.
+            </summary>        
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDataLogger.LogChangesOnly">
+            <summary>
+            If true, only changed values should be logged.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDataLogger.Guid">
+            <summary>
+            Gets or sets the Guid of the datalogger.
+            </summary>
+            <value>The Guid of the datalogger.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDataLogger.Name">
+            <summary>
+            Gets or sets the name of the datalogger.
+            </summary>
+            <value>The name of the datalogger.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDataLogger.DatabaseTableName">
+            <summary>
+            Gets or sets the name of the database table.
+            </summary>
+            <value>The name of the database table.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDataLogger.TriggerObject">
+            <summary>
+            Gets or sets the DataLoggers triggerobject.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDataLogger.IsEnabled">
+            <summary>
+            Gets or sets if the DataLogger is enabled
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDateTimeEditService.LocalTime">
+            <summary>
+            Current Non UTC System Time;
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IDeviceManagerServiceCF">
+            <summary>
+            Handles the connection between output devices and buffers. 
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IDeviceManagerServiceCF.OutputDevices">
+            <summary>
+            Gets the output devices.
+            </summary>
+            <value>The output devices.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDeviceManagerServiceCF.CreateBuffer(System.String)">
+            <summary>
+            Creates a buffer with a specific size. The size of the buffer is specified
+            by the related OutputDevice object.
+            </summary>
+            <param name="deviceName">Name of the device.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDeviceManagerServiceCF.CreateCompositeOutputDevicesObject">
+            <summary>
+            Creates the CompositeOutputDevices object.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDeviceManagerServiceCF.LoadDevices">
+            <summary>
+            Loads the devices from .xml file.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDeviceManagerServiceCF.SaveDevices(Neo.ApplicationFramework.Interfaces.IOutputDevice)">
+            <summary>
+            Save the devices to .xml file.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IDeviceManagerServiceCF.GetOutputDevice``1">
+            <summary>
+            get device.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IEmailDevice">
+            <summary>
+            Needed in order for the email device to know which group or person
+            to send a mail to.
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Interfaces.IEventAdapter.MouseEnter">
+            <summary>
+            Security is not supported when scripting on a MouseEnter event. Use an Action instead.
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Interfaces.IEventAdapter.MouseLeave">
+            <summary>
+            Security is not supported when scripting on a MouseLeave event. Use an Action instead.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.AddMoreAlarmItemInfoEventArgs.#ctor(Neo.ApplicationFramework.Interfaces.IAlarmItem)">
+            <summary>
+            Initializes a new instance of the AddMoreAlarmItemInfoEventArgs class.
+            </summary>
+            <param name="alarmItem"></param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IAlarmItem.OutputDevices">
+            <summary>
+            Gets or sets the output devices.
+            </summary>
+            <value>The output devices.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IAlarmItem.Contacts">
+            <summary>
+            Gets or sets the contacts.
+            </summary>
+            <value>The contacts.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IAlarmItem.DataConnection">
+            <summary>
+            Gets or sets the data connection.
+            </summary>
+            <value>The data connection.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IBrandService.ProductFamilyName">
+            <summary>
+            The main product family aka iX Developer
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFileSettingsService.FileName(System.String)">
+            <summary>
+            Return the file name with path in correct subdirectory of AppData , where it should be OK to write user settings
+            If a corresponding file does exist in the program directory it is used as default
+            If a new file is created in the program directory the user settings are deleted
+            </summary>
+            <param name="fileName"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFileSettingsService.GetAppDataFiles(System.String)">
+            <summary>
+            Return the files matching the search pattern in AppData.
+            </summary>
+            <param name="searchPattern">The search pattern.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFileSettingsService.ImportTemplateFolder">
+            <summary>
+            Return the folder containing importtemplatefiles.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFileSettingsService.LoadUserSettings``1">
+            <summary>
+            If No settings file exists a default object is returned, see also FileName property
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFileSettingsService.LoadUserSettings(System.String)">
+            <summary>
+            Tries to load named user settings. If no setting exists with that name, null will be returned.
+            </summary>
+            <param name="settingsName">Name of the settings file.</param>
+            <returns>Object with usersettings.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFileSettingsService.SaveUserSettings(System.Object)">
+            <summary>
+            Save settings per user
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IFileSettingsService.SaveUserSettings(System.Object,System.String)">
+            <summary>
+            Save named settings per user.
+            </summary>
+            <param name="obj">The settings object to serialize.</param>
+            <param name="settingsName">The name to give the file.</param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IFunctionKey.IsDown">
+            <summary>
+            True while the key is pressed
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IFunctionKey.WaitingForRealKeyUp">
+            <summary>
+            Set to true if all Down events should be ignored until next Up event
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IKeyboardHelper.ShowFullKeyboard(System.Drawing.Rectangle,System.Boolean)">
+            <summary>
+            Shows the full keyboard and tries to avoid the area represented by the rectangle,
+            which must be in screen coordinates.
+            </summary>
+            <param name="rectangle"></param>
+            <param name="showAsAsterix">If the text should be shown as asterixs e.g. when entering a password</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IKeyboardHelper.ShowNumericKeyboard(System.Drawing.Rectangle,System.Boolean)">
+            <summary>
+            Shows the numeric keyboard and tries to avoid the area represented by the rectangle,
+            which must be in screen coordinates. The default layout will be used.
+            </summary>
+            <param name="rectangle">The area to avoid, usually the input text box.</param>
+            <param name="showAsAsterix">If the text should be shown as asterixs e.g. when entering a password</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IKeyboardHelper.ShowNumericHexKeyboard(System.Drawing.Rectangle,System.Boolean)">
+            <summary>
+            Shows the numeric keyboard and tries to avoid the area represented by the rectangle,
+            which must be in screen coordinates.
+            </summary>
+            <param name="rectangle">The area to avoid, usually the input text box.</param>
+            <param name="showAsAsterix">If the text should be shown as asterixs e.g. when entering a password</param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IKeyboardHelper.KeyboardLayouts">
+            <summary>
+            Returns a list of available keyboardlayouts.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IKeyboardHelper.SetWindowsOnScreenKeyboardLayout(Neo.ApplicationFramework.Interfaces.IKeyboardLayoutInfo)">
+            <summary>
+            Sets the keyboard layout for Windows On-Screen Keyboard
+            </summary>
+            <param name="keyboardLayoutInfo"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IKeyboardHelper.IsChangeOfPreloadedImeNeeded(Neo.ApplicationFramework.Interfaces.IKeyboardLayoutInfo)">
+            <summary>
+            Checks wheter the IME has to be changed when switching to the keyboard layout passed as paramter.
+            </summary>
+            <param name="keyboardLayoutInfo">Contains information about the IME.</param>
+            <returns>True if the IME needs to be changed.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IKeyboardHelper.TryChangePreloadedIme(Neo.ApplicationFramework.Interfaces.IKeyboardLayoutInfo,System.Boolean)">
+            <summary>
+            Changes the necessary system settings for the preloaded IME.
+            Reboot is required for the changes to take effect.
+            </summary>
+            <param name="keyboardLayoutInfo">Contains information about the IME.</param>
+            <param name="askUserForPermission">When set to true the user is asked for permission to make any changes.</param>
+            <returns>True if the preload IME settings was changed.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.INameCreationService.CreateName(System.ComponentModel.IContainer,System.Type)">
+            <summary>
+            Creates a new name that is unique to all components in the specified container.
+            </summary>
+            <param name="container"> The container where the new object is added.</param>
+            <param name="dataType">The data type of the object that receives the name.</param>
+            <returns>A unique name for the data type.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.INameCreationService.IsValidName(System.String)">
+            <summary>
+             Gets a value indicating whether the specified name is valid.
+            </summary>
+            <param name="name">The name to validate.</param>
+            <returns>true if the name is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.INameCreationService.IsValidCharacter(System.Char,System.Int32)">
+            <summary>
+            Gets a value indicating whether the specified character is valid.
+            </summary>
+            <param name="character">The character to validate.</param>
+            <param name="position">Position of the character in the string (zero based).</param>
+            <returns>true if the character is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.INameCreationService.ValidateName(System.String)">
+            <summary>
+            Gets a value indicating whether the specified name is valid.
+            </summary>
+            <param name="name">The name to validate.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.INativeAPI.FindWindow(System.String,System.String)">
+            <summary>
+            Use with extreme caution. If you do not provide a class name different from null, it might hang the panel.
+            </summary>
+            <param name="className"></param>
+            <param name="windowName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IObjectNotificationService.NotifyObjectChanged(System.Boolean)">
+            <summary>
+            Will fire an ObjectChanged event immediately or a DelayedObjectChanged
+            later on depending on the <paramref name="delay"/> parameter.
+            </summary>
+            <param name="delay">Delay the event until the user is idle.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IOpcClientServiceCF.AddNewDataItem(System.String,System.String,Neo.ApplicationFramework.Interfaces.IControllerBase)">
+            <summary>
+            Adds a new data item to the controller.
+            </summary>
+            <param name="name">Unique name for the new data item.</param>
+            <param name="id">An underlying item ID for the data item.</param>
+            <param name="controller">The OPC client to hold the data item.</param>
+            <returns>A reference to the new data item, or null if unsuccessfull.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IOpcClientServiceCF.AddNewDataItem(Neo.ApplicationFramework.Interfaces.IGlobalDataItem,System.String,System.String)">
+            <summary>
+            Adds a new data item to the controller and global data item.
+            </summary>
+            <param name="globalDataItem">The global data item to add the item to </param>
+            <param name="id">An underlying item ID for the data item.</param>
+            <param name="controllerName">The name of the OPC client to hold the data item.</param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IOutputBuffer">
+            <summary>
+            Holds the output buffer.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IOutputBuffer.Flush">
+            <summary>
+            Flushes the buffer.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IOutputBuffer.WriteToBuffer(System.String)">
+            <summary>
+            Writes to buffer.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.IOutputDevice">
+            <summary>
+            A general interface that should be implemented whenever
+            som sort of text should be written to an external device.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IOutputDevice.Name">
+            <summary>
+            Gets or sets the name of the device.
+            The name is used in the projectmanager view.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.IOutputDevice.BufferSize">
+            <summary>
+            Gets or sets the size of the buffer.
+            </summary>
+            <value>The size of the buffer.</value>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.IOutputDevice.WriteText(System.String)">
+            <summary>
+            Writes the text to the device.
+            </summary>
+            <param name="text">The text.</param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.ISchedulerJob">
+            <summary>
+            Interface for the SchedulerJob class
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.Period">
+            <summary>
+            What kind of period
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.Start">
+            <summary>
+            Start date/time
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.StartDate">
+            <summary>
+            Start date
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.StartTime">
+            <summary>
+            Start time
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.StopDate">
+            <summary>
+            Stop date
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.StopTime">
+            <summary>
+            Stop time
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.Day">
+            <summary>
+            Day
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.DescriptiveName">
+            <summary>
+            DescriptiveName
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.Duration">
+            <summary>
+            How long the activation will last.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISchedulerJob.Check(System.DateTime)">
+            <summary>
+            Calling this function with current time and the job will check if it's time to activate/deactivate.
+            </summary>
+            <param name="now"></param>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISchedulerJob.StopTimeEnabled">
+            <summary>
+            If Stop Time is enabled or not.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.ISMSDevice">
+            <summary>
+            Needed in order for the sms device to know which person
+            to send a sms to.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.VisibilityModes">
+            <summary>
+            Enumeration containing the different visibility modes for 
+            controls whose access is denied fro security reasons.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.ISecurityExtenderCF">
+            <summary>
+            Interface for security extenders.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityExtenderCF.GetSecurityGroups(System.ComponentModel.IComponent)">
+            <summary>
+            Retrieves the security groups associated with a component.
+            </summary>
+            <param name="component">Component to get the security groups for.</param>
+            <returns>The security groups enumeration.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityExtenderCF.GetVisibilityMode(System.ComponentModel.IComponent)">
+            <summary>
+            Retrieves the visibility mode associated with a component.
+            </summary>
+            <param name="component">Component to get the visibility mode for.</param>
+            <returns>The visibility mode enumeration.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityExtenderCF.SetSecurityGroupsRequired(System.ComponentModel.IComponent,Neo.ApplicationFramework.Interfaces.SecurityGroups)">
+            <summary>
+            Sets the security groups for a component.
+            </summary>
+            <param name="component">The component to set security groups for.</param>
+            <param name="value">A security groups enumeration.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityExtenderCF.SetVisibilityOnAccessDenied(System.ComponentModel.IComponent,Neo.ApplicationFramework.Interfaces.VisibilityModes)">
+            <summary>
+            Sets the visibility mode for a component.
+            </summary>
+            <param name="component">The component to set the visibility mode for.</param>
+            <param name="value">A visibility mode enumeration.</param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.SecurityGroups">
+            <summary>
+            Enumeration containing all possible security groups.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.ISecurityGroup">
+            <summary>
+            Interface for a security group.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityGroup.GroupName">
+            <summary>
+            Gets or sets the name for this security group.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityGroup.Group">
+            <summary>
+            Gets or sets the security groups enumeration associated with this security group.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityGroup.Users">
+            <summary>
+            Gets or sets a list of users belonging to this security group.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.AccessDeniedActions">
+            <summary>
+            Enumeration containing the different actions to take when access is denied.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.AccessDeniedActions.None">
+            <summary>
+            No security action to perform on access denied for a control.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.AccessDeniedActions.ShowLoginDialog">
+            <summary>
+            Show the login dialog on access denied for a control.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.AccessDeniedActions.ShowAccessDeniedMessage">
+            <summary>
+            Show an access denied message on access denied for a control.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityManager.Groups">
+            <summary>
+            Gets the security groups.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityManager.Users">
+            <summary>
+            Gets the security users.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityManager.ShowAutomaticLogoutSucceededDialog">
+            <summary>
+            Gets or sets whether the Logout Succeeded dialog is shown when 
+            the user is automatically logged out.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityManager.AddUser(System.String,System.Byte[])">
+            <summary>
+            Adds a new user.
+            </summary>
+            <param name="name">The username for this user.</param>
+            <param name="password">The password for this user.</param>
+            <returns>
+            A reference to the newly added security user, null on failure.
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityManager.RemoveUser(Neo.ApplicationFramework.Interfaces.ISecurityUser)">
+            <summary>
+            Removes an existing user.
+            </summary>
+            <param name="securityUser">The security user to remove.</param>
+            <returns>True if successfully removed, otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityManager.AddGroup(Neo.ApplicationFramework.Interfaces.ISecurityGroup)">
+            <summary>
+            Adds a security group, sorted after the security groups enumeration.
+            </summary>
+            <param name="securityGroup">The security group to add.</param>
+            <returns>True if added successfully, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityManager.RemoveGroup(Neo.ApplicationFramework.Interfaces.ISecurityGroup)">
+            <summary>
+            Removes an existing security group.
+            </summary>
+            <param name="securityGroup">The security group to remove.</param>
+            <returns>True if removed successfully, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.AddUser(System.String,System.String)">
+            <summary>
+            Adds a new user with respect to password rules. Will throw an exception if password rules are not followed.
+            </summary>
+            <param name="name">The username for this user.</param>
+            <param name="password">The password for this user.</param>
+            <returns>A reference to the newly added security user, null on failure.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.AddUser(System.String,System.String,System.Boolean)">
+            <summary>
+            Adds a new user with a choice of following password rules or not.
+            </summary>
+            <param name="name">The username for this user.</param>
+            <param name="password">The password for this user.</param>
+            <param name="respectPasswordRules">True if password rules should be respected.</param>
+            <returns>A reference to the newly added security user, null on failure.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.RemoveUser(Neo.ApplicationFramework.Interfaces.ISecurityUser)">
+            <summary>
+            Removes an existing user.
+            </summary>
+            <param name="securityUser">The security user to remove.</param>
+            <returns>True if removed successfully, false otherwise.</returns>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.Groups">
+            <summary>
+            Gets a collection with all security groups.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.Users">
+            <summary>
+            Gets a collection with all security users.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.CurrentUser">
+            <summary>
+            Gets the currently logged in user
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.Load(System.String)">
+            <summary>
+            Loads the users.
+            </summary>
+            <param name="fileName">Full path to the destination file.</param>
+            <returns>True if successfully loaded, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.Save(System.String)">
+            <summary>
+            Saves the users.
+            </summary>
+            <param name="fileName">Full path to the source file.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.IsAccessGranted(System.Object)">
+            <summary>
+            Checks if the current user has enough security to access control, otherwise performs security action on access denied.
+            </summary>
+            <param name="secureObject">The object to check access against.</param>
+            <returns>True if access is granted, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.IsAccessGranted(System.Object,System.Object)">
+            <summary>
+            Checks if the current user has enough security to access control, otherwise performs security action on access denied.
+            </summary>
+            <param name="secureObject">The object to check access against.</param>
+            <param name="rootObject">The topmost parent control, for performance on CE.</param>
+            <returns>True if access is granted, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.IsAccessGranted(System.Object,System.Object,System.Boolean)">
+            <summary>
+            Checks if the current user has enough security to access control.
+            </summary>
+            <param name="secureObject">The object to check access against.</param>
+            <param name="rootObject">The topmost parent control, for performance on CE.</param>
+            <param name="performSecurityAction">True to perform security action on action denied, otherwise false.</param>
+            <returns>True if access is granted, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.AddSecurityExtender(System.ComponentModel.Component,Neo.ApplicationFramework.Interfaces.ISecurityExtenderCF)">
+            <summary>
+            Adds a security extender to the common list of all security extenders.
+            </summary>
+            <param name="component">The component hosting the security extender.</param>
+            <param name="securityExtender">The security extender to add reference to.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.LoginUser(System.String,System.String)">
+            <summary>
+            Tries to login user.
+            </summary>
+            <param name="username">Username for the user to login.</param>
+            <param name="password">Password for the user to login.</param>
+            <returns>True if the user was successfully logged in, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.LoginUser(System.String,System.String,System.Boolean)">
+            <summary>
+            Tries to login user.
+            </summary>
+            <param name="username">Username for the user to login.</param>
+            <param name="password">Password for the user to login.</param>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+            <returns>True if the user was successfully logged in, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.LogoutUser">
+            <summary>
+            Logs out the current user.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.LogoutUser(System.Boolean)">
+            <summary>
+            Logs out the current user.
+            </summary>
+            <param name="showLogoutSucceededDialog">True if the logout succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.ChangePassword(System.String,System.String,System.String,System.String)">
+            <summary>
+            Changes a user's password and handles the logic around checking existing password and confirming the password.
+            </summary>
+            <param name="username">Username</param>
+            <param name="oldPassword">Current password</param>
+            <param name="newPassword">Desired new password</param>
+            <param name="confirmNewPassword">Confirmation of the new password</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.ChangePassword(System.String,System.String)">
+            <summary>
+            Changes a user's password. Throws exception if the new password does not conform to password rules.
+            </summary>
+            <param name="username">Username for the user to login.</param>
+            <param name="newPassword">Desired new password</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.ShowLoginDialog">
+            <summary>
+            Brings up the login dialog and logs in the user.
+            </summary>
+            <returns>True if the user was successfully logged in, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.ShowLoginDialog(System.Boolean)">
+            <summary>
+            Brings up the login dialog and logs in the user.
+            </summary>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+            <returns>True if the user was successfully logged in, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.ShowLoginDialog(System.String)">
+            <summary>
+            Brings up the login dialog and logs in the user.
+            </summary>
+            <param name="username">Username for the user to login.</param>
+            <returns>True if the user was successfully logged in, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.ShowLoginDialog(System.String,System.Boolean)">
+            <summary>
+            Brings up the login dialog and logs in the user.
+            </summary>
+            <param name="username">Username for the user to login.</param>
+            <param name="showLoginSucceededDialog">True if the login succeeded dialog should be displayed,
+            false otherwise (e.g. required user input may not be wanted when scripting).</param>
+            <returns>True if the user was successfully logged in, false otherwise.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.ShowMessageBoxWithTimeout(System.String,System.String)">
+            <summary>
+            Shows a MessageBox with a timeout
+            </summary>
+            <param name="text"></param>
+            <param name="caption"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.UpdateVisibility(System.Object)">
+            <summary>
+            Updates the visibility for all containing objects,
+            depending on the security level for the current user.
+            </summary>
+            <param name="rootObject">Root object to update visibility for.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.UpdateAllVisibility">
+            <summary>
+            Updates the visibility for all forms currently instansiated
+            depending on the security level for the current user.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.SecurityManager">
+            <summary>
+            Sets a reference to the security manager.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.GetUsers(Neo.ApplicationFramework.Interfaces.ISecurityGroup)">
+            <summary>
+            Returns a list of users who belong to specified group.
+            </summary>
+            <param name="securityGroup">Group to return users for.</param>
+            <returns>List of securityusers.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.SetUsers(Neo.ApplicationFramework.Interfaces.ISecurityGroup,System.Collections.Generic.IList{Neo.ApplicationFramework.Interfaces.ISecurityUser})">
+            <summary>
+            Sets all users in list to belong to specified group.
+            </summary>
+            <param name="securityGroup">Group to which all users shall belong.</param>
+            <param name="securityUsers">List of users who belong to the group.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.GetSecurityGroups(Neo.ApplicationFramework.Interfaces.SecurityGroups)">
+            <summary>
+            Returns a list of SecurityGroup objects for an enumeration value (can be bitted).
+            </summary>
+            <param name="securityGroupEnum">The enumeration value to translate to SecurityGroup objects.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.GetSecurityGroups(System.String)">
+            <summary>
+            Returns SecurityGroups enumeration value (can be bitted) for the comma separated SecurityGroupsRequired string
+            </summary>
+            <param name="value">SecurityGroupsRequired string</param>
+            <returns>SecurityGroups enumeration</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.GetSecurityGroupsRequired(Neo.ApplicationFramework.Interfaces.SecurityGroups)">
+            <summary>
+            Gets the comma separated SecurityGroupsRequired string from the given <see cref="T:Neo.ApplicationFramework.Interfaces.SecurityGroups"/>
+            </summary>
+            <param name="groups">Security groups enumeration</param>
+            <returns>SecurityGroupsRequired string</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityServiceCF.UserActive">
+            <summary>
+            Tells the Security Service that the user has done something which in turn resets the idle timer.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.ISecurityUser">
+            <summary>
+            Interface for a security user.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityUser.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityUser.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityUser.Description">
+            <summary>
+            Gets or sets the description, e.g. full name of user.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityUser.Groups">
+            <summary>
+            Gets or sets the security groups (enumeration) that this user belongs to.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISecurityUser.SecurityGroups">
+            <summary>
+            Gets or sets a list of security group objects that this user belongs to.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityUser.AddToGroup(Neo.ApplicationFramework.Interfaces.SecurityGroups)">
+            <summary>
+            Adds the user to the specified security group.
+            </summary>
+            <param name="group">The SecurityGroups enumeration to flag for this user.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityUser.RemoveFromGroup(Neo.ApplicationFramework.Interfaces.SecurityGroups)">
+            <summary>
+            Removes the user from the specified security group.
+            </summary>
+            <param name="group">The SecurityGroups enumeration to unflag for this user.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.ISecurityUser.BelongsToGroup(Neo.ApplicationFramework.Interfaces.SecurityGroups)">
+            <summary>
+            Checks if the user belongs to any of the specified security groups.
+            </summary>
+            <param name="group">The SecurityGroups enumeration to check if flagged for user.</param>
+            <returns>True if the user belong to any of the groups, false otherwise.</returns>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISystemInformationService.PhysicalMemoryAvailable">
+            <summary>
+            Represents total available
+            memory in kilobytes.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.ISystemSettings.IsStartupAfterNewProjectDownload">
+            <summary>
+            Gets a value indicating whether this is a startup of a new project after it has been
+            downloaded.
+            </summary>
+            <remarks>
+            This property can be used to determine whether certain initial settings should be
+            applied.
+            </remarks>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.ErrorAction.Throw">
+            <summary>
+            Throw the exception.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.ErrorAction.Skip">
+            <summary>
+            Skip the current processing and continue with the rest.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Interfaces.ErrorAction.Abort">
+            <summary>
+            Abort all processing.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Interfaces.SNTP.ISntpClientRootComponent.UpdateInterval">
+            <summary>
+            Update Interval in minutes
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.TagsPredicate">
+            <summary>
+            This predicate is used to include or exclude tag sets depending on what the consumer wants. 
+            Also there is an option to flatten a structured tag list. 
+            Long term, this might be broken up into three different enum-types. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.VariantValue.op_True(Neo.ApplicationFramework.Interfaces.VariantValue)">
+            <summary>
+            Not executed, since implicit bool casting operator is implemented, but needed by compiler for evaluation of binary expressions, e.g. AND, OR.
+            </summary>
+            <param name="variantValue">Value to check if true.</param>
+            <returns>True if value is true.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.VariantValue.op_False(Neo.ApplicationFramework.Interfaces.VariantValue)">
+            <summary>
+            Not executed, since implicit bool casting operator is implemented, but needed by compiler for evaluation of binary expressions, e.g. AND, OR.
+            </summary>
+            <param name="variantValue">Value to check if false.</param>
+            <returns>True if value is false.</returns>
+        </member>
+    </members>
+</doc>

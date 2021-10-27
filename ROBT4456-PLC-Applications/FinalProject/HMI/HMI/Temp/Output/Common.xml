@@ -1,0 +1,899 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Common</name>
+    </assembly>
+    <members>
+        <member name="M:Neo.ApplicationFramework.Common.Constants.EnvironmentFolders.GetPath(Neo.ApplicationFramework.Common.Constants.SpecialFolder)">
+            <summary> 
+            Get an environment folder path for Windows environment folders.
+            </summary> 
+            <returns>A string pointing to the special path.</returns> 
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Converters.ColorConverterFX">
+            <summary>
+            Color converter for converting between FX Colors (<code>System.Windows.Media.Color</code>)
+            and .Net 2.0 Colors (<code>System.Drawing.Color</code>).
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Converters.EnumValueConverter">
+            <summary>
+            Converts between different Enum values by trying to find matching value with same
+            name in destination enum.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Converters.ValueToTextConverter">
+            <summary>
+            Converter that will attempt to convert the Value property of the Label/Button
+            to a text to display as the MultiText's Content.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChanged.SetAndFirePropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}},``0@,``0)">
+            <summary>
+            Sets the specified new value, and fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/>
+            event if the new value is different from the old value.
+            </summary>
+            <typeparam name="T">The type of the value.</typeparam>
+            <param name="propertyExpression">An expression pointing to the property being changed.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+            <returns>true if value was changed; otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChanged.FirePropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>
+            Fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event on property
+            described by specified expression.
+            </summary>
+            <typeparam name="T">The type of the value.</typeparam>
+            <param name="propertyExpression">An expression pointing to the property being changed.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChanged.FirePropertyChanged(System.String)">
+            <summary>
+            Fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event on property
+            described by specified expression.
+            </summary>
+            <param name="name">Name of the property being changed (normally pass null to use the name of the current property).</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChanged.FirePropertiesChanged">
+            <summary>
+            Fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event on all properties.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChanged.CreatePropertyChangedHelper">
+            <summary>
+            Creates a <see cref="T:Neo.ApplicationFramework.PropertyChangeHelpers.NotifyPropertyChangedHelperBase" />.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChangedHelper.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Neo.ApplicationFramework.Common.Data.NotifyPropertyChangedHelper" /> class.
+            </summary>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChangedHelper.SetAndFirePropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}},``0@,``0)">
+            <summary>
+            Sets the specified new value, and fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/>
+            event if the new value is different from the old value.
+            </summary>
+            <typeparam name="T">The type of the value.</typeparam>
+            <param name="propertyExpression">An expression pointing to the property being changed.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+            <returns>true if value was changed; otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChangedHelper.SetAndFirePropertyChanged``2(System.Linq.Expressions.Expression{System.Func{``0}},``0@,``0,System.Linq.Expressions.Expression{System.Func{``1}})">
+            <summary>
+            Sets the specified new value, and fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/>
+            event if the new value is different from the old value.
+            </summary>
+            <typeparam name="T">The type of the value.</typeparam>
+            <typeparam name="TDependentProperty">The type of the dependant property.</typeparam>
+            <param name="propertyExpression">An expression pointing to the property being changed.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+            <param name="dependentPropertyExpression">
+            Expression to property depending on this property.
+            </param>
+            <returns>true if value was changed; otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChangedHelper.SetAndFirePropertyChanged``3(System.Linq.Expressions.Expression{System.Func{``0}},``0@,``0,System.Linq.Expressions.Expression{System.Func{``1}},System.Linq.Expressions.Expression{System.Func{``2}})">
+            <summary>
+            Sets the specified new value, and fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/>
+            event if the new value is different from the old value.
+            </summary>
+            <typeparam name="T">The type of the value.</typeparam>
+            <typeparam name="TFirstDependentProperty">The type of the first dependant property.</typeparam>
+            <typeparam name="TSecondDependentProperty">The type of the second dependant property.</typeparam>
+            <param name="propertyExpression">An expression pointing to the property being changed.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+            <param name="firstDependentPropertyExpression">
+            First expression to property depending on this property.
+            </param>
+            <param name="secondDependentPropertyExpression">
+            Second expression to property depending on this property.
+            </param>
+            <returns>true if value was changed; otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChangedHelper.SetAndFirePropertyChanged``4(System.Linq.Expressions.Expression{System.Func{``0}},``0@,``0,System.Linq.Expressions.Expression{System.Func{``1}},System.Linq.Expressions.Expression{System.Func{``2}},System.Linq.Expressions.Expression{System.Func{``3}})">
+            <summary>
+            Sets the specified new value, and fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/>
+            event if the new value is different from the old value.
+            </summary>
+            <typeparam name="T">The type of the value.</typeparam>
+            <typeparam name="TFirstDependentProperty">The type of the first dependant property.</typeparam>
+            <typeparam name="TSecondDependentProperty">The type of the second dependant property.</typeparam>
+            <typeparam name="TThirdDependentProperty">The type of the third dependant property.</typeparam>
+            <param name="propertyExpression">An expression pointing to the property being changed.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+            <param name="firstDependentPropertyExpression">
+            First expression to property depending on this property.
+            </param>
+            <param name="secondDependentPropertyExpression">
+            Second expression to property depending on this property.
+            </param>
+            <param name="thirdDependentPropertyExpression">
+            Third expression to property depending on this property.
+            </param>
+            <returns>true if value was changed; otherwise false.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.NotifyPropertyChangedHelper.FirePropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>
+            Fires the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event on property
+            described by specified expression.
+            </summary>
+            <typeparam name="T">The type of the value.</typeparam>
+            <param name="propertyExpression">An expression pointing to the property being changed.</param>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Data.PropertyObserver`1">
+            <summary>
+            Monitors the PropertyChanged event of an object that implements INotifyPropertyChanged,
+            and executes callback methods (i.e. handlers) registered for properties of that object.
+            </summary>
+            <typeparam name="TPropertySource">The type of object to monitor for property changes.</typeparam>
+            <remarks>
+            Code is originally written by Josh Smith. Read more about the class here:
+            http://joshsmithonwpf.wordpress.com/2009/07/11/one-way-to-avoid-messy-propertychanged-event-handling/
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.PropertyObserver`1.#ctor(`0)">
+            <summary>
+            Initializes a new instance of PropertyObserver, which observes the 'propertySource'
+            object for property changes.
+            </summary>
+            <param name="propertySource">The object to monitor for property changes.</param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.PropertyObserver`1.RegisterHandler(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{`0})">
+            <summary>
+            Registers a callback to be invoked when the PropertyChanged event has been raised for
+            the specified property.
+            </summary>
+            <param name="expression">A lambda expression like 'n => n.PropertyName'.</param>
+            <param name="handler">The callback to invoke when the property has changed.</param>
+            <returns>
+            The object on which this method was invoked, to allow for multiple invocations chained together.
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Data.PropertyObserver`1.UnregisterHandler(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            Removes the callback associated with the specified property.
+            </summary>
+            <param name="expression">A lambda expression like 'n => n.PropertyName'.</param>
+            <returns>
+            The object on which this method was invoked, to allow for multiple invocations chained together.
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Dynamics.BoolDynamicsConverter.#ctor">
+            <summary>
+            Initializes a new instance of the BoolDynamicsConverter class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Dynamics.BrushDynamicsConverter.#ctor">
+            <summary>
+            Initializes a new instance of the BrushConverter class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Dynamics.MessageLibraryDynamicsConverter.#ctor">
+            <summary>
+            Only there to support xml serialization!
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Dynamics.StringIntervalList">
+            <summary>
+            Inherit generic type, since XamlWriter cannot serialize generics.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Dynamics.StringIntervalMapper.#ctor">
+            <summary>
+            Only to be used when hosted by Non-FrameworkElements
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Dynamics.TextIdConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            We use the paramter instead of DefaultValue since that's unique for all intervals when deserialized, since they use a static converter.
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Extensions.System.ActionExtensions.Once(System.Action,System.Boolean)">
+            <summary>
+            Makes sure that an action is run only once
+            </summary>
+            <param name="action">The argument to the Action method being called</param>
+            <param name="threadSafe">Makes sure that multiple thread can invoke the action and only one will run</param>
+            <returns></returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Extensions.System.ActionExtensions.Once``1(System.Action{``0},System.Boolean)">
+            <summary>
+            Makes sure that an action is run only once
+            </summary>
+            <typeparam name="T">The argument to the Action method being called</typeparam>
+            <param name="action">The action to be run only once</param>
+            <param name="threadSafe">Makes sure that multiple thread can invoke the action and only one will run</param>
+            <returns></returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.FileLogic.FilePathLogic">
+            <summary>
+            Help class to set up correct file paths for generated files 
+            on the execution environment Windows.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Graphics.BitmapHelper.MakeTransparent(System.Windows.Media.Imaging.BitmapSource)">
+            <summary>
+            All pixels that has the same color as the first (top-left) are replaced
+            with the same new transparent color (A= 0, R=255, G=255, B=255).
+            The returned BitmapSource could be in another format than the supplied.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Graphics.BitmapHelper.ConvertToCETransparencyFormat(System.Windows.Media.Imaging.BitmapSource)">
+            <summary>
+            Replaces all pixels with some transparency with the Fuchsia color.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Graphics.BitmapHelper.ConvertToCETransparencyFormat(System.Windows.Media.Imaging.BitmapSource,System.Boolean@)">
+            <summary>
+            Replaces all pixels with some transparency with the Fuchsia color.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Graphics.BitmapModifierBase.Modify(System.Windows.Media.Imaging.BitmapSource,System.Boolean@)">
+            <summary>
+            Walks through all pixels in the bitmap and manipulates it.
+            The resulting BitmapSource isn't necessarily in the same format.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Graphics.BitmapModifierBase.Modify(System.Windows.Media.Imaging.BitmapSource)">
+            <summary>
+            Walks through all pixels in the bitmap and manipulates it.
+            The resulting BitmapSource isn't necessarily in the same format.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Graphics.BitmapModifierBase.ColorBgra">
+            <summary>
+            Most of this struct borrowed from the Paint.NET sourcecode.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Graphics.BitmapModifierBase.ColorBgra.BgraToUInt32(System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Packs color and alpha values into a 32-bit integer.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Graphics.ImageInfo.#ctor">
+            <summary>
+            Initializes a new instance of the ImageInfo class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Graphics.ImageInfo.Check">
+            Call this method after you have provided an input stream or file
+            using {@link #setInput(InputStream)} or {@link #setInput(DataInput)}.
+            If true is returned, the file format was known and information
+            on the file's content can be retrieved using the various getXyz methods.
+            @return if information could be retrieved from input
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Graphics.ThumbnailCreator">
+            <summary>
+            Summary description for ThumbnailCreator.
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyDown">
+            <summary>
+            Occurs when the user presses a key
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyPress">
+            <summary>
+            Occurs when the user presses and releases 
+            </summary>
+        </member>
+        <member name="E:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyUp">
+            <summary>
+            Occurs when the user releases a key
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.ToAscii(System.Int32,System.Int32,System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            The ToAscii function translates the specified virtual-key code and keyboard 
+            state to the corresponding character or characters. The function translates the code 
+            using the input language and physical keyboard layout identified by the keyboard layout handle.
+            </summary>
+            <param name="uVirtKey">
+            [in] Specifies the virtual-key code to be translated. 
+            </param>
+            <param name="uScanCode">
+            [in] Specifies the hardware scan code of the key to be translated. 
+            The high-order bit of this value is set if the key is up (not pressed). 
+            </param>
+            <param name="lpbKeyState">
+            [in] Pointer to a 256-byte array that contains the current keyboard state. 
+            Each element (byte) in the array contains the state of one key. 
+            If the high-order bit of a byte is set, the key is down (pressed). 
+            The low bit, if set, indicates that the key is toggled on. In this function, 
+            only the toggle bit of the CAPS LOCK key is relevant. The toggle state 
+            of the NUM LOCK and SCROLL LOCK keys is ignored.
+            </param>
+            <param name="lpwTransKey">
+            [out] Pointer to the buffer that receives the translated character or characters. 
+            </param>
+            <param name="fuState">
+            [in] Specifies whether a menu is active. This parameter must be 1 if a menu is active, or 0 otherwise. 
+            </param>
+            <returns>
+            If the specified key is a dead key, the return value is negative. Otherwise, it is one of the following values. 
+            Value Meaning 
+            0 The specified virtual key has no translation for the current state of the keyboard. 
+            1 One character was copied to the buffer. 
+            2 Two characters were copied to the buffer. This usually happens when a dead-key character 
+            (accent or diacritic) stored in the keyboard layout cannot be composed with the specified 
+            virtual key to form a single character. 
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/keyboardinput/keyboardinputreference/keyboardinputfunctions/toascii.asp
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.GetKeyboardState(System.Byte[])">
+            <summary>
+            The GetKeyboardState function copies the status of the 256 virtual keys to the 
+            specified buffer. 
+            </summary>
+            <param name="pbKeyState">
+            [in] Pointer to a 256-byte array that contains keyboard key states. 
+            </param>
+            <returns>
+            If the function succeeds, the return value is nonzero.
+            If the function fails, the return value is zero. To get extended error information, call GetLastError. 
+            </returns>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/keyboardinput/keyboardinputreference/keyboardinputfunctions/toascii.asp
+            </remarks>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.WM_KEYDOWN">
+            <summary>
+            The WM_KEYDOWN message is posted to the window with the keyboard focus when a nonsystem 
+            key is pressed. A nonsystem key is a key that is pressed when the ALT key is not pressed.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.WM_KEYUP">
+            <summary>
+            The WM_KEYUP message is posted to the window with the keyboard focus when a nonsystem 
+            key is released. A nonsystem key is a key that is pressed when the ALT key is not pressed, 
+            or a keyboard key that is pressed when a window has the keyboard focus.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.WM_SYSKEYDOWN">
+            <summary>
+            The WM_SYSKEYDOWN message is posted to the window with the keyboard focus when the user 
+            presses the F10 key (which activates the menu bar) or holds down the ALT key and then 
+            presses another key. It also occurs when no window currently has the keyboard focus; 
+            in this case, the WM_SYSKEYDOWN message is sent to the active window. The window that 
+            receives the message can distinguish between these two contexts by checking the context 
+            code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.WM_SYSKEYUP">
+            <summary>
+            The WM_SYSKEYUP message is posted to the window with the keyboard focus when the user 
+            releases a key that was pressed while the ALT key was held down. It also occurs when no 
+            window currently has the keyboard focus; in this case, the WM_SYSKEYUP message is sent 
+            to the active window. The window that receives the message can distinguish between 
+            these two contexts by checking the context code in the lParam parameter. 
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyboardHookStruct">
+            <summary>
+            The KBDLLHOOKSTRUCT structure contains information about a low-level keyboard input event. 
+            </summary>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookstructures/cwpstruct.asp
+            </remarks>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyboardHookStruct.vkCode">
+            <summary>
+            Specifies a virtual-key code. The code must be a value in the range 1 to 254. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyboardHookStruct.scanCode">
+            <summary>
+            Specifies a hardware scan code for the key. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyboardHookStruct.flags">
+            <summary>
+            Specifies the extended-key flag, event-injected flag, context code, and transition-state flag.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyboardHookStruct.time">
+            <summary>
+            Specifies the time stamp for this message.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyboardHookStruct.dwExtraInfo">
+            <summary>
+            Specifies extra information associated with the message. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.#ctor">
+            <summary>
+            Initializes a new instance of the MouseHook class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Hooks.GlobalKeyboardHook.KeyboardHookProc(System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            A callback function which will be called every time a keyboard activity detected.
+            </summary>
+            <param name="nCode">
+            [in] Specifies whether the hook procedure must process the message. 
+            If nCode is HC_ACTION, the hook procedure must process the message. 
+            If nCode is less than zero, the hook procedure must pass the message to the 
+            CallNextHookEx function without further processing and must return the 
+            value returned by CallNextHookEx.
+            </param>
+            <param name="wParameter">
+            [in] Specifies whether the message was sent by the current thread. 
+            If the message was sent by the current thread, it is nonzero; otherwise, it is zero. 
+            </param>
+            <param name="lParameter">
+            [in] Pointer to a CWPSTRUCT structure that contains details about the message. 
+            </param>
+            <returns>
+            If nCode is less than zero, the hook procedure must return the value returned by CallNextHookEx. 
+            If nCode is greater than or equal to zero, it is highly recommended that you call CallNextHookEx 
+            and return the value it returns; otherwise, other applications that have installed WH_CALLWNDPROC 
+            hooks will not receive hook notifications and may behave incorrectly as a result. If the hook 
+            procedure does not call CallNextHookEx, the return value should be zero. 
+            </returns>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.POINT">
+            <summary>
+            The POINT structure defines the x- and y- coordinates of a point. 
+            </summary>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/rectangl_0tiq.asp
+            </remarks>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.POINT.x">
+            <summary>
+            Specifies the x-coordinate of the point. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.POINT.y">
+            <summary>
+            Specifies the y-coordinate of the point. 
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseHookStruct">
+            <summary>
+            The MOUSEHOOKSTRUCT structure contains information about a mouse event passed to a WH_MOUSE hook procedure, MouseProc. 
+            </summary>
+            <remarks>
+            http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/windowing/hooks/hookreference/hookstructures/cwpstruct.asp
+            </remarks>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseHookStruct.pt">
+            <summary>
+            Specifies a POINT structure that contains the x- and y-coordinates of the cursor, in screen coordinates. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseHookStruct.hwnd">
+            <summary>
+            Handle to the window that will receive the mouse message corresponding to the mouse event. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseHookStruct.wHitTestCode">
+            <summary>
+            Specifies the hit-test value. For a list of hit-test values, see the description of the WM_NCHITTEST message. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseHookStruct.dwExtraInfo">
+            <summary>
+            Specifies extra information associated with the message. 
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseLLHookStruct">
+            <summary>
+            The MSLLHOOKSTRUCT structure contains information about a low-level keyboard input event. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseLLHookStruct.pt">
+            <summary>
+            Specifies a POINT structure that contains the x- and y-coordinates of the cursor, in screen coordinates. 
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseLLHookStruct.mouseData">
+             <summary>
+             If the message is WM_MOUSEWHEEL, the high-order word of this member is the wheel delta. 
+             The low-order word is reserved. A positive value indicates that the wheel was rotated forward, 
+             away from the user; a negative value indicates that the wheel was rotated backward, toward the user. 
+             One wheel click is defined as WHEEL_DELTA, which is 120. 
+            If the message is WM_XBUTTONDOWN, WM_XBUTTONUP, WM_XBUTTONDBLCLK, WM_NCXBUTTONDOWN, WM_NCXBUTTONUP,
+             or WM_NCXBUTTONDBLCLK, the high-order word specifies which X button was pressed or released, 
+             and the low-order word is reserved. This value can be one or more of the following values. Otherwise, mouseData is not used. 
+            XBUTTON1
+            The first X button was pressed or released.
+            XBUTTON2
+            The second X button was pressed or released.
+             </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseLLHookStruct.flags">
+             <summary>
+             Specifies the event-injected flag. An application can use the following value to test the mouse flags. Value Purpose 
+            LLMHF_INJECTED Test the event-injected flag.  
+            0
+            Specifies whether the event was injected. The value is 1 if the event was injected; otherwise, it is 0.
+            1-15
+            Reserved.
+             </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseLLHookStruct.time">
+            <summary>
+            Specifies the time stamp for this message.
+            </summary>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseLLHookStruct.dwExtraInfo">
+            <summary>
+            Specifies extra information associated with the message. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.#ctor">
+            <summary>
+            Initializes a new instance of the MouseHook class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Hooks.GlobalMouseHook.MouseHookProc(System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            A callback function which will be called every time a mouse activity detected.
+            </summary>
+            <param name="nCode">
+            [in] Specifies whether the hook procedure must process the message. 
+            If nCode is HC_ACTION, the hook procedure must process the message. 
+            If nCode is less than zero, the hook procedure must pass the message to the 
+            CallNextHookEx function without further processing and must return the 
+            value returned by CallNextHookEx.
+            </param>
+            <param name="wParameter">
+            [in] Specifies whether the message was sent by the current thread. 
+            If the message was sent by the current thread, it is nonzero; otherwise, it is zero. 
+            </param>
+            <param name="lParameter">
+            [in] Pointer to a CWPSTRUCT structure that contains details about the message. 
+            </param>
+            <returns>
+            If nCode is less than zero, the hook procedure must return the value returned by CallNextHookEx. 
+            If nCode is greater than or equal to zero, it is highly recommended that you call CallNextHookEx 
+            and return the value it returns; otherwise, other applications that have installed WH_CALLWNDPROC 
+            hooks will not receive hook notifications and may behave incorrectly as a result. If the hook 
+            procedure does not call CallNextHookEx, the return value should be zero. 
+            </returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Logic.ArcLogic.#ctor">
+            <summary>
+            Initializes a new instance of the ArcLogic class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Common.Logic.ArcLogic.StartAngle">
+            <summary>
+            Angle in degrees
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Common.Logic.ArcLogic.EndAngle">
+            <summary>
+            Angle in degrees
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Printer.GdiPrinter.NativeWrappers.NativeGdiPC">
+            <summary>
+            Wrapper class that communicates with the printer driver.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Printer.GdiPrinter.GdiWrapperPC.CreateDevMode(System.String,System.IntPtr,Neo.ApplicationFramework.Interfaces.IPrinterDevice,Neo.ApplicationFramework.Interfaces.OrientationType)">
+            <summary>
+            Generates a DevMode struct according to Microsoft Guidelines. 
+            https://support.microsoft.com/en-ie/help/167345/how-to-modify-printer-settings-with-the-documentproperties-function
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Resource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Common.Resource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Common.Resource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Common.Resource.Error">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Common.Resource.Help">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Common.Resource.Info">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Neo.ApplicationFramework.Common.Resource.Warning">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Security.SecurityMessageFilter">
+            <summary>
+            Security message filter for full framework.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Security.SecurityMessageFilter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SecurityMessageFilter"/> class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.StyleMarkupExtension.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the StyleMarkupExtension class.
+            </summary>
+            <param name="styleResourceName"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.TypeConverters.WPFToCFFontStyleConverter.#ctor(System.ComponentModel.ICustomTypeDescriptor)">
+            <summary>
+            Initializes a new instance of the WPFToCFFontStyleConverter class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.TypeConverters.WPFToCFFontWeightConverter.#ctor(System.ComponentModel.ICustomTypeDescriptor)">
+            <summary>
+            Initializes a new instance of the WPFToCFFontWeightConverter class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.TypeConverters.WPFToCFTextDecorationsConverter.#ctor(System.ComponentModel.ICustomTypeDescriptor)">
+            <summary>
+            Initializes a new instance of the WPFToCFTextDecorationsConverter class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.TypeConverters.WPFToCFThicknessConverter.#ctor(System.ComponentModel.ICustomTypeDescriptor)">
+            <summary>
+            Initializes a new instance of the WPFToCFBrushConverter class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.TypeConverters.WPFToCFTypeConverter.#ctor(System.ComponentModel.ICustomTypeDescriptor)">
+            <summary>
+            Initializes a new instance of the WPFToCFBrushConverter class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.TypeConverters.WPFToCFTypeDescriptionProvider.#ctor(System.Type)">
+            <summary>
+            Initializes a new instance of the WPFToCFTypeDescriptionProvider class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.TypeConverters.WPFToCFTypeDescriptor.#ctor(Neo.ApplicationFramework.Common.TypeConverters.WPFToCFTypeDescriptionProvider,System.ComponentModel.ICustomTypeDescriptor,System.Type)">
+            <summary>
+            Initializes a new instance of the WPFToCFBrushTypeDescriptor class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.TypeConverters.WPFToCFVisibilityConverter.#ctor(System.ComponentModel.ICustomTypeDescriptor)">
+            <summary>
+            Initializes a new instance of the WPFToCFVisibilityConverter class.
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Utilities.BlockRecursionScope">
+            <summary>
+            This class is made to dissallow recursive calls to a method. 
+            It will throw an exception when a recursive calls is being made. 
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.DependencyObjectPropertyBinder.#ctor(Neo.ApplicationFramework.Interfaces.IDataItemProxyProvider)">
+            <summary>
+            </summary>
+            <param name="dataItemProxyProvider"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.DependencyObjectPropertyBinder.IsDynamicsBinding(System.Windows.Data.BindingExpression)">
+            <returns>
+            True if the bindingExpression contains a binding that can be handled by any of the
+            registered binding source providers.
+            False if the binding cannot be handled.
+            False if there is no spoon, ehh binding.
+            </returns>
+            <remarks>
+            The intended criteria for "is dynamics binding" seems to be to return true for a
+            binding that is not null and a multi-language one.
+            The actual criteria used to be a check whether it was a tag binding.
+            </remarks>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.DependencyObjectPropertyBinder.GetBindingSourceDescription(System.Windows.Data.Binding)">
+            <summary>
+            This method converts a Binding object into an BindingSourceDescription object.
+            </summary>
+            <param name="binding">The binding to convert.</param>
+            <returns>An BindingSourceDescription object, describing the binding source.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.ElementHelper.FindTransform``1(System.Windows.Media.Transform)">
+            <summary>
+            Checks if the transform is of the specified type.
+            If the transform is a transform group, the transform type will be searched for.
+            </summary>
+            <typeparam name="T">The transform type to search for.</typeparam>
+            <param name="transform">The transform to search among.</param>
+            <returns>The first transform of the specified type, or null if not found.</returns>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.ElementHelper.FindTransforms``1(System.Windows.Media.Transform)">
+            <summary>
+            Searches for all transforms of the specified type.
+            </summary>
+            <typeparam name="T">The transform type to search for.</typeparam>
+            <param name="transform">The transform to search among.</param>
+            <returns>A collection of the transforms found.</returns>
+        </member>
+        <member name="F:Neo.ApplicationFramework.Common.Utilities.NativeAPI.LOGFONT.lfFaceName">
+            <summary>
+            <see cref="F:Neo.ApplicationFramework.Common.Utilities.NativeAPI.LF_FACESIZE"/> means that the string
+            should be marshalled as an array of TCHAR embedded in the
+            structure.  This implies that the font names can be no larger
+            than <see cref="N:System.Runtime"/> including the terminating '\0'.
+            That works out to 31 characters.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.NativeAPI.SetRenderingMode">
+            <summary>
+             Introduced for Optimus first revision, controlled by BeHWApi.ShouldDisableVisualThemes
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.NeoZipFile.#ctor(System.String,System.String)">
+            <summary>
+            NeoZipFile Create a new instance of a NeoZipfile.
+            Creates the zip file if it does not exist.
+            Remember to close streams if you call OpenRead and get at stream back.
+            </summary>
+            <param name="zipFilePath"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.NeoZipFile.#ctor(System.String)">
+            <summary>
+            NeoZipFile Create a new instance of a NeoZipfile.
+            Creates the zip file if it does not exist.
+            Remember to close streams if you call OpenRead and get at stream back.
+            </summary>
+            <param name="zipFilePath"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.NeoZipFile.Delete">
+            <summary>
+            Delete will close streams that have been opened from within the zip file
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Utilities.StringIntervalHelper.StringIntervalDefaultFactory">
+            <summary>
+            Needed for unit test being able to provide mocked StringIntervalMapper
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Utilities.SuppressActionChangedScope">
+            <summary>
+            Use this scope if you want to make changes in an action, for example update action properties, without triggering an action change, which will redraw the property grid control.
+            This class makes sure that any code executed within this scope will not trigger any action changed events.
+            When nested scopes appear, action changed events will be suppressed until the outer most scope is disposed.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.TransferCommandType.#ctor">
+            <summary>
+            Initializes a new instance of the TransferCommandType class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.TransferCommandType.#ctor(Neo.ApplicationFramework.Common.Utilities.TransferCommandTypeEnum,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the TransferCommandType class.
+            </summary>
+            <param name="transferCommandType"></param>
+            <param name="name"></param>
+            <param name="description"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.TransferCommandTypes.#ctor">
+            <summary>
+            Initializes a new instance of the TransferCommandTypes class.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.TransferDeploymentCommand.#ctor(Neo.ApplicationFramework.Common.Utilities.TransferCommandType,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the TransferDeploymentCommand class.
+            </summary>
+            <param name="commandType"></param>
+            <param name="arguments"></param>
+            <param name="displayText"></param>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Common.Utilities.DispatcherThreadHelper.WaitForPriority(System.Windows.Threading.Dispatcher,System.Windows.Threading.DispatcherPriority)">
+            <summary>
+            Halts the execution of the current thread until the Dispatcher queue processes the operations with the priority you specify.
+            </summary>
+            <remarks>Taken from Bea Stollnitz blog: http://bea.stollnitz.com/blog/?p=59 </remarks>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Common.Xaml.Serializer.TextIdSerializationHelper">
+            <summary>
+            Contains help functionality to serialize / deserialize static Text Id to/from XAML
+            </summary>
+        </member>
+        <member name="T:Neo.ApplicationFramework.Interfaces.PropertyBinderWpfExtensions">
+            <summary>
+            Class containing extensions to <see cref="T:Neo.ApplicationFramework.Interfaces.IPropertyBinderWpf"/>.
+            </summary>
+        </member>
+        <member name="M:Neo.ApplicationFramework.Interfaces.PropertyBinderWpfExtensions.GetMultiLanguageBinding(Neo.ApplicationFramework.Interfaces.IPropertyBinderWpf,System.Object,System.Windows.DependencyProperty)">
+            <summary>
+            Gets the multi language binding i.e. ResourceItem binding
+            </summary>
+        </member>
+        <member name="M:System.Windows.WindowExtensions.ResetWindowOwner(System.Windows.Window)">
+            <summary>
+            This works around a bug in WPF/Windows window handling that forces the application to 
+            lose focus after closing more than 1 childwindow.
+            </summary>
+        </member>
+        <member name="M:System.Windows.WindowExtensions.AssignBrandIconToWindow(System.Windows.Window)">
+            <summary>
+            Assigns the default brand icon to the specified window
+            </summary>
+            <param name="window"></param>
+        </member>
+        <member name="P:System.Windows.WindowExtensions.ActiveScreenWindowHandle">
+            <summary>
+            Gets the main screen window handle in runtime
+            </summary>
+        </member>
+        <member name="P:System.Windows.WindowExtensions.MainScreenWindowHandle">
+            <summary>
+            Gets the main screen window handle in runtime
+            </summary>
+        </member>
+        <member name="P:System.Windows.WindowExtensions.MainWindowHandle">
+            <summary>
+            Gets the main window handle in designtime
+            </summary>
+        </member>
+        <member name="M:System.ServiceProviderExtensions.GetService``1(Core.Api.Service.IServiceContainerCF)">
+            <summary>
+            Gets the service object of the specified type.
+            </summary>
+        </member>
+        <member name="M:System.ServiceProviderExtensions.GetService``1(System.IServiceProvider)">
+            <summary>
+            Gets the service object of the specified type.
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.AllDigits(System.String)">
+            <summary>
+            Verifies that all characters in string are digits. No whitespace, decimalsigns or separatorsigns allowed 
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.OrDefaultPropertyIfNull(System.String,System.Object)">
+            <summary>
+            Gets the property name if not null; otherwise the default property of specified target.
+            </summary>
+        </member>
+    </members>
+</doc>

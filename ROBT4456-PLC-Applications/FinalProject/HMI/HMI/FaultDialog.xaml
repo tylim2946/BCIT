@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.44.53.0'?>
+<nacs:ScreenWindow Topmost="False" Title="FaultDialog" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="800, 480" TemplateScreen="{x:Null}" StyleName="Default" IsCacheable="True" Background="#FF121212" Width="800" Height="480" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Operators" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" x:Class="Neo.ApplicationFramework.Generated.FaultDialog">
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="800" Height="480" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
+    <nac:Label Text="Possible causes:" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI" FontSize="20" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="5,0,5,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="12" Canvas.Left="216" Canvas.Top="241" />
+    <nac:Label Text="Description:" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI" FontSize="20" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="5,0,5,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="216" Canvas.Top="145" />
+    <nac:TextBox MultiLine="True" WordWrap="True" FontFamily="Segoe UI" UndoLimit="1" Transparent="Visible" TextWrapping="Wrap" MaxLines="2147483647" IsReadOnly="True" AcceptsReturn="True" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Normal" VerticalContentAlignment="Top" Name="m_TextBox1" Width="352" Height="64" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="10" Canvas.Left="219" Canvas.Top="273">
+      <nac:TextBox.Resources>
+        <ResourceDictionary>
+          <nacd1:MessageLibraryDynamicsConverter x:Key="TextConverter" MessageLibraryGroupName="Fault_Causes">
+            <nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+              <nacd2:MessageLibraryGroupResolver />
+            </nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+          </nacd1:MessageLibraryDynamicsConverter>
+        </ResourceDictionary>
+      </nac:TextBox.Resources>
+      <nac:TextBox.Text>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Fault_ErrorCode].Value" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>TextBox</Binding.FallbackValue>
+        </Binding>
+      </nac:TextBox.Text>
+    </nac:TextBox>
+    <nac:TextBox MultiLine="True" WordWrap="True" FontFamily="Segoe UI" UndoLimit="1" Transparent="Visible" TextWrapping="Wrap" MaxLines="2147483647" IsReadOnly="True" AcceptsReturn="True" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Normal" VerticalContentAlignment="Top" Name="m_TextBox" Width="352" Height="64" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="9" Canvas.Left="218" Canvas.Top="177">
+      <nac:TextBox.Resources>
+        <ResourceDictionary>
+          <nacd1:MessageLibraryDynamicsConverter x:Key="TextConverter" MessageLibraryGroupName="Fault_Description">
+            <nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+              <nacd2:MessageLibraryGroupResolver />
+            </nacd1:MessageLibraryDynamicsConverter.MessageLibraryGroupResolver>
+          </nacd1:MessageLibraryDynamicsConverter>
+        </ResourceDictionary>
+      </nac:TextBox.Resources>
+      <nac:TextBox.Text>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Fault_ErrorCode].Value" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>TextBox</Binding.FallbackValue>
+        </Binding>
+      </nac:TextBox.Text>
+    </nac:TextBox>
+    <nac:Label TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Text3" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="351" Canvas.Top="98">
+      <nac:Label.Resources>
+        <ResourceDictionary>
+          <nacd1:RawConverter x:Key="TextConverter" DefaultValue="1001" />
+        </ResourceDictionary>
+      </nac:Label.Resources>
+      <nac:Label.Text>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_Fault_ErrorCode].Value" Converter="{StaticResource TextConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>1001</Binding.FallbackValue>
+        </Binding>
+      </nac:Label.Text>
+    </nac:Label>
+    <nac:Button Text="OK" RequiresTransparency="True" SymbolTransparent="False" Transparent="Hidden" Background="{x:Null}" Foreground="#FF5B92D6" FontFamily="Segoe UI" FontSize="18" FontWeight="Bold" Name="m_Button" Width="100" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="504" Canvas.Top="337" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Close Screen">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Close" ObjectName="" EventName="Click" ReferenceType="This" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="True" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Label Text="Error Code:" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="Segoe UI" FontSize="24" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Title" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="216" Canvas.Top="97" />
+    <nacc:Rectangle Fill="#FF2B2B2B" Stroke="{x:Null}" StrokeThickness="0" Name="m_Rectangle2" Width="432" Height="321" RenderTransformOrigin="0.5,0.5" Visibility="Visible" IsEnabled="False" Panel.ZIndex="2" Canvas.Left="184" Canvas.Top="80" nac:EnabledProperties.EnabledDynamicsValue="False" />
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

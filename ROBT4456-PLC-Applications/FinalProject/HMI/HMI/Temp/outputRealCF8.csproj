@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Building this project file requires Visual Studio 2013 and Application Builder Compact 2013 for Visual Studio 2013 -->
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform>AnyCPU</Platform>
+    <ProjectGuid>{440F9285-096F-4476-AF1D-6DFE508CB9F9}</ProjectGuid>
+    <ProjectTypeGuids>{6AFDAB0D-95EF-424D-8A49-099ECD40B0FF};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Neo.ApplicationFramework.Generated</RootNamespace>
+    <AssemblyName>NeoOutput</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsEmbeddedCompact</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.9</TargetFrameworkVersion>
+    <TargetFrameworkTargetsVersion>v8.0</TargetFrameworkTargetsVersion>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>OutputReal</OutputPath>
+    <InstallPath></InstallPath>
+    <DisplayOrHeadless></DisplayOrHeadless>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>OutputReal</OutputPath>
+    <DefineConstants>DEBUG;TRACE;CE;V5;$(DisplayOrHeadless)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>0114;0108</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>OutputReal</OutputPath>
+    <DefineConstants>TRACE;CE;V5;$(DisplayOrHeadless)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Output\*.dll">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\*.cs" />
+    <Compile Include="..\buildfiles\*.cs" />
+    <EmbeddedResource Include="obj\Release\*.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- To get native assemblies downloaded to panel we need to include them as content. Set all assemblies as content since we cannot know which are native here.
+         They are also included as references to be able to build. -->
+    <Content Include="Output\*.dll" Exclude="Output\SQLite.Interop.094.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>.\%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="Output\*.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>.\%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="Output\*.config" Exclude="Output\App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>.\%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="Output\*.cfgtool">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>.\%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="Output\*.kbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>.\%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="Output\*.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>.\%(Filename)%(Extension)</Link>
+    </Content>
+    <Content Include="Output\*.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>.\%(Filename)%(Extension)</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkTargetsVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+  </Target>
+</Project>

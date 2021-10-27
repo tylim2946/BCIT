@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.44.53.0'?>
+<NeoItem d1p1:Serializer="Neo.ApplicationFramework.Common.Serialization.ObjectSerializer" xmlns:d1p1="urn:Neo.ApplicationFramework.Serializer">
+  <Object d1p1:type="Neo.ApplicationFramework.Tools.ProjectConfiguration.ProjectConfiguration, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" d1p1:Site.Name="ProjectConfiguration" ProjectGuid="bf2b7cd7-8b0a-4823-8953-3e5689edf1ec">
+    <UISettings>
+      <Object d1p1:type="Neo.ApplicationFramework.Tools.ProjectConfiguration.UISettings, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Foreground="255, 255, 255" ControlForeground="255, 255, 255" MessageBoxDelay="00:00:20" ListItemHeight="35">
+        <Background>
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Graphics.Logic.BrushCF, CommonCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Graphics.Logic.BrushCF, CommonCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+              <Parameter Name="StartColor">
+                <Object d1p1:type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                  <InstanceDescriptor DeclaringType="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="FromArgb" MemberType="Method">
+                    <Parameter Name="Red">
+                      <Object d1p1:type="System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="167" />
+                    </Parameter>
+                    <Parameter Name="Green">
+                      <Object d1p1:type="System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="188" />
+                    </Parameter>
+                    <Parameter Name="Blue">
+                      <Object d1p1:type="System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="214" />
+                    </Parameter>
+                  </InstanceDescriptor>
+                </Object>
+              </Parameter>
+              <Parameter Name="EndColor">
+                <Object d1p1:type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                  <InstanceDescriptor DeclaringType="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="Empty" MemberType="Field" />
+                </Object>
+              </Parameter>
+              <Parameter Name="FillDirection">
+                <Object d1p1:type="Neo.ApplicationFramework.Interfaces.FillDirection, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+                  <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.FillDirection, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="None" MemberType="Field" />
+                </Object>
+              </Parameter>
+            </InstanceDescriptor>
+          </Object>
+        </Background>
+        <ControlBackground>
+          <Object d1p1:type="Neo.ApplicationFramework.Common.Graphics.Logic.BrushCF, CommonCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+            <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Common.Graphics.Logic.BrushCF, CommonCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name=".ctor" MemberType="Constructor">
+              <Parameter Name="StartColor">
+                <Object d1p1:type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                  <InstanceDescriptor DeclaringType="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="FromArgb" MemberType="Method">
+                    <Parameter Name="Red">
+                      <Object d1p1:type="System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="115" />
+                    </Parameter>
+                    <Parameter Name="Green">
+                      <Object d1p1:type="System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="148" />
+                    </Parameter>
+                    <Parameter Name="Blue">
+                      <Object d1p1:type="System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" primitive.value="190" />
+                    </Parameter>
+                  </InstanceDescriptor>
+                </Object>
+              </Parameter>
+              <Parameter Name="EndColor">
+                <Object d1p1:type="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                  <InstanceDescriptor DeclaringType="System.Drawing.Color, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="Empty" MemberType="Field" />
+                </Object>
+              </Parameter>
+              <Parameter Name="FillDirection">
+                <Object d1p1:type="Neo.ApplicationFramework.Interfaces.FillDirection, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null">
+                  <InstanceDescriptor DeclaringType="Neo.ApplicationFramework.Interfaces.FillDirection, InterfacesCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" Name="None" MemberType="Field" />
+                </Object>
+              </Parameter>
+            </InstanceDescriptor>
+          </Object>
+        </ControlBackground>
+        <Font>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.ProjectConfiguration.FontSettings, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" FamilyName="Segoe UI Semibold" />
+        </Font>
+        <TitleFont>
+          <Object d1p1:type="Neo.ApplicationFramework.Tools.ProjectConfiguration.FontSettings, ToolsCF, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" FamilyName="Segoe UI Black" SizePixels="22" />
+        </TitleFont>
+      </Object>
+    </UISettings>
+  </Object>
+</NeoItem>
