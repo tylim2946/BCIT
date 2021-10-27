@@ -1,5 +1,7 @@
 # Contents
 
+:star: - Suggested to have a look
+
 ## ROBT3356 Controller Systems (C, Assembly)
 
 1. [Lab 5 - Parallel to Serial Conversion](https://github.com/tylim2946/BCIT/tree/main/ROBT3356-Controller-Systems/ROBT3356_Lab05)
